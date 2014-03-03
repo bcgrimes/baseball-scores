@@ -1,0 +1,2561 @@
+<!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt--><events year="2012" month="03" day="02" modified_date="2012-03-03T15:10:00Z" next_day_date="2012-03-03">
+<game id="2012/03/02/guhbbc-wasmlb-1" venue="Space Coast Stadium" game_pk="336450" time="12:00" time_zone="ET" ampm="PM" away_time="12:00" away_time_zone="ET" away_ampm="PM" home_time="12:00" home_time_zone="ET" home_ampm="PM" game_type="E" resume_date="" time_zone_aw_lg="0" time_zone_hm_lg="-5" time_aw_lg="" aw_lg_ampm="" tz_aw_lg_gen="" time_hm_lg="12:00" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2513" scheduled_innings="9" description="vs. Georgetown" away_name_abbrev="GU" home_name_abbrev="WSH" away_code="guh" away_file_code="t2330" away_team_id="2330" away_team_city="Georgetown U." away_team_name="Hoyas" away_division="" away_league_id="107" away_sport_code="bbc" home_code="was" home_file_code="was" home_team_id="120" home_team_city="Washington" home_team_name="Nationals" home_division="E" home_league_id="104" home_sport_code="mlb" day="FRI" gameday_sw="N" away_games_back="" home_games_back="" away_games_back_wildcard="" home_games_back_wildcard="" venue_w_chan_loc="USFL0579" gameday="2012_03_02_guhbbc_wasmlb_1"  away_win="0"  away_loss="1"  home_win="1"  home_loss="0"  league="BN"> 
+<status status="Final" ind="F" reason="" inning="9" top_inning="Y" b="0" s="0" o="3" inning_state=""/>
+<linescore>
+<inning away="0" home="1"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="1"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="1"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="0"/> 
+<inning away="0" /> 
+<r away="0" home="3" diff="3"/> 
+<h away="4" home="5"/> 
+<e away="4" home="0"/> 
+</linescore>
+<winning_pitcher id="545357" last="Purke" first="Matt" name_display_roster="Purke" number="50" era="0.00" wins="1" losses="0"/> 
+<losing_pitcher id="613470" last="Harris" first="Will" name_display_roster="Harris" number="31" era="0.00" wins="0" losses="1"/> 
+<save_pitcher id="445246" last="Fulchino" first="Jeff" number="46" name_display_roster="Fulchino" era="0.00" wins="0" losses="0" saves="1"/> 
+<newsroom><gamecenter type="mlb"><game ampm="pm" away_score="0" game-number="1" home_score="3" id="2012_03_02_guhbbc_wasmlb_1" league="" series-code="" series-game-number="1" start_time="12:00" status="F" time_zone="ET" type="E">
+    <ticketlink/>
+    <venueShort>Space Coast Stadium</venueShort>
+	<venueLong>Space Coast Stadium</venueLong>
+	<gallery exists="0"/>
+    <broadcast>
+        <home>
+        <tv/>
+        <radio/>
+</home>
+        <away>
+        <tv/>
+        <radio/>
+</away>
+    </broadcast>
+    <probables>
+	    
+	<home>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</home>
+
+        
+	<away>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</away>
+	
+	</probables>
+    <previews>
+        <mlb>
+</mlb>
+        <home>
+</home>
+        <away>
+</away>
+    </previews>
+    <recaps>
+        <home><headline><![CDATA[Nats' young stars shine in exhibition]]></headline><blurb><![CDATA[The Nationals played their first exhibition game Friday afternoon, blanking Georgetown University, 3-0, at Space Coast Stadium. ]]></blurb><url cid="2012030226962684"><![CDATA[/news/article.jsp?ymd=20120302&content_id=26962684&vkey=news_was&c_id=was]]></url>
+</home>    
+        <away>
+</away>    
+    </recaps>
+    <wrap>
+        <mlb>
+</mlb>    
+    </wrap>
+    <photos>
+        
+<ipad>
+<url>/images/2012/02/29/uEV65vhq.png</url>
+<headline><![CDATA[MLB.com]]></headline>
+<caption><![CDATA[Spring Training 2012]]></caption>
+<credit/>
+</ipad>
+    
+    </photos>
+    
+
+
+<mlbtv_alt_feed_index>
+</mlbtv_alt_feed_index>
+
+
+</game></gamecenter></newsroom><homebase><item createdOn="2012-03-02T11:52:40-0500" id="20116585" lastSave="2012-03-03T10:06:36-0500" name="DAM Media: 20116585 2012-03-02 : vs. Georgetown | MLBTV" namespaceId="1" state="A" userDate="2012-03-02T11:52:35-0500" version="5">
+    <displayData>headline=2012-03-02%20%3A%20vs.%20Georgetown%20%7C%20MLBTV&amp;kicker=2012-03-02%20%3A%20vs.%20Georgetown%20%7C%20MLBTV&amp;blurb=2012-03-02%20%3A%20vs.%20Georgetown%20%7C%20MLBTV&amp;createdOn=Fri%20Mar%2002%2011%3A52%3A36%20EST%202012&amp;thumbnail=http%3A%2F%2Fmediadownloads.mlb.com%2Fmlbam%2Fpreview%2Fguhwas_336450_preview.jpg</displayData>
+    <lockInfo/>
+    <itemType category="content" key="video" name="Video"/>
+    <appAccountIds>
+      <appId>14</appId>
+    </appAccountIds>
+    <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+    <field key="kicker" primitive="String">2012-03-02 : vs. Georgetown | MLBTV</field>
+    <field key="secure" primitive="String">Y</field>
+    <field key="sequence" primitive="String">1</field>
+    <field key="namespace" primitive="String">1</field>
+    <field key="blurb" primitive="String">2012-03-02 : vs. Georgetown | MLBTV</field>
+    <field key="headline" primitive="String">2012-03-02 : vs. Georgetown | MLBTV</field>
+    <field key="guid" primitive="String">e29e5d7c734a0dac</field>
+    <field key="delivery-type" primitive="String">live</field>
+    <field key="bigblurb" primitive="String">2012-03-02 : vs. Georgetown | MLBTV</field>
+    <field key="audio-tracks" primitive="List" subTypeKey="audio_track" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T11:52:40-0500" id="26952558" lastSave="2012-03-03T10:06:36-0500" name="TRACK: channel: 482; icon-id: null; language: EN; type: TV; description: MLB.com" namespaceId="1" rank="0" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=TRACK%3A%20channel%3A%20482%3B%20icon-id%3A%20null%3B%20language%3A%20EN%3B%20type%3A%20TV%3B%20description%3A%20MLB.com</displayData>
+          <itemType key="audio_track" name="Audio Track"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="channel" primitive="Long">482</field>
+          <field key="type" primitive="String">TV</field>
+          <field key="description" primitive="String">MLB.com</field>
+          <field key="language" primitive="String">EN</field>
+        </item>
+        <item createdOn="2012-03-02T11:52:41-0500" id="26952560" lastSave="2012-03-03T10:06:36-0500" name="TRACK: channel: 484; icon-id: null; language: EN; type: NAT SOUND; description: PARK" namespaceId="1" rank="1" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=TRACK%3A%20channel%3A%20484%3B%20icon-id%3A%20null%3B%20language%3A%20EN%3B%20type%3A%20NAT%20SOUND%3B%20description%3A%20PARK</displayData>
+          <itemType key="audio_track" name="Audio Track"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="channel" primitive="Long">484</field>
+          <field key="type" primitive="String">NAT SOUND</field>
+          <field key="description" primitive="String">PARK</field>
+          <field key="language" primitive="String">EN</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="partners" primitive="List" subTypeKey="partner" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T11:52:41-0500" id="26952562" lastSave="2012-03-03T10:06:36-0500" name="MLB  for contentId: 20116585" namespaceId="1" rank="0" state="A" userDate="2012-03-02T11:52:35-0500" version="5" viewId="0">
+          <displayData>name=MLB%20%20for%20contentId%3A%2020116585</displayData>
+          <itemType key="partner" name="Partner"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="app-account" primitive="String">14</field>
+          <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="name" primitive="String">MLB</field>
+          <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-03T10:06:36-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63907" viewId="0">
+                <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+                <itemType key="dam_view" name="DAM View"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                  <appId>164</appId>
+                </appAccountIds>
+                <field key="key" primitive="String">MLBTV_MP_4</field>
+                <field key="description" primitive="String">MLBTV_MP_4</field>
+              </item>
+            </subItemList>
+          </field>
+          <field key="media-urls" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T11:52:41-0500" id="26952564" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841341 HTTP_CLOUD_MOBILE content: 20116585" namespaceId="1" rank="0" state="A" userDate="2012-03-02T11:52:35-0500" version="5" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841341%20HTTP_CLOUD_MOBILE%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">ANDROID,IPAD,IPHONE_MEDIAPLAYER</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841341</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973652" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973654" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T11:52:41-0500" id="26952570" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841342 HTTP_CLOUD_TABLET content: 20116585" namespaceId="1" rank="1" state="A" userDate="2012-03-02T11:52:35-0500" version="5" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841342%20HTTP_CLOUD_TABLET%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">ANDROID,IPAD</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841342</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_TABLET</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973656" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973658" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T11:52:41-0500" id="26952576" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841343 HTTP_CLOUD_WIRED content: 20116585" namespaceId="1" rank="2" state="A" userDate="2012-03-02T11:52:35-0500" version="5" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841343%20HTTP_CLOUD_WIRED%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">APPLETV,BOXEE,ENABLED_APPLIANCE,IPAD,LG,LGBDP,PANASONIC,POPBOX,PS3,ROKU,SAMSUNG,SONYIPTV,WD,XBOX</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841343</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973660" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973662" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T14:49:13-0500" id="26958706" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5842179 HTTP_CLOUD_WIRED_ALT content: 20116585" namespaceId="1" rank="3" state="A" userDate="2012-03-02T14:49:09-0500" version="2" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205842179%20HTTP_CLOUD_WIRED_ALT%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">LG,LGBSP</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5842179</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_ALT</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973782" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973784" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T11:52:41-0500" id="26952586" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841345 HTTP_CLOUD_WIRED_WEB content: 20116585" namespaceId="1" rank="4" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841345%20HTTP_CLOUD_WIRED_WEB%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841345</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_WEB</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973786" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973788" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T14:26:07-0500" id="26958328" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5842166 FMS_CLOUD content: 20116585" namespaceId="1" rank="5" state="A" userDate="2012-03-02T14:26:03-0500" version="3" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205842166%20FMS_CLOUD%20content%3A%2020116585</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5842166</field>
+                <field key="playback-scenario" primitive="String">FMS_CLOUD</field>
+                <field key="video-state" primitive="String">MEDIA_DONE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973790" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-03T10:06:36-0500" id="26973792" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+            </subItemList>
+          </field>
+          <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+        </item>
+      </subItemList>
+    </field>
+    <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-03T10:06:36-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63907" viewId="0">
+          <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+          <itemType key="dam_view" name="DAM View"/>
+          <appAccountIds>
+            <appId>14</appId>
+            <appId>164</appId>
+          </appAccountIds>
+          <field key="key" primitive="String">MLBTV_MP_4</field>
+          <field key="description" primitive="String">MLBTV_MP_4</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="media-urls" min="1" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T11:52:41-0500" id="26952600" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841347 HTTP_CLOUD_MOBILE content: 20116585" namespaceId="1" rank="0" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841347%20HTTP_CLOUD_MOBILE%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">ANDROID,IPAD,IPHONE_MEDIAPLAYER</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841347</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973794" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973796" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T11:52:41-0500" id="26952606" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841348 HTTP_CLOUD_TABLET content: 20116585" namespaceId="1" rank="1" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841348%20HTTP_CLOUD_TABLET%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">ANDROID,IPAD</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841348</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_TABLET</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973798" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973800" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T11:52:41-0500" id="26953420" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841349 HTTP_CLOUD_WIRED content: 20116585" namespaceId="1" rank="2" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841349%20HTTP_CLOUD_WIRED%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">APPLETV,BOXEE,ENABLED_APPLIANCE,IPAD,LG,LGBDP,PANASONIC,POPBOX,PS3,ROKU,SAMSUNG,SONYIPTV,WD,XBOX</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841349</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973802" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973804" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T14:49:13-0500" id="26958712" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5842180 HTTP_CLOUD_WIRED_ALT content: 20116585" namespaceId="1" rank="3" state="A" userDate="2012-03-02T14:49:09-0500" version="2" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205842180%20HTTP_CLOUD_WIRED_ALT%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">LG,LGBSP</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5842180</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_ALT</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973806" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:36-0500" id="26973808" lastSave="2012-03-03T10:06:36-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T11:52:42-0500" id="26953430" lastSave="2012-03-03T10:06:36-0500" name="URL mediaId: 5841351 HTTP_CLOUD_WIRED_WEB content: 20116585" namespaceId="1" rank="4" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841351%20HTTP_CLOUD_WIRED_WEB%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841351</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_WEB</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:37-0500" id="26973810" lastSave="2012-03-03T10:06:37-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:37-0500" id="26973812" lastSave="2012-03-03T10:06:37-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T14:26:07-0500" id="26958336" lastSave="2012-03-03T10:06:37-0500" name="URL mediaId: 5842168 FMS_CLOUD content: 20116585" namespaceId="1" rank="5" state="A" userDate="2012-03-02T14:26:04-0500" version="3" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205842168%20FMS_CLOUD%20content%3A%2020116585</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5842168</field>
+          <field key="playback-scenario" primitive="String">FMS_CLOUD</field>
+          <field key="video-state" primitive="String">MEDIA_DONE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-03T10:06:37-0500" id="26973814" lastSave="2012-03-03T10:06:37-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-03T10:06:37-0500" id="26973816" lastSave="2012-03-03T10:06:37-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-03T10:06:32-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="thumbnails" primitive="List" subTypeKey="image" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T11:52:42-0500" id="26953444" lastSave="2012-03-03T10:06:37-0500" name="Thumbnail: 7 content: 20116585" namespaceId="1" rank="0" state="A" userDate="2012-03-02T11:52:36-0500" version="5" viewId="0">
+          <displayData>name=Thumbnail%3A%207%20content%3A%2020116585</displayData>
+          <itemType key="image" name="Thumbnail"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="location" primitive="BinaryPath">http://mediadownloads.mlb.com/mlbam/preview/guhwas_336450_preview.jpg</field>
+          <field key="thumbnail-type" primitive="String">7</field>
+        </item>
+      </subItemList>
+    </field>
+    <itemTag type="game_events_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_guhbbc_wasmlb_1/game_events.plist"/>
+    <itemTag displayName="MEDIA_DONE" type="combined_media_state" value="MEDIA_DONE"/>
+    <itemTag displayName="2012/03/02/guhbbc-wasmlb-1" type="game_pk" value="336450"/>
+    <itemTag type="coverage_type" value="out-of-market"/>
+    <itemTag type="source_aspect_ratio" value="HD"/>
+    <itemTag type="call_letters" value="MLB.com"/>
+    <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+    <itemTag type="in_epg" value="mlb_mp4_epg"/>
+    <itemTag type="game_id" value="2012/03/02/guhbbc-wasmlb-1"/>
+    <itemTag displayName="LIVE_EVENT_COVERAGE" type="subject" value="LIVE_EVENT_COVERAGE"/>
+    <itemTag type="coverage_association" value="120"/>
+    <itemTag displayName="MLBTV" type="subject" value="MLBTV"/>
+    <itemTag type="home_team_id" value="120"/>
+    <itemTag type="calendar_event_id" value="14-336450-2012-03-02"/>
+    <itemTag displayName="2012-03-02T12:00:00-0500" type="event_date" value="2012-03-02T12:00:00-0500"/>
+    <itemTag type="inning_index_location_xml" value="http://mlb.mlb.com/mlb/mmls2012/336450.xml"/>
+    <itemTag type="run_scoring_plays_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_guhbbc_wasmlb_1/runScoringPlays.plist"/>
+    <itemTag type="away_team_id" value="2330"/>
+    <itemTag type="inning_index_location_plist" value="http://mlb.mlb.com/mlb/mmls2012/336450.plist"/>
+  </item></homebase>
+ <links mlbtv="" wrapup="" home_audio="" away_audio="" home_preview="" away_preview="" preview="" tv_station=""/> 
+</game>
+<game id="2012/03/02/flsbbc-detmlb-1" venue="Joker Marchant Stadium" game_pk="332094" time="1:05" time_zone="ET" ampm="PM" away_time="1:05" away_time_zone="ET" away_ampm="PM" home_time="1:05" home_time_zone="ET" home_ampm="PM" game_type="E" resume_date="" time_zone_aw_lg="0" time_zone_hm_lg="-5" time_aw_lg="" aw_lg_ampm="" tz_aw_lg_gen="" time_hm_lg="1:05" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2511" scheduled_innings="9" description="vs Florida Southern" away_name_abbrev="FSC" home_name_abbrev="DET" away_code="fls" away_file_code="fso" away_team_id="228" away_team_city="Fla. Southern Col." away_team_name="Mocs" away_division="" away_league_id="108" away_sport_code="bbc" home_code="det" home_file_code="det" home_team_id="116" home_team_city="Detroit" home_team_name="Tigers" home_division="C" home_league_id="103" home_sport_code="mlb" day="FRI" gameday_sw="N" away_games_back="" home_games_back="" away_games_back_wildcard="" home_games_back_wildcard="" venue_w_chan_loc="USFL0267" gameday="2012_03_02_flsbbc_detmlb_1"  away_win="0"  away_loss="1"  home_win="1"  home_loss="0"  league="AA"> 
+<status status="Final" ind="F" reason="" inning="9" top_inning="Y" b="0" s="0" o="3" inning_state=""/>
+<linescore>
+<inning away="0" home="2"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="1"/> 
+<inning away="1" home="0"/> 
+<inning away="0" home="2"/> 
+<inning away="0" home="6"/> 
+<inning away="0" home="0"/> 
+<inning away="0" /> 
+<r away="1" home="11" diff="10"/> 
+<h away="4" home="11"/> 
+<e away="3" home="0"/> 
+</linescore>
+<winning_pitcher id="501989" last="Oliver" first="Andrew" name_display_roster="Oliver" number="43" era="0.00" wins="1" losses="0"/> 
+<losing_pitcher id="613482" last="Jackson" first="Austin" name_display_roster="Jackson" number="28" era="9.00" wins="0" losses="1"/> 
+<save_pitcher id="" last="" first="" number="" name_display_roster="" era="0" wins="0" losses="0" saves="0"/> 
+<newsroom><gamecenter type="mlb"><game ampm="pm" away_score="1" game-number="1" home_score="11" id="2012_03_02_flsbbc_detmlb_1" league="" series-code="" series-game-number="1" start_time="1:05" status="F" time_zone="ET" type="E">
+    <ticketlink/>
+    <venueShort>Joker Marchant Stadium</venueShort>
+	<venueLong>Joker Marchant Stadium</venueLong>
+	<gallery exists="0"/>
+    <broadcast>
+        <home>
+        <tv/>
+        <radio/>
+</home>
+        <away>
+        <tv/>
+        <radio/>
+</away>
+    </broadcast>
+    <probables>
+	    
+	<home>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</home>
+
+        
+	<away>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</away>
+	
+	</probables>
+    <previews>
+        <mlb>
+</mlb>
+        <home>
+</home>
+        <away>
+</away>
+    </previews>
+    <recaps>
+        <home>
+</home>    
+        <away>
+</away>    
+    </recaps>
+    <wrap>
+        <mlb>
+</mlb>    
+    </wrap>
+    <photos>
+        
+<ipad>
+<url>/images/2012/02/29/uEV65vhq.png</url>
+<headline><![CDATA[MLB.com]]></headline>
+<caption><![CDATA[Spring Training 2012]]></caption>
+<credit/>
+</ipad>
+    
+    </photos>
+    
+
+
+<mlbtv_alt_feed_index>
+</mlbtv_alt_feed_index>
+
+
+</game></gamecenter></newsroom><homebase><item createdOn="2012-03-02T12:23:09-0500" id="20116651" lastSave="2012-03-02T12:23:09-0500" name="DAM Media: 20116651 2012-03-02 : vs Florida Southern | MLBTV" namespaceId="1" state="A" userDate="2012-03-02T12:23:04-0500" version="0">
+    <displayData>headline=2012-03-02%20%3A%20vs%20Florida%20Southern%20%7C%20MLBTV&amp;kicker=2012-03-02%20%3A%20vs%20Florida%20Southern%20%7C%20MLBTV&amp;blurb=2012-03-02%20%3A%20vs%20Florida%20Southern%20%7C%20MLBTV&amp;createdOn=Fri%20Mar%2002%2012%3A23%3A05%20EST%202012&amp;thumbnail=http%3A%2F%2Fmediadownloads.mlb.com%2Fmlbam%2Fpreview%2Fflsdet_332094_preview.jpg</displayData>
+    <lockInfo/>
+    <itemType category="content" key="video" name="Video"/>
+    <appAccountIds>
+      <appId>14</appId>
+    </appAccountIds>
+    <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+    <field key="kicker" primitive="String">2012-03-02 : vs Florida Southern | MLBTV</field>
+    <field key="secure" primitive="String">Y</field>
+    <field key="sequence" primitive="String">1</field>
+    <field key="namespace" primitive="String">1</field>
+    <field key="blurb" primitive="String">2012-03-02 : vs Florida Southern | MLBTV</field>
+    <field key="headline" primitive="String">2012-03-02 : vs Florida Southern | MLBTV</field>
+    <field key="guid" primitive="String">bad4d8025f247cc2</field>
+    <field key="delivery-type" primitive="String">live</field>
+    <field key="bigblurb" primitive="String">2012-03-02 : vs Florida Southern | MLBTV</field>
+    <field key="audio-tracks" primitive="List" subTypeKey="audio_track" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T12:23:09-0500" id="26954016" lastSave="2012-03-02T12:23:09-0500" name="TRACK: channel: 482; icon-id: null; language: EN; type: TV; description: MLB.com" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=TRACK%3A%20channel%3A%20482%3B%20icon-id%3A%20null%3B%20language%3A%20EN%3B%20type%3A%20TV%3B%20description%3A%20MLB.com</displayData>
+          <itemType key="audio_track" name="Audio Track"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="channel" primitive="Long">482</field>
+          <field key="type" primitive="String">TV</field>
+          <field key="description" primitive="String">MLB.com</field>
+          <field key="language" primitive="String">EN</field>
+        </item>
+        <item createdOn="2012-03-02T12:23:09-0500" id="26954018" lastSave="2012-03-02T12:23:09-0500" name="TRACK: channel: 484; icon-id: null; language: EN; type: NAT SOUND; description: PARK" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=TRACK%3A%20channel%3A%20484%3B%20icon-id%3A%20null%3B%20language%3A%20EN%3B%20type%3A%20NAT%20SOUND%3B%20description%3A%20PARK</displayData>
+          <itemType key="audio_track" name="Audio Track"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="channel" primitive="Long">484</field>
+          <field key="type" primitive="String">NAT SOUND</field>
+          <field key="description" primitive="String">PARK</field>
+          <field key="language" primitive="String">EN</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="partners" primitive="List" subTypeKey="partner" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T12:23:09-0500" id="26954020" lastSave="2012-03-02T12:23:09-0500" name="MLB  for contentId: 20116651" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:04-0500" version="0" viewId="0">
+          <displayData>name=MLB%20%20for%20contentId%3A%2020116651</displayData>
+          <itemType key="partner" name="Partner"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="app-account" primitive="String">14</field>
+          <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="name" primitive="String">MLB</field>
+          <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T14:04:33-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63841" viewId="0">
+                <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+                <itemType key="dam_view" name="DAM View"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                  <appId>164</appId>
+                </appAccountIds>
+                <field key="key" primitive="String">MLBTV_MP_4</field>
+                <field key="description" primitive="String">MLBTV_MP_4</field>
+              </item>
+            </subItemList>
+          </field>
+          <field key="media-urls" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:09-0500" id="26954022" lastSave="2012-03-02T12:23:09-0500" name="URL mediaId: 5841468 HTTP_CLOUD_MOBILE content: 20116651" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:04-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841468%20HTTP_CLOUD_MOBILE%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">ANDROID,IPAD,IPHONE_MEDIAPLAYER</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841468</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954024" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:04-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954026" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:04-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T12:23:09-0500" id="26954028" lastSave="2012-03-02T12:23:09-0500" name="URL mediaId: 5841469 HTTP_CLOUD_TABLET content: 20116651" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:04-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841469%20HTTP_CLOUD_TABLET%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">ANDROID,IPAD</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841469</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_TABLET</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954030" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954032" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T12:23:09-0500" id="26954034" lastSave="2012-03-02T12:23:09-0500" name="URL mediaId: 5841470 HTTP_CLOUD_WIRED content: 20116651" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841470%20HTTP_CLOUD_WIRED%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">APPLETV,BOXEE,ENABLED_APPLIANCE,IPAD,LG,LGBDP,PANASONIC,POPBOX,PS3,ROKU,SAMSUNG,SONYIPTV,WD,XBOX</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841470</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954036" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954038" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954040" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T12:23:09-0500" id="26954042" lastSave="2012-03-02T12:23:09-0500" name="URL mediaId: 5841471 null content: 20116651" namespaceId="1" rank="3" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841471%20null%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841471</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+              </item>
+              <item createdOn="2012-03-02T12:23:09-0500" id="26954044" lastSave="2012-03-02T12:23:09-0500" name="URL mediaId: 5841472 HTTP_CLOUD_WIRED_WEB content: 20116651" namespaceId="1" rank="4" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841472%20HTTP_CLOUD_WIRED_WEB%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841472</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_WEB</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954046" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954048" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:09-0500" id="26954050" lastSave="2012-03-02T12:23:09-0500" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954052" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841473 null content: 20116651" namespaceId="1" rank="5" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205841473%20null%20content%3A%2020116651</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="delivery-type" primitive="String">live</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5841473</field>
+                <field key="video-state" primitive="String">MEDIA_OFF</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T12:23:10-0500" id="26954122" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                    <item createdOn="2012-03-02T12:23:10-0500" id="26954124" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+            </subItemList>
+          </field>
+          <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+        </item>
+      </subItemList>
+    </field>
+    <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T14:04:33-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63841" viewId="0">
+          <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+          <itemType key="dam_view" name="DAM View"/>
+          <appAccountIds>
+            <appId>14</appId>
+            <appId>164</appId>
+          </appAccountIds>
+          <field key="key" primitive="String">MLBTV_MP_4</field>
+          <field key="description" primitive="String">MLBTV_MP_4</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="media-urls" min="1" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954126" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841474 HTTP_CLOUD_MOBILE content: 20116651" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841474%20HTTP_CLOUD_MOBILE%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">ANDROID,IPAD,IPHONE_MEDIAPLAYER</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841474</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954128" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954130" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954132" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841475 HTTP_CLOUD_TABLET content: 20116651" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841475%20HTTP_CLOUD_TABLET%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">ANDROID,IPAD</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841475</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_TABLET</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954134" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954136" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954138" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841476 HTTP_CLOUD_WIRED content: 20116651" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841476%20HTTP_CLOUD_WIRED%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">APPLETV,BOXEE,ENABLED_APPLIANCE,IPAD,LG,LGBDP,PANASONIC,POPBOX,PS3,ROKU,SAMSUNG,SONYIPTV,WD,XBOX</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841476</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954140" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954142" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954144" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954146" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841477 null content: 20116651" namespaceId="1" rank="3" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841477%20null%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841477</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+        </item>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954148" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841478 HTTP_CLOUD_WIRED_WEB content: 20116651" namespaceId="1" rank="4" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841478%20HTTP_CLOUD_WIRED_WEB%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841478</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_WIRED_WEB</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954150" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954152" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954154" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="2" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954156" lastSave="2012-03-02T12:23:10-0500" name="URL mediaId: 5841479 null content: 20116651" namespaceId="1" rank="5" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205841479%20null%20content%3A%2020116651</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="delivery-type" primitive="String">live</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5841479</field>
+          <field key="video-state" primitive="String">MEDIA_OFF</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954158" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+              <item createdOn="2012-03-02T12:23:10-0500" id="26954160" lastSave="2012-03-02T12:23:10-0500" namespaceId="1" rank="1" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="thumbnails" primitive="List" subTypeKey="image" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-02T12:23:10-0500" id="26954162" lastSave="2012-03-02T12:23:10-0500" name="Thumbnail: 7 content: 20116651" namespaceId="1" rank="0" state="A" userDate="2012-03-02T12:23:05-0500" version="0" viewId="0">
+          <displayData>name=Thumbnail%3A%207%20content%3A%2020116651</displayData>
+          <itemType key="image" name="Thumbnail"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="location" primitive="BinaryPath">http://mediadownloads.mlb.com/mlbam/preview/flsdet_332094_preview.jpg</field>
+          <field key="thumbnail-type" primitive="String">7</field>
+        </item>
+      </subItemList>
+    </field>
+    <itemTag type="coverage_association" value="116"/>
+    <itemTag type="inning_index_location_xml" value="http://mlb.mlb.com/mlb/mmls2012/332094.xml"/>
+    <itemTag type="coverage_type" value="out-of-market"/>
+    <itemTag displayName="2012/03/02/flsbbc-detmlb-1" type="game_pk" value="332094"/>
+    <itemTag displayName="2012-03-02T13:05:00-0500" type="event_date" value="2012-03-02T13:05:00-0500"/>
+    <itemTag type="inning_index_location_plist" value="http://mlb.mlb.com/mlb/mmls2012/332094.plist"/>
+    <itemTag type="source_aspect_ratio" value="HD"/>
+    <itemTag type="away_team_id" value="228"/>
+    <itemTag type="game_events_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_flsbbc_detmlb_1/game_events.plist"/>
+    <itemTag type="call_letters" value="MLB.com"/>
+    <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+    <itemTag type="in_epg" value="mlb_mp4_epg"/>
+    <itemTag displayName="LIVE_EVENT_COVERAGE" type="subject" value="LIVE_EVENT_COVERAGE"/>
+    <itemTag displayName="MLBTV" type="subject" value="MLBTV"/>
+    <itemTag type="calendar_event_id" value="14-332094-2012-03-02"/>
+    <itemTag type="run_scoring_plays_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_flsbbc_detmlb_1/runScoringPlays.plist"/>
+    <itemTag displayName="MEDIA_OFF" type="combined_media_state" value="MEDIA_OFF"/>
+    <itemTag type="home_team_id" value="116"/>
+    <itemTag type="game_id" value="2012/03/02/flsbbc-detmlb-1"/>
+  </item></homebase>
+ <links mlbtv="" wrapup="" home_audio="" away_audio="" home_preview="" away_preview="" preview="" tv_station=""/> 
+</game>
+<game id="2012/03/02/usfbbc-nyamlb-1" venue="George M. Steinbrenner Field" game_pk="332096" time="1:05" time_zone="ET" ampm="PM" away_time="1:05" away_time_zone="ET" away_ampm="PM" home_time="1:05" home_time_zone="ET" home_ampm="PM" game_type="E" resume_date="" time_zone_aw_lg="0" time_zone_hm_lg="-5" time_aw_lg="" aw_lg_ampm="" tz_aw_lg_gen="" time_hm_lg="1:05" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2523" scheduled_innings="9" description="vs University of South Florida" away_name_abbrev="USF" home_name_abbrev="NYY" away_code="usf" away_file_code="t2292" away_team_id="2292" away_team_city="U. of South Florida" away_team_name="Bulls" away_division="" away_league_id="107" away_sport_code="bbc" home_code="nya" home_file_code="nyy" home_team_id="147" home_team_city="NY Yankees" home_team_name="Yankees" home_division="E" home_league_id="103" home_sport_code="mlb" day="FRI" gameday_sw="N" away_games_back="-" home_games_back="-" away_games_back_wildcard="" home_games_back_wildcard="-" venue_w_chan_loc="USFL0481" gameday="2012_03_02_usfbbc_nyamlb_1"  away_win="0"  away_loss="1"  home_win="1"  home_loss="0"  league="BA"> 
+<status status="Final" ind="F" reason="" inning="9" top_inning="Y" b="0" s="0" o="3" inning_state=""/>
+<linescore>
+<inning away="0" home="1"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="2"/> 
+<inning away="0" home="3"/> 
+<inning away="0" home="0"/> 
+<inning away="0" home="5"/> 
+<inning away="0" home="0"/> 
+<inning away="0" /> 
+<r away="0" home="11" diff="11"/> 
+<h away="4" home="14"/> 
+<e away="2" home="0"/> 
+</linescore>
+<winning_pitcher id="476589" last="Warren" first="Adam" name_display_roster="Warren" number="86" era="0.00" wins="1" losses="0"/> 
+<losing_pitcher id="543684" last="Reed" first="Matthew" name_display_roster="Reed" number="21" era="0.00" wins="0" losses="1"/> 
+<save_pitcher id="" last="" first="" number="" name_display_roster="" era="0" wins="0" losses="0" saves="0"/> 
+<newsroom><gamecenter type="mlb"><game ampm="pm" away_score="0" game-number="1" home_score="11" id="2012_03_02_usfbbc_nyamlb_1" league="" series-code="" series-game-number="1" start_time="1:05" status="F" time_zone="ET" type="E">
+    <ticketlink/>
+    <venueShort>George M. Steinbrenner Field</venueShort>
+	<venueLong>George M. Steinbrenner Field</venueLong>
+	<gallery exists="0"/>
+    <broadcast>
+        <home>
+        <tv/>
+        <radio/>
+</home>
+        <away>
+        <tv/>
+        <radio/>
+</away>
+    </broadcast>
+    <probables>
+	    
+	<home>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</home>
+
+        
+	<away>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</away>
+	
+	</probables>
+    <previews>
+        <mlb>
+</mlb>
+        <home>
+</home>
+        <away>
+</away>
+    </previews>
+    <recaps>
+        <home><headline><![CDATA[Prospects shine in Yankees' victory over USF]]></headline><blurb><![CDATA[The Yankees opened their spring exhibition slate on Friday at George M. Steinbrenner Field, posting an 11-0 victory over the University of South Florida Bulls.]]></blurb><url cid="2012030226963148"><![CDATA[/mlb/gameday/index.jsp?gid=2012_03_02_usfbbc_nyamlb_1&mode=recap&c_id=nyy]]></url>
+</home>    
+        <away>
+</away>    
+    </recaps>
+    <wrap>
+        <mlb>
+</mlb>    
+    </wrap>
+    <photos>
+        
+<ipad>
+<url>/images/2012/02/29/uEV65vhq.png</url>
+<headline><![CDATA[MLB.com]]></headline>
+<caption><![CDATA[Spring Training 2012]]></caption>
+<credit/>
+</ipad>
+    
+    </photos>
+    
+
+
+<mlbtv_alt_feed_index>
+</mlbtv_alt_feed_index>
+
+
+</game></gamecenter></newsroom><homebase></homebase>
+ <links mlbtv="" wrapup="" home_audio="" away_audio="" home_preview="" away_preview="" preview="" tv_station=""/> 
+</game>
+<game id="2012/03/02/seamlb-oakmlb-1" venue="Phoenix Municipal Stadium" game_pk="332095" time="3:05" time_zone="ET" ampm="PM" away_time="12:05" away_time_zone="PT" away_ampm="PM" home_time="12:05" home_time_zone="PT" home_ampm="PM" game_type="S" resume_date="" time_zone_aw_lg="-5" time_zone_hm_lg="-5" time_aw_lg="3:05" aw_lg_ampm="PM" tz_aw_lg_gen="ET" time_hm_lg="3:05" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2524" scheduled_innings="9" description="" away_name_abbrev="SEA" home_name_abbrev="OAK" away_code="sea" away_file_code="sea" away_team_id="136" away_team_city="Seattle" away_team_name="Mariners" away_division="W" away_league_id="103" away_sport_code="mlb" home_code="oak" home_file_code="oak" home_team_id="133" home_team_city="Oakland" home_team_name="Athletics" home_division="W" home_league_id="103" home_sport_code="mlb" day="FRI" gameday_sw="Y" away_games_back="-" home_games_back="-" away_games_back_wildcard="-" home_games_back_wildcard="-" venue_w_chan_loc="USAZ0166" away_league_id_spring="114" away_split_squad="N" home_league_id_spring="114" home_split_squad="N" gameday="2012_03_02_seamlb_oakmlb_1"  away_win="1"  away_loss="0"  home_win="0"  home_loss="1"  league="AA"> 
+<status status="Final" ind="F" reason="" inning="9" top_inning="N" b="0" s="0" o="3" inning_state=""/>
+<linescore>
+<inning away="0" home="1"/> 
+<inning away="2" home="0"/> 
+<inning away="0" home="0"/> 
+<inning away="2" home="0"/> 
+<inning away="3" home="1"/> 
+<inning away="0" home="2"/> 
+<inning away="0" home="1"/> 
+<inning away="1" home="0"/> 
+<inning away="0" home="0"/> 
+<r away="8" home="5" diff="3"/> 
+<h away="9" home="10"/> 
+<e away="2" home="1"/> 
+</linescore>
+<home_runs>
+<player id="425904" last="Rodriguez" first="Luis" name_display_roster="Rodriguez, L" number="1" hr="1" std_hr="1" inning="5" runners="0" team_code="sea"/>
+<player id="503345" last="Chavez" first="Johermyn" name_display_roster="Chavez" number="70" hr="1" std_hr="1" inning="8" runners="0" team_code="sea"/>
+<player id="519299" last="Sogard" first="Eric" name_display_roster="Sogard" number="28" hr="1" std_hr="1" inning="7" runners="0" team_code="oak"/>
+<player id="451713" last="Peguero" first="Carlos" name_display_roster="Peguero, C" number="4" hr="1" std_hr="1" inning="4" runners="1" team_code="sea"/>
+<player id="524968" last="Montero" first="Jesus" name_display_roster="Montero" number="63" hr="1" std_hr="1" inning="5" runners="1" team_code="sea"/>
+<player id="459431" last="Saunders" first="Michael" name_display_roster="Saunders, M" number="55" hr="1" std_hr="1" inning="2" runners="1" team_code="sea"/>
+</home_runs>
+<winning_pitcher id="518444" last="Beavan" first="Blake" name_display_roster="Beavan" number="49" era="3.86" wins="1" losses="0"/> 
+<losing_pitcher id="453232" last="Godfrey" first="Graham" name_display_roster="Godfrey" number="45" era="9.00" wins="0" losses="1"/> 
+<save_pitcher id="430675" last="Henn" first="Sean" number="39" name_display_roster="Henn" era="0.00" wins="0" losses="0" saves="1"/> 
+<newsroom><gamecenter type="mlb"><game ampm="pm" away_score="8" game-number="1" home_score="5" id="2012_03_02_seamlb_oakmlb_1" league="CL" series-code="" series-game-number="1" start_time="3:05" status="F" time_zone="ET" type="S">
+    <ticketlink/>
+    <venueShort>Phoenix Municipal Stadium</venueShort>
+	<venueLong>Phoenix Municipal Stadium</venueLong>
+	<gallery exists="0"/>
+    <broadcast>
+        <home>
+        <tv/>
+        <radio>MLB.com</radio>
+</home>
+        <away>
+        <tv/>
+        <radio>710 ESPN</radio>
+</away>
+    </broadcast>
+    <probables>
+	    
+	<home>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</home>
+
+        
+	<away>
+		<player_id/>
+		<useName/>
+		<lastName/>
+		<rosterDisplayName/> 
+        <number/>
+		<throwinghand/>
+		<wins/>
+		<losses/>
+		<era/>
+		<so/>
+		<std_wins/>
+		<std_losses/>
+		<std_era/>
+		<std_so/>
+		<report/>
+	    
+	</away>
+	
+	</probables>
+    <previews>
+        <mlb>
+</mlb>
+        <home>
+</home>
+        <away>
+</away>
+    </previews>
+    <recaps>
+        <home><headline><![CDATA[A's pitchers plagued by long ball in opener]]></headline><blurb><![CDATA[The long ball dictated the first game of the Cactus League season Friday, as the Mariners relied on five against the A's for an 8-5 victory at Phoenix Municipal Stadium.]]></blurb><url cid="2012030226958896"><![CDATA[/news/article.jsp?ymd=20120302&content_id=26958896&vkey=news_oak&c_id=oak]]></url>
+</home>    
+        <away><headline><![CDATA[Mariners open spring with five homers]]></headline><blurb><![CDATA[The long ball dictated the first game of the Cactus League season Friday, as the Mariners relied on five against the A's for an 8-5 victory at Phoenix Municipal Stadium.]]></blurb><url cid="2012030226960318"><![CDATA[/news/article.jsp?ymd=20120302&content_id=26960318&vkey=news_sea&c_id=sea]]></url>
+</away>    
+    </recaps>
+    <wrap>
+        <mlb>
+</mlb>    
+    </wrap>
+    <photos>
+        
+<ipad>
+<url>/images/2012/02/29/uEV65vhq.png</url>
+<headline><![CDATA[MLB.com]]></headline>
+<caption><![CDATA[Spring Training 2012]]></caption>
+<credit/>
+</ipad>
+    
+    </photos>
+    
+
+
+<mlbtv_alt_feed_index>
+</mlbtv_alt_feed_index>
+
+
+</game></gamecenter></newsroom><homebase><item createdOn="2012-03-01T12:30:26-0500" id="20114735" lastSave="2012-03-02T18:56:45-0500" name="DAM Media: 20114735 2012-03-02 : sea at oak | MLBTV" namespaceId="1" state="A" userDate="2012-03-01T12:30:00-0500" version="22">
+    <displayData>headline=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;kicker=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;blurb=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;createdOn=Thu%20Mar%2001%2012%3A30%3A24%20EST%202012&amp;thumbnail=http%3A%2F%2Fmediadownloads.mlb.com%2Fmlbam%2Fpreview%2Fseaoak_332095_preview.jpg</displayData>
+    <lockInfo/>
+    <itemType category="content" key="audio" name="Audio"/>
+    <appAccountIds>
+      <appId>14</appId>
+    </appAccountIds>
+    <field key="secure" primitive="String">Y</field>
+    <field key="headline" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="sequence" primitive="String">1</field>
+    <field key="bigblurb" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="feature-context" primitive="String">MLBTV2012.FREETV</field>
+    <field key="guid" primitive="String">c93427efce38510e</field>
+    <field key="kicker" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="namespace" primitive="String">1</field>
+    <field key="blurb" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="delivery-type" primitive="String">demand</field>
+    <field key="duration" primitive="String">02:52:03</field>
+    <field key="partners" primitive="List" subTypeKey="partner" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:26-0500" id="26933464" lastSave="2012-03-02T18:56:45-0500" name="MLB  for contentId: 20114735" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=MLB%20%20for%20contentId%3A%2020114735</displayData>
+          <itemType key="partner" name="Partner"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="name" primitive="String">MLB</field>
+          <field key="feature-context" primitive="String">MLBTV2012.FREETV</field>
+          <field key="app-account" primitive="String">14</field>
+          <field key="media-urls" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26933466" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5838995 HTTP_CLOUD_AUDIO content: 20114735" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838995%20HTTP_CLOUD_AUDIO%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838995</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_AUDIO</field>
+                <field key="platform" primitive="String">ANDROID,IPAD,IPHONE,ROKU,XBOX</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965136" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlblive-akc.mlb.com/ls03/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_HOME_20120302/master_radio.m3u8</field>
+                      <field key="location-parameters" primitive="String">kid.1=vNqCjr/l132FlmPCJDAdRg==</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+                    </item>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965138" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_LEVEL3" namespaceId="1" rank="1" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_LEVEL3</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlblive-l3c.mlb.com/ls03/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_HOME_20120302/master_radio.m3u8</field>
+                      <field key="location-parameters" primitive="String">kid.1=vNqCjr/l132FlmPCJDAdRg==</field>
+                      <field key="name" primitive="String">PRIMARY_LEVEL3</field>
+                      <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26934610" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5838996 AUDIO_FMS_32K content: 20114735" namespaceId="1" rank="1" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838996%20AUDIO_FMS_32K%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838996</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_FMS_32K</field>
+                <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965140" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtmp://cp65670.edgefcs.net/ondemand/mp3:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k?aifp=v0004&amp;auth={1}&amp;slist=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k</field>
+                      <field key="location-parameters" primitive="String">host=cp65670.edgefcs.net&amp;tokenPath=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k&amp;path=mp4:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_FLASH_STREAM_ONDEMAND</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26934614" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5838997 AUDIO_AAC_LATM_16K content: 20114735" namespaceId="1" rank="2" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838997%20AUDIO_AAC_LATM_16K%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838997</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_AAC_LATM_16K</field>
+                <field key="platform" primitive="String">ANDROID,MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965142" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_TMI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtsp://211.43.148.135/CH21038.sdp</field>
+                      <field key="location-parameters" primitive="String">server=rtsp://211.43.148.135/&amp;fileName=CH21038.sdp</field>
+                      <field key="name" primitive="String">PRIMARY_TMI</field>
+                      <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26934618" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5838998 AUDIO_AMR_3GPP_16K content: 20114735" namespaceId="1" rank="3" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838998%20AUDIO_AMR_3GPP_16K%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838998</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_AMR_3GPP_16K</field>
+                <field key="platform" primitive="String">ANDROID</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965144" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_TMI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtsp://211.43.148.146/CH11038.sdp</field>
+                      <field key="location-parameters" primitive="String">server=rtsp://211.43.148.146/&amp;fileName=CH11038.sdp</field>
+                      <field key="name" primitive="String">PRIMARY_TMI</field>
+                      <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26934622" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5838999 AUDIO_SHOUTCAST_32K content: 20114735" namespaceId="1" rank="4" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838999%20AUDIO_SHOUTCAST_32K%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838999</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_SHOUTCAST_32K</field>
+                <field key="platform" primitive="String">ANDROID,BLACKBERRY,BOXEE,IPAD,IPHONE,PALM,ROKU,WINDOWS_PHONE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965146" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlb-ga-sc-19.ng.akacast.akamaistream.net/7/529/81690/v1/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_19?aifp=v0004&amp;auth={1}</field>
+                      <field key="location-parameters" primitive="String">tokenPath=/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_19</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_SHOUTCAST_STREAM_LIVE</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:26-0500" id="26934626" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839000 AUDIO_WMA_16K content: 20114735" namespaceId="1" rank="5" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205839000%20AUDIO_WMA_16K%20content%3A%2020114735</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5839000</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_WMA_16K</field>
+                <field key="platform" primitive="String">MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:07:20-0500" id="26965148" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">reflector:10492</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_WINDOWSMEDIA_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+            </subItemList>
+          </field>
+          <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T18:56:45-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63906" viewId="0">
+                <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+                <itemType key="dam_view" name="DAM View"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                  <appId>164</appId>
+                </appAccountIds>
+                <field key="key" primitive="String">MLBTV_MP_4</field>
+                <field key="description" primitive="String">MLBTV_MP_4</field>
+              </item>
+            </subItemList>
+          </field>
+          <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+        </item>
+      </subItemList>
+    </field>
+    <field key="thumbnails" primitive="List" subTypeKey="image" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:26-0500" id="26934630" lastSave="2012-03-02T18:56:45-0500" name="Thumbnail: 7 content: 20114735" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:23-0500" version="33" viewId="0">
+          <displayData>name=Thumbnail%3A%207%20content%3A%2020114735</displayData>
+          <itemType key="image" name="Thumbnail"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="location" primitive="BinaryPath">http://mediadownloads.mlb.com/mlbam/preview/seaoak_332095_preview.jpg</field>
+          <field key="thumbnail-type" primitive="String">7</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T18:56:45-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63906" viewId="0">
+          <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+          <itemType key="dam_view" name="DAM View"/>
+          <appAccountIds>
+            <appId>14</appId>
+            <appId>164</appId>
+          </appAccountIds>
+          <field key="key" primitive="String">MLBTV_MP_4</field>
+          <field key="description" primitive="String">MLBTV_MP_4</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="media-urls" min="1" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:26-0500" id="26934632" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839001 HTTP_CLOUD_AUDIO content: 20114735" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839001%20HTTP_CLOUD_AUDIO%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5839001</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_AUDIO</field>
+          <field key="platform" primitive="String">ANDROID,IPAD,IPHONE,ROKU,XBOX</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:20-0500" id="26965150" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlblive-akc.mlb.com/ls03/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_HOME_20120302/master_radio.m3u8</field>
+                <field key="location-parameters" primitive="String">kid.1=vNqCjr/l132FlmPCJDAdRg==</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+              </item>
+              <item createdOn="2012-03-02T18:07:20-0500" id="26965152" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_LEVEL3" namespaceId="1" rank="1" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_LEVEL3</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlblive-l3c.mlb.com/ls03/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_HOME_20120302/master_radio.m3u8</field>
+                <field key="location-parameters" primitive="String">kid.1=vNqCjr/l132FlmPCJDAdRg==</field>
+                <field key="name" primitive="String">PRIMARY_LEVEL3</field>
+                <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:27-0500" id="26934638" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839002 AUDIO_FMS_32K content: 20114735" namespaceId="1" rank="1" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839002%20AUDIO_FMS_32K%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_FMS_32K</field>
+          <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="mediaid" primitive="Long">5839002</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:20-0500" id="26965154" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtmp://cp65670.edgefcs.net/ondemand/mp3:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k?aifp=v0004&amp;auth={1}&amp;slist=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k</field>
+                <field key="location-parameters" primitive="String">host=cp65670.edgefcs.net&amp;tokenPath=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k&amp;path=mp4:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_home_32k</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_FLASH_STREAM_ONDEMAND</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:27-0500" id="26934642" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839003 AUDIO_AAC_LATM_16K content: 20114735" namespaceId="1" rank="2" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839003%20AUDIO_AAC_LATM_16K%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5839003</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_AAC_LATM_16K</field>
+          <field key="platform" primitive="String">ANDROID,MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:20-0500" id="26965156" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_TMI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtsp://211.43.148.135/CH21038.sdp</field>
+                <field key="location-parameters" primitive="String">server=rtsp://211.43.148.135/&amp;fileName=CH21038.sdp</field>
+                <field key="name" primitive="String">PRIMARY_TMI</field>
+                <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:27-0500" id="26934646" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839004 AUDIO_AMR_3GPP_16K content: 20114735" namespaceId="1" rank="3" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839004%20AUDIO_AMR_3GPP_16K%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5839004</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_AMR_3GPP_16K</field>
+          <field key="platform" primitive="String">ANDROID</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:20-0500" id="26965158" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_TMI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtsp://211.43.148.146/CH11038.sdp</field>
+                <field key="location-parameters" primitive="String">server=rtsp://211.43.148.146/&amp;fileName=CH11038.sdp</field>
+                <field key="name" primitive="String">PRIMARY_TMI</field>
+                <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:27-0500" id="26934650" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839005 AUDIO_SHOUTCAST_32K content: 20114735" namespaceId="1" rank="4" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839005%20AUDIO_SHOUTCAST_32K%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5839005</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_SHOUTCAST_32K</field>
+          <field key="platform" primitive="String">ANDROID,BLACKBERRY,BOXEE,IPAD,IPHONE,PALM,ROKU,WINDOWS_PHONE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:21-0500" id="26965160" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlb-ga-sc-19.ng.akacast.akamaistream.net/7/529/81690/v1/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_19?aifp=v0004&amp;auth={1}</field>
+                <field key="location-parameters" primitive="String">tokenPath=/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_19</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_SHOUTCAST_STREAM_LIVE</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:27-0500" id="26934654" lastSave="2012-03-02T18:56:45-0500" name="URL mediaId: 5839006 AUDIO_WMA_16K content: 20114735" namespaceId="1" rank="5" state="A" userDate="2012-03-01T12:30:23-0500" version="22" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205839006%20AUDIO_WMA_16K%20content%3A%2020114735</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5839006</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_WMA_16K</field>
+          <field key="platform" primitive="String">MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:07:21-0500" id="26965162" lastSave="2012-03-02T18:56:45-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:07:16-0500" version="5" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">reflector:10492</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_WINDOWSMEDIA_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+      </subItemList>
+    </field>
+    <itemTag type="inning_index_location_xml" value="http://mlb.mlb.com/mlb/mmls2012/332095.xml"/>
+    <itemTag type="source_aspect_ratio" value="SD"/>
+    <itemTag type="inning_index_location_plist" value="http://mlb.mlb.com/mlb/mmls2012/332095.plist"/>
+    <itemTag type="calendar_event_id" value="14-332095-2012-03-02"/>
+    <itemTag type="coverage_type" value="out-of-market"/>
+    <itemTag displayName="2012/03/02/seamlb-oakmlb-1" type="game_pk" value="332095"/>
+    <itemTag displayName="MLBMOBILE_GAMEDAY_AUDIO" type="subject" value="MLBMOBILE_GAMEDAY_AUDIO"/>
+    <itemTag displayName="MLBCOM_GAMEDAY_AUDIO" type="subject" value="MLBCOM_GAMEDAY_AUDIO"/>
+    <itemTag type="call_letters" value="MLB.com"/>
+    <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+    <itemTag type="in_epg" value="mlb_mp4_epg"/>
+    <itemTag displayName="LIVE_EVENT_COVERAGE" type="subject" value="LIVE_EVENT_COVERAGE"/>
+    <itemTag type="coverage_association" value="133"/>
+    <itemTag type="home_team_id" value="133"/>
+    <itemTag type="away_team_id" value="136"/>
+    <itemTag displayName="2012-03-02T15:05:00-0500" type="event_date" value="2012-03-02T15:05:00-0500"/>
+    <itemTag type="language" value="EN"/>
+    <itemTag type="run_scoring_plays_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_seamlb_oakmlb_1/runScoringPlays.plist"/>
+    <itemTag displayName="MEDIA_ARCHIVE" type="combined_media_state" value="MEDIA_ARCHIVE"/>
+    <itemTag type="game_events_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_seamlb_oakmlb_1/game_events.plist"/>
+    <itemTag type="game_id" value="2012/03/02/seamlb-oakmlb-1"/>
+  </item><item createdOn="2012-03-01T12:30:23-0500" id="20114733" lastSave="2012-03-02T18:56:12-0500" name="DAM Media: 20114733 2012-03-02 : sea at oak | MLBTV" namespaceId="1" state="A" userDate="2012-03-01T12:30:00-0500" version="15">
+    <displayData>headline=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;kicker=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;blurb=2012-03-02%20%3A%20sea%20at%20oak%20%7C%20MLBTV&amp;createdOn=Thu%20Mar%2001%2012%3A30%3A20%20EST%202012&amp;thumbnail=http%3A%2F%2Fmediadownloads.mlb.com%2Fmlbam%2Fpreview%2Fseaoak_332095_preview.jpg</displayData>
+    <lockInfo/>
+    <itemType category="content" key="audio" name="Audio"/>
+    <appAccountIds>
+      <appId>14</appId>
+    </appAccountIds>
+    <field key="duration" primitive="String">03:10:08</field>
+    <field key="secure" primitive="String">Y</field>
+    <field key="headline" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="sequence" primitive="String">1</field>
+    <field key="bigblurb" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+    <field key="guid" primitive="String">1dfa5b1f01ae050d</field>
+    <field key="kicker" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="namespace" primitive="String">1</field>
+    <field key="blurb" primitive="String">2012-03-02 : sea at oak | MLBTV</field>
+    <field key="delivery-type" primitive="String">demand</field>
+    <field key="partners" primitive="List" subTypeKey="partner" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26933700" lastSave="2012-03-02T18:56:13-0500" name="MLB  for contentId: 20114733" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=MLB%20%20for%20contentId%3A%2020114733</displayData>
+          <itemType key="partner" name="Partner"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="name" primitive="String">MLB</field>
+          <field key="feature-context" primitive="String">MLBTV2012.DEFAULT</field>
+          <field key="app-account" primitive="String">14</field>
+          <field key="media-urls" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26933702" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838983 HTTP_CLOUD_AUDIO content: 20114733" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838983%20HTTP_CLOUD_AUDIO%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="mediaid" primitive="Long">5838983</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">HTTP_CLOUD_AUDIO</field>
+                <field key="platform" primitive="String">ANDROID,IPAD,IPHONE,ROKU,XBOX</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965734" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlblive-akc.mlb.com/ls02/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_VISIT_20120302/master_radio.m3u8</field>
+                      <field key="location-parameters" primitive="String">kid.1=iHwkJqWImw+Vm/Wo+APXWA==</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+                    </item>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965736" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_LEVEL3" namespaceId="1" rank="1" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_LEVEL3</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlblive-l3c.mlb.com/ls02/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_VISIT_20120302/master_radio.m3u8</field>
+                      <field key="location-parameters" primitive="String">kid.1=iHwkJqWImw+Vm/Wo+APXWA==</field>
+                      <field key="name" primitive="String">PRIMARY_LEVEL3</field>
+                      <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26933708" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838984 AUDIO_FMS_32K content: 20114733" namespaceId="1" rank="1" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838984%20AUDIO_FMS_32K%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838984</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_FMS_32K</field>
+                <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965738" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtmp://cp65670.edgefcs.net/ondemand/mp3:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k?aifp=v0004&amp;auth={1}&amp;slist=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k</field>
+                      <field key="location-parameters" primitive="String">host=cp65670.edgefcs.net&amp;tokenPath=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k&amp;path=mp4:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_FLASH_STREAM_ONDEMAND</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26933712" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838985 AUDIO_AAC_LATM_16K content: 20114733" namespaceId="1" rank="2" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838985%20AUDIO_AAC_LATM_16K%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838985</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_AAC_LATM_16K</field>
+                <field key="platform" primitive="String">ANDROID,MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965740" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_TMI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtsp://211.43.148.135/CH21048.sdp</field>
+                      <field key="location-parameters" primitive="String">server=rtsp://211.43.148.135/&amp;fileName=CH21048.sdp</field>
+                      <field key="name" primitive="String">PRIMARY_TMI</field>
+                      <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26933716" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838986 AUDIO_AMR_3GPP_16K content: 20114733" namespaceId="1" rank="3" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838986%20AUDIO_AMR_3GPP_16K%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838986</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_AMR_3GPP_16K</field>
+                <field key="platform" primitive="String">ANDROID</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965742" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_TMI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">rtsp://211.43.148.146/CH11048.sdp</field>
+                      <field key="location-parameters" primitive="String">server=rtsp://211.43.148.146/&amp;fileName=CH11048.sdp</field>
+                      <field key="name" primitive="String">PRIMARY_TMI</field>
+                      <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26934506" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838987 AUDIO_SHOUTCAST_32K content: 20114733" namespaceId="1" rank="4" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838987%20AUDIO_SHOUTCAST_32K%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838987</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_SHOUTCAST_32K</field>
+                <field key="platform" primitive="String">ANDROID,BLACKBERRY,BOXEE,IPAD,IPHONE,PALM,ROKU,WINDOWS_PHONE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965744" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">http://mlb-ga-sc-24.ng.akacast.akamaistream.net/7/620/81690/v1/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_24?aifp=v0004&amp;auth={1}</field>
+                      <field key="location-parameters" primitive="String">tokenPath=/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_24</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_SHOUTCAST_STREAM_LIVE</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+              <item createdOn="2012-03-01T12:30:23-0500" id="26934510" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838988 AUDIO_WMA_16K content: 20114733" namespaceId="1" rank="5" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+                <displayData>name=URL%20mediaId%3A%205838988%20AUDIO_WMA_16K%20content%3A%2020114733</displayData>
+                <itemType key="media-url" name="URL"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="mediaid" primitive="Long">5838988</field>
+                <field key="delivery-type" primitive="String">demand</field>
+                <field key="filesize" primitive="Long">0</field>
+                <field key="secure" primitive="String">Y</field>
+                <field key="sequence" primitive="String">1</field>
+                <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+                <field key="auth-required" primitive="String">Y</field>
+                <field key="playback-scenario" primitive="String">AUDIO_WMA_16K</field>
+                <field key="platform" primitive="String">MOBILE</field>
+                <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+                <field key="login-required" primitive="String">Y</field>
+                <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+                  <subItemList>
+                    <item createdOn="2012-03-02T18:30:25-0500" id="26965746" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                      <displayData>name=PRIMARY_AKAMAI</displayData>
+                      <itemType key="location-detail" name="Location Detail"/>
+                      <appAccountIds>
+                        <appId>14</appId>
+                      </appAccountIds>
+                      <field key="location" primitive="String">reflector:62753</field>
+                      <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                      <field key="cdn" primitive="String">AKAMAI_WINDOWSMEDIA_STREAM</field>
+                    </item>
+                  </subItemList>
+                </field>
+              </item>
+            </subItemList>
+          </field>
+          <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T18:56:13-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63905" viewId="0">
+                <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+                <itemType key="dam_view" name="DAM View"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                  <appId>164</appId>
+                </appAccountIds>
+                <field key="key" primitive="String">MLBTV_MP_4</field>
+                <field key="description" primitive="String">MLBTV_MP_4</field>
+              </item>
+            </subItemList>
+          </field>
+          <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+        </item>
+      </subItemList>
+    </field>
+    <field key="thumbnails" primitive="List" subTypeKey="image" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934514" lastSave="2012-03-02T18:56:13-0500" name="Thumbnail: 7 content: 20114733" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:20-0500" version="23" viewId="0">
+          <displayData>name=Thumbnail%3A%207%20content%3A%2020114733</displayData>
+          <itemType key="image" name="Thumbnail"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="location" primitive="BinaryPath">http://mediadownloads.mlb.com/mlbam/preview/seaoak_332095_preview.jpg</field>
+          <field key="thumbnail-type" primitive="String">7</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="dam-views" primitive="List" subTypeKey="dam_view" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2010-05-30T13:57:27-0400" id="10604774" lastSave="2012-03-02T18:56:13-0500" name="COPY OF =&gt; MLBTV_MP_4" namespaceId="0" rank="0" state="A" userDate="2010-05-30T13:57:00-0400" version="63905" viewId="0">
+          <displayData>name=COPY%20OF%20%3D%3E%20MLBTV_MP_4</displayData>
+          <itemType key="dam_view" name="DAM View"/>
+          <appAccountIds>
+            <appId>14</appId>
+            <appId>164</appId>
+          </appAccountIds>
+          <field key="key" primitive="String">MLBTV_MP_4</field>
+          <field key="description" primitive="String">MLBTV_MP_4</field>
+        </item>
+      </subItemList>
+    </field>
+    <field key="media-urls" min="1" primitive="List" subTypeKey="media-url" xmlCascade="Y">
+      <subItemList>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934516" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838989 HTTP_CLOUD_AUDIO content: 20114733" namespaceId="1" rank="0" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838989%20HTTP_CLOUD_AUDIO%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838989</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">HTTP_CLOUD_AUDIO</field>
+          <field key="platform" primitive="String">ANDROID,IPAD,IPHONE,ROKU,XBOX</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965748" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlblive-akc.mlb.com/ls02/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_VISIT_20120302/master_radio.m3u8</field>
+                <field key="location-parameters" primitive="String">kid.1=iHwkJqWImw+Vm/Wo+APXWA==</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+              </item>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965750" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_LEVEL3" namespaceId="1" rank="1" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_LEVEL3</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlblive-l3c.mlb.com/ls02/mlbam/2012/03/02/MLB_GAME_AUDIO_SEAOAK_VISIT_20120302/master_radio.m3u8</field>
+                <field key="location-parameters" primitive="String">kid.1=iHwkJqWImw+Vm/Wo+APXWA==</field>
+                <field key="name" primitive="String">PRIMARY_LEVEL3</field>
+                <field key="cdn" primitive="String">HTTP_ENCAPSULATED</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934522" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838990 AUDIO_FMS_32K content: 20114733" namespaceId="1" rank="1" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838990%20AUDIO_FMS_32K%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838990</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_FMS_32K</field>
+          <field key="platform" primitive="String">WEB_MEDIAPLAYER</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965752" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtmp://cp65670.edgefcs.net/ondemand/mp3:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k?aifp=v0004&amp;auth={1}&amp;slist=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k</field>
+                <field key="location-parameters" primitive="String">host=cp65670.edgefcs.net&amp;tokenPath=secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k&amp;path=mp4:secure/mlbam/2012/03/02/14-332095-2012-03-02/web-encodes/mlbtv_seaoak_visit_32k</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_FLASH_STREAM_ONDEMAND</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934526" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838991 AUDIO_AAC_LATM_16K content: 20114733" namespaceId="1" rank="2" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838991%20AUDIO_AAC_LATM_16K%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838991</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_AAC_LATM_16K</field>
+          <field key="platform" primitive="String">ANDROID,MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965754" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_TMI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtsp://211.43.148.135/CH21048.sdp</field>
+                <field key="location-parameters" primitive="String">server=rtsp://211.43.148.135/&amp;fileName=CH21048.sdp</field>
+                <field key="name" primitive="String">PRIMARY_TMI</field>
+                <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934530" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838992 AUDIO_AMR_3GPP_16K content: 20114733" namespaceId="1" rank="3" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838992%20AUDIO_AMR_3GPP_16K%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838992</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_AMR_3GPP_16K</field>
+          <field key="platform" primitive="String">ANDROID</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965756" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_TMI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_TMI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">rtsp://211.43.148.146/CH11048.sdp</field>
+                <field key="location-parameters" primitive="String">server=rtsp://211.43.148.146/&amp;fileName=CH11048.sdp</field>
+                <field key="name" primitive="String">PRIMARY_TMI</field>
+                <field key="cdn" primitive="String">TMI_AMR_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934534" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838993 AUDIO_SHOUTCAST_32K content: 20114733" namespaceId="1" rank="4" state="A" userDate="2012-03-01T12:30:19-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838993%20AUDIO_SHOUTCAST_32K%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838993</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_SHOUTCAST_32K</field>
+          <field key="platform" primitive="String">ANDROID,BLACKBERRY,BOXEE,IPAD,IPHONE,PALM,ROKU,WINDOWS_PHONE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965758" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">http://mlb-ga-sc-24.ng.akacast.akamaistream.net/7/620/81690/v1/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_24?aifp=v0004&amp;auth={1}</field>
+                <field key="location-parameters" primitive="String">tokenPath=/mlb.akacast.akamaistream.net/mlb_!/mlb_ga_sc_24</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_SHOUTCAST_STREAM_LIVE</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+        <item createdOn="2012-03-01T12:30:23-0500" id="26934538" lastSave="2012-03-02T18:56:13-0500" name="URL mediaId: 5838994 AUDIO_WMA_16K content: 20114733" namespaceId="1" rank="5" state="A" userDate="2012-03-01T12:30:20-0500" version="15" viewId="0">
+          <displayData>name=URL%20mediaId%3A%205838994%20AUDIO_WMA_16K%20content%3A%2020114733</displayData>
+          <itemType key="media-url" name="URL"/>
+          <appAccountIds>
+            <appId>14</appId>
+          </appAccountIds>
+          <field key="mediaid" primitive="Long">5838994</field>
+          <field key="delivery-type" primitive="String">demand</field>
+          <field key="filesize" primitive="Long">0</field>
+          <field key="secure" primitive="String">Y</field>
+          <field key="sequence" primitive="String">1</field>
+          <field key="cat-code" primitive="String">mlb_media_mlb_lg</field>
+          <field key="auth-required" primitive="String">Y</field>
+          <field key="playback-scenario" primitive="String">AUDIO_WMA_16K</field>
+          <field key="platform" primitive="String">MOBILE</field>
+          <field key="video-state" primitive="String">MEDIA_ARCHIVE</field>
+          <field key="login-required" primitive="String">Y</field>
+          <field key="location-details" primitive="List" subTypeKey="location-detail" xmlCascade="Y">
+            <subItemList>
+              <item createdOn="2012-03-02T18:30:25-0500" id="26965760" lastSave="2012-03-02T18:56:13-0500" name="PRIMARY_AKAMAI" namespaceId="1" rank="0" state="A" userDate="2012-03-02T18:30:21-0500" version="3" viewId="0">
+                <displayData>name=PRIMARY_AKAMAI</displayData>
+                <itemType key="location-detail" name="Location Detail"/>
+                <appAccountIds>
+                  <appId>14</appId>
+                </appAccountIds>
+                <field key="location" primitive="String">reflector:62753</field>
+                <field key="name" primitive="String">PRIMARY_AKAMAI</field>
+                <field key="cdn" primitive="String">AKAMAI_WINDOWSMEDIA_STREAM</field>
+              </item>
+            </subItemList>
+          </field>
+        </item>
+      </subItemList>
+    </field>
+    <itemTag type="inning_index_location_xml" value="http://mlb.mlb.com/mlb/mmls2012/332095.xml"/>
+    <itemTag type="coverage_association" value="136"/>
+    <itemTag type="source_aspect_ratio" value="SD"/>
+    <itemTag type="inning_index_location_plist" value="http://mlb.mlb.com/mlb/mmls2012/332095.plist"/>
+    <itemTag type="coverage_type" value="out-of-market"/>
+    <itemTag type="calendar_event_id" value="14-332095-2012-03-02"/>
+    <itemTag displayName="2012/03/02/seamlb-oakmlb-1" type="game_pk" value="332095"/>
+    <itemTag displayName="MLBMOBILE_GAMEDAY_AUDIO" type="subject" value="MLBMOBILE_GAMEDAY_AUDIO"/>
+    <itemTag displayName="MLBCOM_GAMEDAY_AUDIO" type="subject" value="MLBCOM_GAMEDAY_AUDIO"/>
+    <itemTag displayName="MLBTV_MP_4" type="default_dam_view_key" value="MLBTV_MP_4"/>
+    <itemTag type="in_epg" value="mlb_mp4_epg"/>
+    <itemTag displayName="LIVE_EVENT_COVERAGE" type="subject" value="LIVE_EVENT_COVERAGE"/>
+    <itemTag type="home_team_id" value="133"/>
+    <itemTag displayName="2012-03-02T15:05:00-0500" type="event_date" value="2012-03-02T15:05:00-0500"/>
+    <itemTag type="away_team_id" value="136"/>
+    <itemTag type="call_letters" value="KIRO"/>
+    <itemTag type="language" value="EN"/>
+    <itemTag type="run_scoring_plays_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_seamlb_oakmlb_1/runScoringPlays.plist"/>
+    <itemTag displayName="MEDIA_ARCHIVE" type="combined_media_state" value="MEDIA_ARCHIVE"/>
+    <itemTag type="game_events_location_plist" value="http://gdx.mlb.com/components/game/mlb/year_2012/month_03/day_02/gid_2012_03_02_seamlb_oakmlb_1/game_events.plist"/>
+    <itemTag type="game_id" value="2012/03/02/seamlb-oakmlb-1"/>
+  </item></homebase>
+ <links mlbtv="" wrapup="" home_audio="" away_audio="" home_preview="" away_preview="" preview="" tv_station=""/> 
+</game>
+
+</events>

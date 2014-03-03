@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<scoreboard date="20120302" last_modified="">
+   <go_game>
+      <game id="2012_03_02_guhbbc_wasmlb_1" league="BN" status="FINAL" start_time="12:00PM"
+            home_code=""/>
+      <team name="Nationals" code="">
+         <gameteam R="3" H="5" E="0"/>
+      </team>
+      <team name="Hoyas" code="">
+         <gameteam R="0" H="4" E="4"/>
+      </team>
+      <w_pitcher wins="1" losses="0">
+         <pitcher name="M. Purke"/>
+      </w_pitcher>
+      <l_pitcher wins="0" losses="1">
+         <pitcher name="W. Harris"/>
+      </l_pitcher>
+      <sv_pitcher saves="1">
+         <pitcher name="J. Fulchino"/>
+      </sv_pitcher>
+   </go_game>
+   <go_game>
+      <game id="2012_03_02_flsbbc_detmlb_1" league="AA" status="FINAL" start_time="1:05PM"
+            home_code=""/>
+      <team name="Tigers" code="">
+         <gameteam R="11" H="11" E="0"/>
+      </team>
+      <team name="Mocs" code="">
+         <gameteam R="1" H="4" E="3"/>
+      </team>
+      <w_pitcher wins="1" losses="0">
+         <pitcher name="A. Oliver"/>
+      </w_pitcher>
+      <l_pitcher wins="0" losses="1">
+         <pitcher name="A. Jackson"/>
+      </l_pitcher>
+      <sv_pitcher saves="0">
+         <pitcher name=". "/>
+      </sv_pitcher>
+   </go_game>
+   <go_game>
+      <game id="2012_03_02_usfbbc_nyamlb_1" league="BA" status="FINAL" start_time="1:05PM"
+            home_code=""/>
+      <team name="Yankees" code="">
+         <gameteam R="11" H="14" E="0"/>
+      </team>
+      <team name="Bulls" code="">
+         <gameteam R="0" H="4" E="2"/>
+      </team>
+      <w_pitcher wins="1" losses="0">
+         <pitcher name="A. Warren"/>
+      </w_pitcher>
+      <l_pitcher wins="0" losses="1">
+         <pitcher name="M. Reed"/>
+      </l_pitcher>
+      <sv_pitcher saves="0">
+         <pitcher name=". "/>
+      </sv_pitcher>
+   </go_game>
+   <go_game>
+      <game id="2012_03_02_seamlb_oakmlb_1" league="AA" status="FINAL" start_time="3:05PM"
+            home_code=""/>
+      <team name="Athletics" code="">
+         <gameteam R="5" H="10" E="1"/>
+      </team>
+      <team name="Mariners" code="">
+         <gameteam R="8" H="9" E="2"/>
+      </team>
+      <w_pitcher wins="1" losses="0">
+         <pitcher name="B. Beavan"/>
+      </w_pitcher>
+      <l_pitcher wins="0" losses="1">
+         <pitcher name="G. Godfrey"/>
+      </l_pitcher>
+      <sv_pitcher saves="1">
+         <pitcher name="S. Henn"/>
+      </sv_pitcher>
+   </go_game>
+</scoreboard>

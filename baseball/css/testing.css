@@ -1,0 +1,2475 @@
+﻿/*! stopgap_start */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input, textarea, select {
+    *font-size: 100%;
+}
+
+legend {
+    color: #000;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+pre, code, kbd, samp, tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%;
+}
+
+body {
+    font: 12px arial,helvetica,sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.ada {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#mc {
+    min-height: 600px;
+}
+
+#tw_mc #section_navigation, #tw_mc_ad #section_navigation {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#tw_mc #mc_container {
+    min-height: 600px;
+    clear: both;
+}
+
+#tw_mc h2 {
+    text-align: -9999px;
+    font-size: 1px;
+    color: #fff;
+}
+
+#tw_mc_ad #mc_container {
+    width: 814px;
+    float: left;
+    margin: 8px 0 5px 5px;
+    clear: both;
+}
+
+*html #tw_mc_ad #mc_container {
+    margin-left: 3px;
+}
+
+#tw_mc_ad #ad {
+    width: 160px;
+    float: left;
+    margin: 8px 0 5px 6px;
+}
+
+#tw_secnav_mc #section_navigation {
+    float: left;
+    width: 160px;
+    clear: both;
+    margin: 8px 0 5px 5px;
+    clear: both;
+}
+
+*html #tw_secnav_mc #section_navigation {
+    margin-left: 3px;
+}
+
+#tw_secnav_mc #mc_container {
+    width: 814px;
+    float: left;
+    margin: 8px 0;
+    border-left: 1px solid #c9cfd6;
+    min-height: 600px;
+    padding-left: 5px;
+}
+
+#tw_secnav_mc_ad #section_navigation {
+    float: left;
+    width: 160px;
+    clear: both;
+    margin: 8px 0 5px 5px;
+    clear: both;
+}
+
+*html #tw_secnav_mc_ad #section_navigation {
+    margin: 8px 0 0 3px;
+}
+
+#tw_secnav_mc_ad #mc_container {
+    width: 649px;
+    float: left;
+    margin: 8px 0;
+    border-left: 1px solid #c9cfd6;
+    min-height: 600px;
+    padding-left: 5px;
+}
+
+*html #tw_secnav_mc_ad #mc_container {
+    padding-right: 5px;
+}
+
+#tw_secnav_mc_ad #ad {
+    width: 160px;
+    float: left;
+    margin: 8px 0 5px 5px;
+}
+
+*html #tw_secnav_mc_ad #ad {
+    margin: 8px 0;
+}
+
+#tw_interior #mc_container {
+    width: 649px;
+    float: left;
+    margin: 14px 0 0 11px;
+    padding-bottom: 11px;
+}
+
+*html #tw_interior #mc_container {
+    margin: 0 0 0 6px;
+}
+
+#tw_interior #related_container {
+    width: 300px;
+    float: left;
+    margin: 14px 0 0 17px;
+    padding-bottom: 11px;
+}
+
+#tw_interior #mc h3, #tw_secnav_mc_ad #mc h3 {
+    margin: 0 0 6px 0;
+}
+
+h3, h4, dt, h5, h6, caption {
+    font-weight: bold;
+}
+
+h2 {
+    color: #999;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+    h2 img {
+        padding-right: 2px;
+    }
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5, dt, caption {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+#mc a:link, #mc a:visited {
+    text-decoration: none;
+}
+
+#mc a:hover, #mc a:active {
+    text-decoration: underline;
+}
+
+#mc .tlink_text, body.tw_blank .tlink_text {
+    background: url("/mlb/images/icon_ticket.gif") no-repeat scroll left top transparent;
+    height: 13px;
+    padding-left: 18px;
+    font-weight: bold;
+}
+
+span.button {
+    margin: 8px 0;
+    display: block;
+}
+
+    span.button a {
+        font: normal bold 10.5px verdana,arial,sans-serif;
+        text-decoration: none;
+        border: 1px solid #000;
+        cursor: pointer;
+        color: #000;
+        padding: 1px 8px;
+        text-align: center;
+    }
+
+#mc span.button a:hover, #mc span.button a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+span.button.content a {
+    background-color: #ccc;
+}
+
+    span.button.content a:hover {
+        background-color: #666;
+    }
+
+span.button.purchase a {
+    background-color: #9c6;
+}
+
+    span.button.purchase a:hover {
+        background-color: #693;
+    }
+
+ul.bullet_round_black li, dl.bullet_round_black dd {
+    background: transparent url(/images/icons/bullet_round_black.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.bullet_square_black li, dl.bullet_square_black dd {
+    background: transparent url(/images/icons/bullet_square_black.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.bullet_dash_black li, dl.bullet_dash_black dd {
+    background: transparent url(/images/icons/bullet_dash_black.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.bullet_round_white li, dl.bullet_round_white dd {
+    background: transparent url(/images/icons/bullet_round_white.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.bullet_square_white li, dl.bullet_square_white dd {
+    background: transparent url(/images/icons/bullet_square_white.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.bullet_dash_white li, dl.bullet_dash_white dd {
+    background: transparent url(/images/icons/bullet_dash_white.gif) no-repeat scroll .2em .45em;
+    padding-left: 11px;
+}
+
+ul.video_gray li, dl.video_gray dd {
+    background: transparent url(/images/icons/video.gif) no-repeat scroll .2em .1em;
+    padding-left: 22px;
+}
+
+ul.camera_gray li, dl.camera_gray dd {
+    background: transparent url(/images/icons/photo.gif) no-repeat scroll .2em .2em;
+    padding-left: 22px;
+}
+
+ul.audio_gray li, dl.audio_gray dd {
+    background: transparent url(/images/icons/audio.gif) no-repeat scroll .2em .2em;
+    padding-left: 22px;
+}
+
+ol.numeric li {
+    list-style: inside decimal!important;
+    padding-left: 20px;
+}
+
+ol.numeric ul li, ol.numeric dl dd {
+    list-style: inside disc!important;
+    padding-left: 30px!important;
+}
+
+li.video_gray, dd.video_gray {
+    background: transparent url(/images/icons/video.gif) no-repeat scroll .2em .1em;
+    padding-left: 22px;
+}
+
+li.camera_gray, dd.camera_gray {
+    background: transparent url(/images/icons/photo.gif) no-repeat scroll .2em .2em;
+    padding-left: 22px;
+}
+
+li.audio_gray, dd.audio_gray {
+    background: transparent url(/images/icons/audio.gif) no-repeat scroll .2em .2em;
+    padding-left: 22px;
+}
+
+#related_container .related_links li.video {
+    background: transparent url(/images/icons/video.gif) no-repeat scroll .6em .1em;
+    padding-left: 30px;
+}
+
+#related_container .related_links li.photo {
+    background: transparent url(/images/icons/photo.gif) no-repeat scroll .7em .1em;
+    padding-left: 30px;
+}
+
+#related_container .related_links li.audio {
+    background: transparent url(/images/icons/audio.gif) no-repeat scroll .7em .1em;
+    padding-left: 30px;
+}
+
+#related_container .related_links li.pdf {
+    background: transparent url(/oak/images/icons/icon_link_pdf.gif) no-repeat scroll .86em .1em;
+    padding-left: 30px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image_left {
+    float: left;
+    margin: 0 4px 4px 0;
+}
+
+.image_right {
+    float: right;
+    margin: 0 0 4px 4px;
+}
+
+.clear {
+    clear: both;
+}
+
+.legal {
+    font-size: 9px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 11px;
+}
+
+.disclaimer {
+    font-size: 11px;
+    font-style: italic;
+    color: #222;
+}
+
+img.png {
+    behavior: url("/scripts/fix_png.htc");
+}
+
+.no_background {
+    background: none!important;
+}
+
+.no_border {
+    border: none!important;
+}
+
+.no_bold {
+    font-weight: normal!important;
+}
+
+.white, a:link.white, a:visited.white, a:hover.white, #mc a:active.white {
+    color: white;
+}
+
+.black, a:link.black, a:visited.black, a:hover.black, #mc a:active.black {
+    color: black;
+}
+
+.back_to_top {
+    padding: 5px;
+    font-size: 10px;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.screen_reader, #mc .address em {
+    position: absolute;
+    left: -9999em;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#mc .more {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.video_icon {
+    display: inline;
+    background: transparent url(/images/icons/video.gif) right no-repeat;
+    padding-right: 22px;
+}
+
+#mc .address {
+    color: #333;
+    padding-left: 14px;
+    margin-bottom: 4px;
+}
+
+    #mc .address dd {
+        line-height: 1.4em;
+        background: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mc .address dt {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+#mc .related_links {
+    margin-bottom: 8px;
+}
+
+    #mc .related_links li, #mc .related_links dd {
+        background: transparent url(/images/icons/bullet_square_black.gif) no-repeat scroll .2em .45em;
+        padding-left: 11px;
+    }
+
+#mc p, #mc ul.bullet, #mc dl.bullet, #mc ul.bullet_round_black, #mc dl.bullet_round_black, #mc ul.bullet_square_black, #mc dl.bullet_square_black, #mc ul.bullet_round_white, #mc dl.bullet_round_white, #mc ul.bullet_square_white, #mc dl.bullet_square_white, #mc ul.video_gray, #mc dl.video_gray, #mc ul.audio_gray, #mc dl.audio_gray, #mc ol.numeric {
+    margin: 0 0 8px 0;
+    line-height: 1.3em;
+}
+
+    #mc ul.bullet li, #mc dl.bullet dd {
+        list-style: inside disc;
+        padding-left: 20px;
+    }
+
+#breadcrumbs_container {
+    margin: 8px 0 0 0;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 11px;
+}
+
+    #breadcrumbs_container h2 {
+        font-size: 10px;
+        display: inline;
+        font-weight: bold;
+    }
+
+    #breadcrumbs_container ul li {
+        display: inline;
+        padding-right: 4px;
+    }
+
+#related_container .related_links {
+    border-top: 1px solid #4d4d4d;
+    padding: 2px 0;
+}
+
+#related_container h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 0 0 12px;
+    background: 0;
+    line-height: 1em;
+}
+
+    #related_container h3 a, #related_container h3 {
+        display: inline;
+    }
+
+#related_container .related_links {
+    background: transparent url(/images/global/related_links_bg.gif) repeat-x;
+    margin-bottom: 24px;
+}
+
+#related_container .ad {
+    margin-bottom: 24px;
+}
+
+#related_container .related_links ul {
+    padding-top: 2px;
+}
+
+#related_container .related_links li {
+    background: transparent url(/images/icons/bullet_square_black.gif) no-repeat scroll 1.6em .45em;
+    padding-left: 30px;
+}
+
+#related_container #ad_mastercard_landing {
+    margin: 0;
+    display: none;
+}
+
+#tw_mc_ad .ad {
+    margin: 20px 0;
+}
+
+.mlb #ad_stubhub {
+    margin-left: 20px;
+}
+
+#footer_container {
+    clear: both;
+    background-color: #000;
+    overflow: auto;
+}
+
+#section_navigation ul {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+    #section_navigation ul, #section_navigation ul ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #section_navigation ul em, #section_navigation ul a {
+            font-style: normal;
+        }
+
+        #section_navigation ul li {
+            margin: 1em 0;
+        }
+
+            #section_navigation ul li ul li {
+                margin: 0;
+            }
+
+        #section_navigation ul.accessibleNav em, #section_navigation ul.accessibleNav a {
+            display: inline-block;
+            cursor: pointer;
+            background: transparent url(/images/nav/plus_minus_arrow_toggle.gif) no-repeat left -148px;
+        }
+
+        #section_navigation ul.accessibleNav li em.accessibleNav-hovered {
+            background-position: left -308px;
+        }
+
+        #section_navigation ul.accessibleNav li em.accessibleNav-expanded {
+            background-position: left -468px;
+        }
+
+        #section_navigation ul.accessibleNav li em.accessibleNav-hovered.accessibleNav-expanded {
+            background-position: left -628px;
+        }
+
+        #section_navigation ul.accessibleNav li a {
+            background-position: left -788px;
+        }
+
+            #section_navigation ul.accessibleNav li a.accessibleNav-hovered {
+                background-position: left -948px;
+            }
+
+        #section_navigation ul.accessibleNav li em, #section_navigation ul.accessibleNav li a, #section_navigation ul.accessibleNav li ul li {
+            padding-left: 15px;
+        }
+
+        #section_navigation ul.accessibleNav span.accessibleNav-selected {
+            display: block;
+            padding-left: 15px;
+            background: transparent url(/images/nav/plus_minus_arrow_toggle.gif) no-repeat left -948px;
+        }
+
+        *html #section_navigation ul.accessibleNav span.accessibleNav-selected {
+            display: inline;
+        }
+
+        #section_navigation ul.accessibleNav li ul li em, #section_navigation ul.accessibleNav li ul li a, #section_navigation ul.accessibleNav li ul li span.accessibleNav-selected {
+            background: none!important;
+            padding-left: 0;
+        }
+
+        #section_navigation ul.accessibleNav span.accessibleNav-selected {
+            font-weight: bold;
+        }
+
+        #section_navigation ul#section_navigation_ad li {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+.ac_results {
+    padding: 0;
+    border: 1px solid WindowFrame;
+    background-color: Window;
+    overflow: hidden;
+    z-index: 101;
+    position: relative;
+}
+
+    .ac_results ul {
+        width: 100%;
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ac_results iframe {
+        display: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: mask();
+        width: 3000px;
+        height: 3000px;
+    }
+
+    .ac_results li {
+        margin: 0;
+        padding: 2px 5px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        font: menu;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+.ac_loading {
+    background: Window url('../images/loading.gif') top no-repeat;
+}
+
+.ac_over {
+    background-color: Highlight;
+    color: HighlightText;
+}
+
+@media print {
+    #header_container, #footer_container, #related_container, #breadcrumbs_container {
+        display: none;
+    }
+}
+
+.standings_mn_txt {
+    text-align: center;
+    font-family: adelle;
+    float: left;
+    font-size: 12px;
+    padding-top: 0;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.standings_mn {
+    overflow: hidden;
+    padding-top: 1px;
+    padding-right: 0;
+    font-family: arial;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 49px;
+    background-position: right top;
+    background: url("/mlb/images/homepage/y2012/mn_num_bg.png") no-repeat scroll 0 0 transparent;
+    width: 65px;
+    height: 62px;
+}
+
+div.standings_clinch {
+    margin-top: -8px;
+}
+
+li#standings_link_all {
+    margin-top: -5px;
+}
+
+body.team {
+    background-position: center 90px;
+    background-repeat: no-repeat;
+}
+
+#tw_mc {
+    padding-top: 90px;
+}
+
+#sbBannerAd {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -364px;
+}
+
+.ad {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ad728x90 {
+    width: 728px;
+    height: 90px;
+}
+
+#adContainer {
+    float: right;
+    width: 300px;
+    height: 1050px;
+}
+
+#featuredAd2 {
+    width: 300px;
+    height: 2px;
+}
+
+#featuredAd1.fixed {
+    position: fixed;
+    top: 0;
+}
+
+#featuredAd1.fixedBottom {
+    position: fixed;
+    bottom: 0;
+}
+
+#featuredAd1.fixed1050 {
+    position: fixed;
+    top: -70px;
+}
+
+#featuredAd1.hugfooter {
+    position: absolute;
+    bottom: 154px;
+}
+
+.ad300x50, .ie7 .ad300x50 {
+    float: right;
+}
+
+.ie7 .ad300x50 {
+    left: 511px;
+    top: -15px;
+}
+
+.ad573x50, .ie7 .ad573x50 {
+    width: 573px;
+    height: 50px;
+    float: right;
+}
+
+.ie7 .ad573x50 {
+    left: 511px;
+    top: -15px;
+}
+
+@font-face {
+    font-family: 'adelle';
+    src: url('/shared/fonts/adellebasicbold/adelle.eot?') format('eot'),url('/shared/fonts/adellebasicbold/adelle.woff') format('woff'),url('/shared/fonts/adellebasicbold/adelle.svg#webfontJwXbgJrv') format('svg'),url('/shared/fonts/adellebasicbold/adelle.ttf') format('truetype');
+}
+
+#sbContent {
+    padding: 8px;
+    background: #fff;
+    margin: 0 0 40px 0;
+    min-height: 1060px;
+}
+
+    #sbContent h1 {
+        font: 24px/24px adelle,arial,sans-serif;
+        text-transform: uppercase;
+        float: left;
+    }
+
+    #sbContent h3 {
+        font: 16px/24px adelle,arial,sans-serif;
+        text-transform: uppercase;
+    }
+
+#pickerAndTicker {
+    overflow: hidden;
+    clear: both;
+}
+
+#sbLeagueGames {
+    padding: 10px 0 0 0;
+    float: left;
+}
+
+#gameContainer {
+    position: relative;
+}
+
+#sbLeagueGames h3 {
+    width: 490px;
+    line-height: 31px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#sbBoxscores {
+    clear: both;
+    width: 660px;
+}
+
+#sbDaypicker {
+    width: 30%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+#sbTicker {
+    width: 100%;
+    margin: 2px 0 10px 0;
+}
+
+    #sbTicker #gameAlerts {
+        height: 21px;
+    }
+
+    #sbTicker .gameAlert, #sbTicker .liveLookIn {
+        display: block;
+        font-style: italic;
+        padding: 0 1em;
+        line-height: 21px;
+        background: #e5e5e5;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+#sbContent td, th {
+    color: inherit;
+}
+
+#sbContent abbr {
+    border-bottom: 0;
+}
+
+#sbContent .leagueTypeArea {
+    clear: both;
+    overflow: hidden;
+}
+
+#sbContent .league {
+    float: left;
+    width: 484px;
+    text-align: center;
+}
+
+#sbContent .league-right {
+    float: right;
+}
+
+#sbContent .league h3 {
+    display: block;
+    width: 484px;
+    height: 47px;
+    margin: 0 auto .5em;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+    text-align: left;
+}
+
+#sbContent .leagueGL h3, #sbContent .leagueCL h3, #sbContent .leagueE h3 {
+    background-image: url(/images/scoreboard/pre_season.png);
+}
+
+#sbContent .leagueAL h3, #sbContent .leagueNL h3, #sbContent .leagueX_AL h3, #sbContent .leagueX_NL h3 {
+    background-image: url(/images/scoreboard/regular_season.png);
+}
+
+#sbContent .leagueGL h3 {
+    background-position: left 0;
+}
+
+#sbContent .leagueCL h3 {
+    background-position: left -47px;
+}
+
+#sbContent .leagueE h3 {
+    background-position: left -94px;
+}
+
+#sbContent .leagueAL h3 {
+    background-position: left 0;
+}
+
+#sbContent .leagueNL h3 {
+    background-position: left -47px;
+}
+
+#sbContent .leagueX_AL h3 {
+    background-position: left -94px;
+}
+
+#sbContent .leagueX_NL h3 {
+    background-position: left -141px;
+}
+
+#sbContent .leagueWS_2010 h3 {
+    background-image: url(/images/scoreboard/world_series_2010.png);
+}
+
+#sbContent .leagueWS_2009 h3 {
+    background-image: url(/images/scoreboard/world_series_2009.png);
+}
+
+#sbContent .leagueWS_2008 h3 {
+    background-image: url(/images/scoreboard/world_series_2008.png);
+}
+
+#sbContent .leagueWS_2007 h3 {
+    background-image: url(/images/scoreboard/world_series_2007.png);
+}
+
+#sbContent .leagueAS_2010 h3 {
+    background-image: url(/images/scoreboard/all_star_game_2010.png);
+}
+
+#sbContent .leagueAS_2009 h3 {
+    background-image: url(/images/scoreboard/all_star_game_2009.png);
+}
+
+#sbContent .leagueAS_2008 h3 {
+    background-image: url(/images/scoreboard/all_star_game_2008.png);
+}
+
+#sbContent .leagueAS_2007 h3 {
+    background-image: url(/images/scoreboard/all_star_game_2007.png);
+}
+
+#sbContent .league .boxscores {
+    font-size: 16px;
+    line-height: 20px;
+    width: 484px;
+    margin: auto;
+    text-align: left;
+}
+
+#sbContent .boxscore {
+    font: 16px arial,helvetica,sans-serif;
+    *font: 16px arial,helvetica,sans-serif;
+    _font: 16px arial,helvetica,sans-serif;
+    margin: 0 0 .625em;
+    background: #e5e5e5;
+    color: #333;
+    padding: 4px;
+}
+
+#sbBoxscores .scoreboard-expanded .boxscore {
+    clear: both;
+}
+
+#sbContent .boxscore table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+#sbContent .boxscore td {
+    border: 0 none transparent;
+    padding: 0;
+    vertical-align: top;
+}
+
+#sbContent .boxscore .hdr {
+    background: url(/images/scoreboard/boxHeader.png) repeat-x left bottom;
+    border-bottom: 1px solid #ccc;
+}
+
+#sbContent .boxscore .status {
+    margin: 6px;
+}
+
+    #sbContent .boxscore .status .summary {
+        font-size: 14px;
+        font-weight: bold;
+        height: 19px;
+        line-height: 19px;
+        float: left;
+    }
+
+    #sbContent .boxscore .status .after {
+        color: #c00;
+    }
+
+    #sbContent .boxscore .status .nixed {
+        color: #999;
+    }
+
+    #sbContent .boxscore .status .detail {
+        color: #999;
+        font-size: 11px;
+        font-weight: normal;
+        height: 19px;
+        line-height: 19px;
+        clear: both;
+        float: left;
+    }
+
+#sbContent .boxscore .links {
+    margin: 6px;
+    overflow: hidden;
+    _text-align: right;
+}
+
+    #sbContent .boxscore .links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+        height: 19px;
+    }
+
+    #sbContent .boxscore .links li {
+        float: left;
+        margin-left: .5em;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+    }
+
+        #sbContent .boxscore .links li.button {
+            margin-left: .33em;
+        }
+
+    #sbContent .boxscore .links a, #sbContent .boxscore .links a span {
+        font-weight: bold;
+        height: 19px;
+        line-height: 19px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+    }
+
+    #sbContent .boxscore .links .mlbtv, #sbContent .boxscore .links .gameday, #sbContent .boxscore .links .atbat, #sbContent .boxscore .links .listen, #sbContent .boxscore .links .mlbtv span, #sbContent .boxscore .links .gameday span, #sbContent .boxscore .links .atbat span, #sbContent .boxscore .links .listen span {
+        background: url(/images/scoreboard/linkButtons.png) no-repeat right top;
+    }
+
+    #sbContent .boxscore .links .mlbtv, #sbContent .boxscore .links .gameday, #sbContent .boxscore .links .atbat, #sbContent .boxscore .links .listen {
+        font-size: 9px;
+        color: #fff;
+        padding-right: 7px;
+        text-transform: uppercase;
+    }
+
+        #sbContent .boxscore .links .mlbtv span, #sbContent .boxscore .links .gameday span, #sbContent .boxscore .links .atbat span, #sbContent .boxscore .links .listen span {
+            padding-left: 28px;
+        }
+
+        #sbContent .boxscore .links .mlbtv span {
+            background-position: left -19px;
+        }
+
+        #sbContent .boxscore .links .gameday span {
+            background-position: left -38px;
+        }
+
+        #sbContent .boxscore .links .atbat span {
+            background-position: left -57px;
+        }
+
+        #sbContent .boxscore .links .listen span {
+            background-position: left -76px;
+        }
+
+    #sbContent .boxscore .links .buyMlbtv, #sbContent .boxscore .links .preview, #sbContent .boxscore .links .box, #sbContent .boxscore .links .tickets, #sbContent .boxscore .links .press, #sbContent .boxscore .links .wrap, #sbContent .boxscore .links .highlights {
+        font-size: 12px;
+        color: #333;
+    }
+
+    #sbContent .boxscore .links .tickets {
+        padding-left: 1.5em;
+        background: url(/mlb/images/icon_ticket.gif) 0 3px no-repeat;
+    }
+
+#sbContent .scoreboard-condensed .boxscore .links .tickets {
+    text-indent: -1000em;
+}
+
+#sbContent .scoreboard-condensed .boxscore .links .highlights {
+    text-indent: -1000em;
+    background: url(/images/scoreboard/video.gif) 0 2px no-repeat;
+    padding-left: 1.5em;
+}
+
+#sbContent .boxscore .infographic {
+    border-right: 1px solid #ccc;
+    text-align: center;
+    width: 80px;
+}
+
+#sbContent .boxscore .countAndOuts {
+    font-weight: bold;
+    font-size: 11px;
+    color: #b4b4b4;
+}
+
+#sbContent .boxscore .count, #sbContent .boxscore .outs {
+    display: block;
+    clear: both;
+}
+
+#sbContent .boxscore .info {
+    border-right: 1px solid #ccc;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.1667em;
+    height: 10em;
+    width: 100%;
+}
+
+#sbContent .boxscore .linescore {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+    #sbContent .boxscore .linescore table {
+        width: 100%;
+        border: 0 none transparent;
+        border-collapse: collapse;
+    }
+
+    #sbContent .boxscore .linescore th, #sbContent .boxscore .linescore td {
+        border: 0 none transparent;
+        padding: 0;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    #sbContent .boxscore .linescore tbody th {
+        text-align: left;
+    }
+
+    #sbContent .boxscore .linescore thead th {
+        font-size: 10px;
+        line-height: 1.4em;
+        font-weight: bold;
+        color: #999;
+    }
+
+    #sbContent .boxscore .linescore tbody th, #sbContent .boxscore .linescore tbody td {
+        border-right: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+
+    #sbContent .boxscore .linescore tbody td {
+        font-size: 13px;
+    }
+
+    #sbContent .boxscore .linescore .separator {
+        width: .75em;
+        border-top: 0 none transparent;
+        border-left: 1px solid #ccc;
+    }
+
+    #sbContent .boxscore .linescore .currentHalf .currentInning {
+        background-color: #e5e5e5;
+    }
+
+    #sbContent .boxscore .linescore .inning, #sbContent .boxscore .linescore .runs, #sbContent .boxscore .linescore .hits, #sbContent .boxscore .linescore .errors {
+        width: 1.84615385em;
+    }
+
+    #sbContent .boxscore .linescore .errors {
+        border-right: 0 none transparent;
+    }
+
+    #sbContent .boxscore .linescore .hidden {
+        display: none;
+    }
+
+    #sbContent .boxscore .linescore .winner {
+        background: url(/images/scoreboard/winner.gif) no-repeat 0 center;
+    }
+
+    #sbContent .boxscore .linescore .team {
+        margin-left: 4px;
+        background: url(/images/scoreboard/logo_sprite.png) no-repeat 6px 0;
+        height: 36px;
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #333;
+        padding-left: 48px;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    #sbContent .boxscore .linescore a.ana {
+        background-position: 6px -504px;
+    }
+
+    #sbContent .boxscore .linescore a.ari {
+        background-position: 6px -36px;
+    }
+
+    #sbContent .boxscore .linescore a.atl {
+        background-position: 6px -72px;
+    }
+
+    #sbContent .boxscore .linescore a.bal {
+        background-position: 6px -108px;
+    }
+
+    #sbContent .boxscore .linescore a.bos {
+        background-position: 6px -144px;
+    }
+
+    #sbContent .boxscore .linescore a.chc {
+        background-position: 6px -180px;
+    }
+
+    #sbContent .boxscore .linescore a.cin {
+        background-position: 6px -216px;
+    }
+
+    #sbContent .boxscore .linescore a.cle {
+        background-position: 6px -252px;
+    }
+
+    #sbContent .boxscore .linescore a.col {
+        background-position: 6px -288px;
+    }
+
+    #sbContent .boxscore .linescore a.cws {
+        background-position: 6px -324px;
+    }
+
+    #sbContent .boxscore .linescore a.det {
+        background-position: 6px -360px;
+    }
+
+    #sbContent .boxscore .linescore a.fla {
+        background-position: 6px -396px;
+    }
+
+    #sbContent .boxscore .linescore a.hou {
+        background-position: 6px -432px;
+    }
+
+    #sbContent .boxscore .linescore a.kc {
+        background-position: 6px -468px;
+    }
+
+    #sbContent .boxscore .linescore a.la {
+        background-position: 6px -540px;
+    }
+
+    #sbContent .boxscore .linescore a.mia {
+        background-position: 6px -396px;
+    }
+
+    #sbContent .boxscore .linescore a.mil {
+        background-position: 6px -576px;
+    }
+
+    #sbContent .boxscore .linescore a.min {
+        background-position: 6px -612px;
+    }
+
+    #sbContent .boxscore .linescore a.nym {
+        background-position: 6px -648px;
+    }
+
+    #sbContent .boxscore .linescore a.nyy {
+        background-position: 6px -684px;
+    }
+
+    #sbContent .boxscore .linescore a.oak {
+        background-position: 6px -720px;
+    }
+
+    #sbContent .boxscore .linescore a.phi {
+        background-position: 6px -756px;
+    }
+
+    #sbContent .boxscore .linescore a.pit {
+        background-position: 6px -792px;
+    }
+
+    #sbContent .boxscore .linescore a.sd {
+        background-position: 6px -828px;
+    }
+
+    #sbContent .boxscore .linescore a.sea {
+        background-position: 6px -864px;
+    }
+
+    #sbContent .boxscore .linescore a.sf {
+        background-position: 6px -900px;
+    }
+
+    #sbContent .boxscore .linescore a.stl {
+        background-position: 6px -936px;
+    }
+
+    #sbContent .boxscore .linescore a.tb {
+        background-position: 6px -972px;
+    }
+
+    #sbContent .boxscore .linescore a.tex {
+        background-position: 6px -1008px;
+    }
+
+    #sbContent .boxscore .linescore a.tor {
+        background-position: 6px -1044px;
+    }
+
+    #sbContent .boxscore .linescore a.was {
+        background-position: 6px -1080px;
+    }
+
+    #sbContent .boxscore .linescore span.al {
+        background-position: 6px -1116px;
+    }
+
+    #sbContent .boxscore .linescore span.nl {
+        background-position: 6px -1152px;
+    }
+
+    #sbContent .boxscore .linescore .team .teamName, #sbContent .boxscore .linescore .team .fullName, #sbContent .boxscore .linescore .team abbr {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.15385em;
+    }
+
+    #sbContent .boxscore .linescore .split {
+        background: url(/images/schedule/icon_splitsquad.gif) no-repeat right top;
+        padding-right: 16px;
+    }
+
+    #sbContent .boxscore .linescore .record {
+        font-size: 11px;
+        line-height: 1.18181818em;
+        color: #999;
+        font-weight: normal;
+    }
+
+    #sbContent .boxscore .linescore .runs {
+        color: #000;
+        font-weight: bold;
+        border-left: 1px solid #ccc;
+    }
+
+    #sbContent .boxscore .linescore tbody .runs {
+        background: #e5e5e5;
+    }
+
+    #sbContent .boxscore .linescore input.prev, #sbContent .boxscore .linescore input.next {
+        width: 8px;
+        height: 13px;
+        margin: 0;
+        border: 0 none transparent;
+        padding: 0;
+        background: url(/images/scoreboard/pagination.gif) no-repeat;
+        cursor: pointer;
+    }
+
+    #sbContent .boxscore .linescore input.prev {
+        background-position: bottom center;
+        float: right;
+    }
+
+    #sbContent .boxscore .linescore input.next {
+        background-position: top center;
+        float: left;
+    }
+
+#sbContent .boxscore .info dl {
+    margin: 0 0 .5em;
+    padding: 0;
+    display: block;
+}
+
+    #sbContent .boxscore .info dl dl, #sbContent .boxscore .info dt, #sbContent .boxscore .info dd {
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        font-weight: normal;
+    }
+
+    #sbContent .boxscore .info dl dl, #sbContent .boxscore .info dt, #sbContent .boxscore .info dd {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+    }
+
+#sbContent .before .info dl dl, #sbContent .before .info dt, #sbContent .before .info dd {
+    display: block;
+}
+
+#sbContent .boxscore .info dl a {
+    font-weight: bold;
+}
+
+#sbContent .boxscore .info dl.pregameLinks {
+    overflow: hidden;
+}
+
+#sbContent .boxscore .info .pbp dd {
+    white-space: normal;
+    display: inline;
+}
+
+#sbContent .boxscore .probables dt {
+    float: left;
+}
+
+#sbContent .boxscore .probables dd {
+    display: block;
+    margin-left: 6em;
+}
+
+#sbContent .boxscore .info .pbp a {
+    font-weight: normal;
+}
+
+#sbContent ul.inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+    #sbContent ul.inline li {
+        float: left;
+        padding: 0 .66em 0 .33em;
+        margin-left: -0.33em;
+        white-space: nowrap;
+    }
+
+#sbContent .boxscore .pregameLinks ul {
+    margin: 0 0 0 .33em;
+}
+
+#sbContent .boxscore .pregameLinks li {
+    border-left: 1px solid #000;
+}
+
+#sbContent .boxscore .pregameLinks dt {
+    line-height: 1em;
+    margin-bottom: .2727em;
+    float: left;
+    width: 3em;
+}
+
+#sbContent .boxscore .pregameLinks dd {
+    line-height: 1em;
+    margin-bottom: .2727em;
+}
+
+#sbContent .scoreboard-expanded .boxscore .preview {
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+
+#sbContent .scoreboard-expanded .boxscore .infographic {
+    padding: 10px;
+}
+
+#sbContent .scoreboard-expanded .boxscore .menOnBase, #sbContent .scoreboard-expanded .boxscore .menOnBase dl {
+    position: relative;
+    width: 52px;
+    height: 38px;
+    margin: 0;
+}
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase dt, #sbContent .scoreboard-expanded .boxscore .menOnBase dd {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url(/images/scoreboard/runners-24.png);
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase dd {
+        margin: 0;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase .first {
+        left: 28px;
+        top: 14px;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase .second {
+        left: 14px;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase .third {
+        left: 0;
+        top: 14px;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase .runner {
+        background-position: -24px 0;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase .moved {
+        background-position: -48px 0;
+    }
+
+    #sbContent .scoreboard-expanded .boxscore .menOnBase abbr, #sbContent .scoreboard-expanded .boxscore .menOnBase span {
+        opacity: 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        text-indent: -999em;
+        overflow: hidden;
+    }
+
+#sbContent .scoreboard-expanded .boxscore .countAndOuts {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    margin-top: 3px;
+}
+
+#sbCountdown {
+    visibility: hidden;
+    text-align: right;
+    overflow: hidden;
+    margin: 0 1em;
+    font-size: 11px;
+    line-height: 16px;
+    height: 16px;
+    color: #999;
+    float: right;
+}
+
+    #sbCountdown .icon {
+        background: url(/images/scoreboard/countdown.png) no-repeat 0 0;
+        width: 16px;
+        height: 16px;
+        float: right;
+        margin-left: .333em;
+    }
+
+    #sbCountdown .loading {
+        background: url(/images/scoreboard/loading.gif) no-repeat 0 0!important;
+    }
+
+#sbContent .boxscore .video {
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+#sbContent .boxscore .thumb {
+    margin: auto;
+    padding: 6px;
+    zoom: 1;
+}
+
+    #sbContent .boxscore .thumb a {
+        display: block;
+        width: 124px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    #sbContent .boxscore .thumb .versus {
+        display: none;
+    }
+
+    #sbContent .boxscore .thumb .away, #sbContent .boxscore .thumb .home {
+        float: left;
+        width: 62px;
+        height: 70px;
+        background: url(/images/scoreboard/headsup.png) no-repeat;
+        text-indent: -99px;
+        overflow: hidden;
+    }
+
+#sbContent .boxscore .videoThumbnail {
+    border: 0 none transparent;
+}
+
+#sbContent .boxscore .caption a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 6px;
+}
+
+#sbContent .boxscore .liveLookIn .thumb {
+    background: #eda410;
+}
+
+#sbContent .boxscore .liveLookIn .caption a {
+    font-size: 10px;
+    background: #000 url(/images/scoreboard/liveLookInCaptionBg.png);
+    color: #eda410;
+}
+
+#sbContent .boxscore .highlights .caption a {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+#sbContent .boxscore .thumb .ana {
+    background-position: 0 -980px;
+}
+
+#sbContent .boxscore .thumb .ari {
+    background-position: 0 -70px;
+}
+
+#sbContent .boxscore .thumb .atl {
+    background-position: 0 -140px;
+}
+
+#sbContent .boxscore .thumb .bal {
+    background-position: 0 -210px;
+}
+
+#sbContent .boxscore .thumb .bos {
+    background-position: 0 -280px;
+}
+
+#sbContent .boxscore .thumb .chc {
+    background-position: 0 -350px;
+}
+
+#sbContent .boxscore .thumb .cin {
+    background-position: 0 -420px;
+}
+
+#sbContent .boxscore .thumb .cle {
+    background-position: 0 -490px;
+}
+
+#sbContent .boxscore .thumb .col {
+    background-position: 0 -560px;
+}
+
+#sbContent .boxscore .thumb .cws {
+    background-position: 0 -630px;
+}
+
+#sbContent .boxscore .thumb .det {
+    background-position: 0 -700px;
+}
+
+#sbContent .boxscore .thumb .fla {
+    background-position: 0 -770px;
+}
+
+#sbContent .boxscore .thumb .hou {
+    background-position: 0 -840px;
+}
+
+#sbContent .boxscore .thumb .kc {
+    background-position: 0 -910px;
+}
+
+#sbContent .boxscore .thumb .la {
+    background-position: 0 -1050px;
+}
+
+#sbContent .boxscore .thumb .mia {
+    background-position: 0 -770px;
+}
+
+#sbContent .boxscore .thumb .mil {
+    background-position: 0 -1120px;
+}
+
+#sbContent .boxscore .thumb .min {
+    background-position: 0 -1190px;
+}
+
+#sbContent .boxscore .thumb .nym {
+    background-position: 0 -1260px;
+}
+
+#sbContent .boxscore .thumb .nyy {
+    background-position: 0 -1330px;
+}
+
+#sbContent .boxscore .thumb .oak {
+    background-position: 0 -1400px;
+}
+
+#sbContent .boxscore .thumb .phi {
+    background-position: 0 -1470px;
+}
+
+#sbContent .boxscore .thumb .pit {
+    background-position: 0 -1540px;
+}
+
+#sbContent .boxscore .thumb .sd {
+    background-position: 0 -1610px;
+}
+
+#sbContent .boxscore .thumb .sea {
+    background-position: 0 -1680px;
+}
+
+#sbContent .boxscore .thumb .sf {
+    background-position: 0 -1750px;
+}
+
+#sbContent .boxscore .thumb .stl {
+    background-position: 0 -1820px;
+}
+
+#sbContent .boxscore .thumb .tb {
+    background-position: 0 -1890px;
+}
+
+#sbContent .boxscore .thumb .tex {
+    background-position: 0 -1960px;
+}
+
+#sbContent .boxscore .thumb .tor {
+    background-position: 0 -2030px;
+}
+
+#sbContent .boxscore .thumb .was {
+    background-position: 0 -2100px;
+}
+
+#sbContent .boxscore .thumb .al {
+    background-position: 0 -2170px;
+}
+
+#sbContent .boxscore .thumb .nl {
+    background-position: 0 -2240px;
+}
+
+#sbContent .wbchead {
+    padding: 20px 0 20px 0;
+    clear: both;
+}
+
+#sbContent .ad970 {
+    width: 970px;
+    margin: auto;
+}
+
+#ad970Top {
+    margin-bottom: 8px;
+}
+
+#ad970Bottom {
+    margin-top: 8px;
+}
+
+#sbContent .scoreboard-condensed {
+    overflow: hidden;
+    _zoom: 1;
+    margin: 0 1% 0 0;
+}
+
+    #sbContent .scoreboard-condensed .boxscore {
+        float: left;
+        width: 32%;
+        margin: .5%;
+        padding: 0;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+    }
+
+        #sbContent .scoreboard-condensed .boxscore .cruft {
+            margin: 4px;
+        }
+
+        #sbContent .scoreboard-condensed .boxscore .outertable {
+            width: 100%;
+        }
+
+        #sbContent .scoreboard-condensed .boxscore .linescore .status {
+            float: none;
+            margin: 0;
+            padding: 6px;
+            font-size: 12px;
+            display: inline;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #sbContent .scoreboard-condensed .boxscore .linescore .after {
+            color: #c00;
+        }
+
+        #sbContent .scoreboard-condensed .boxscore .info {
+            height: 6em;
+        }
+
+#sbContent .boxscore .info dl {
+    margin: 0;
+}
+
+    #sbContent .boxscore .info dl.probables {
+        margin-bottom: 1em;
+    }
+
+#sbContent .scoreboard-condensed .boxscore .info dt {
+    clear: left;
+    float: left;
+    margin-right: .333em;
+}
+
+#sbContent .scoreboard-condensed .boxscore .info dd {
+    clear: right;
+    display: block;
+}
+
+#sbContent .scoreboard-condensed .boxscore .probables dd {
+    margin-left: 0;
+}
+
+#sbContent .scoreboard-condensed .boxscore .links {
+    margin: 0 4px;
+    height: 23px;
+}
+
+    #sbContent .scoreboard-condensed .boxscore .links ul {
+        float: none;
+        text-align: center;
+        overflow: hidden;
+        height: auto;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .links li {
+        margin: 0 .25em;
+        float: none;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        line-height: 19px;
+        height: 19px;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .links .mlbtv, #sbContent .scoreboard-condensed .boxscore .links .gameday, #sbContent .scoreboard-condensed .boxscore .links .atbat, #sbContent .scoreboard-condensed .boxscore .links .listen {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        line-height: 19px;
+        height: 19px;
+    }
+
+        #sbContent .scoreboard-condensed .boxscore .links .mlbtv span, #sbContent .scoreboard-condensed .boxscore .links .gameday span, #sbContent .scoreboard-condensed .boxscore .links .atbat span, #sbContent .scoreboard-condensed .boxscore .links .listen span {
+            width: 22px;
+            padding-left: 0;
+            text-indent: -999em;
+            overflow: hidden;
+            line-height: 19px;
+            height: 19px;
+            display: -moz-inline-stack;
+            display: inline-block;
+            zoom: 1;
+            *display: block;
+        }
+
+#sbContent .scoreboard-condensed .boxscore .infographic {
+    padding: 5px;
+}
+
+#sbContent .scoreboard-condensed .boxscore .menOnBase {
+    width: 36px;
+    height: 26px;
+    margin: 0 auto;
+}
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase dl {
+        position: relative;
+        width: 36px;
+        height: 26px;
+        margin: 0;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase dt, #sbContent .scoreboard-condensed .boxscore .menOnBase dd {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url(/images/scoreboard/runners.png);
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase dd {
+        margin: 0;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase .first {
+        left: 20px;
+        top: 10px;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase .second {
+        left: 10px;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase .third {
+        left: 0;
+        top: 10px;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase .runner {
+        background-position: -16px 0;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase .moved {
+        background-position: -32px 0;
+    }
+
+    #sbContent .scoreboard-condensed .boxscore .menOnBase abbr, #sbContent .scoreboard-condensed .boxscore .menOnBase span {
+        opacity: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        text-indent: -999em;
+        overflow: hidden;
+    }
+
+#sbContent .scoreboard-condensed .boxscore .countAndOuts {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 3px;
+}
+
+#sbContent .scoreboard-condensed .long {
+    font-size: 10px;
+}
+
+#sbElevenAm {
+    font-size: 11px;
+    line-height: 12px;
+    position: absolute;
+    right: 42px;
+    top: -30px;
+}
+
+#metaWrap_es #sbElevenAm {
+    font-size: 11px;
+    line-height: 12px;
+    position: absolute;
+    right: 12px;
+    top: -30px;
+}
+
+#sbViewToggle {
+    right: 310px;
+    position: absolute;
+    top: -30px;
+}
+
+    #sbViewToggle .label {
+        padding: 5px;
+        width: 5em;
+        float: left;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: bold;
+        font-size: 10px;
+        height: 31px;
+        line-height: 12px;
+    }
+
+    #sbViewToggle .ui-buttonset {
+        position: relative;
+    }
+
+    #sbViewToggle .leagueGamesViewLabel {
+        border: 0;
+        margin: 0;
+    }
+
+        #sbViewToggle .leagueGamesViewLabel span {
+            display: block;
+            width: 62px;
+            height: 24px;
+            background: url(/images/scoreboard/sbViewToggle2013.png) no-repeat;
+            text-indent: -999em;
+            overflow: hidden;
+        }
+
+    #sbViewToggle #leagueGamesViewCondensedLabel span {
+        margin-left: -1px;
+    }
+
+    #sbViewToggle #leagueGamesViewExpandedLabel span {
+        background-position: 0 0;
+    }
+
+    #sbViewToggle #leagueGamesViewCondensedLabel span {
+        background-position: -61px 0;
+    }
+
+    #sbViewToggle #leagueGamesViewExpandedLabel.ui-state-active span {
+        background-position: 0 -24px;
+    }
+
+    #sbViewToggle #leagueGamesViewCondensedLabel.ui-state-active span {
+        background-position: -61px -24px;
+    }
+
+    #sbViewToggle .ui-button-text {
+        padding: 0;
+    }
+
+#sbContent .noGames {
+    padding: 1em;
+    margin: 0 2em 1em;
+    text-align: center;
+    background: #ffc;
+    border: 1px solid #fc0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-style: italic;
+    width: 620px;
+}
+
+#sbFeaturedGame {
+    clear: both;
+    overflow: hidden;
+    display: none;
+    height: 310px;
+}
+
+    #sbFeaturedGame .sbFeaturedGameView {
+        width: 660px;
+        float: left;
+    }
+
+#sbLeagueGames .sbFeaturedGameEmpty {
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+    background: #ffc;
+    border: 1px solid #fc0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-style: italic;
+    width: 640px;
+}
+
+#sbFeaturedGame .boxscore .info, #sbFeaturedGame .boxscore .info * {
+    font-size: 12px!important;
+    line-height: 15px!important;
+}
+
+#sbFeaturedGame .boxscore .during .info {
+    padding-left: 126px;
+}
+
+#sbFeaturedGame .boxscore .during .pitcherAndBatter {
+    margin-left: -120px;
+    width: 110px;
+    float: left;
+}
+
+#sbFeaturedGame .boxscore .linescore .team abbr {
+    display: none;
+}
+
+#sbFeaturedGame .boxscore .linescore .inning, #sbFeaturedGame .boxscore .linescore .runs, #sbFeaturedGame .boxscore .linescore .hits, #sbFeaturedGame .boxscore .linescore .errors {
+    width: 2.46153846em;
+}
+
+#sbBoxscores .boxscore .linescore .team .teamName {
+    display: none;
+}
+
+#sbBoxscores .boxscores .featured {
+    display: block;
+}
+
+#videoHighLights {
+    height: 250px;
+    display: none;
+}
+
+    #videoHighLights .ad {
+        position: relative;
+        left: 675px;
+        top: -141px;
+    }
+
+#clipstrip #cs_hdr {
+    color: #000;
+    font: 18px/18px adelle,arial,sans-serif;
+    margin-bottom: 10px;
+}
+
+#clipstrip #clipcontainer {
+    width: 646px;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background: #f2f2f2;
+    margin-bottom: 30px;
+}
+
+    #clipstrip #clipcontainer #cs_sponsor {
+        position: absolute;
+        height: 25px;
+        top: 5px;
+        left: 783px;
+        width: 175px;
+    }
+
+    #clipstrip #clipcontainer #cs_carousel_bg {
+        height: 93px;
+        left: 20px;
+        position: absolute;
+        top: 70px;
+        width: 605px;
+    }
+
+    #clipstrip #clipcontainer #cs_carousel_container {
+        height: 250px;
+        overflow: hidden;
+        position: absolute;
+        top: 15px;
+        width: 618px;
+        left: 30px;
+    }
+
+    #clipstrip #clipcontainer li a:before {
+        box-shadow: 0 0 5px 1px rgba(0,0,0,0.3) inset;
+        content: "";
+        height: 70px;
+        position: absolute;
+        width: 124px;
+        top: 0;
+        left: 0;
+    }
+
+    #clipstrip #clipcontainer li div a:before {
+        box-shadow: none;
+    }
+
+    #clipstrip #clipcontainer li a:hover:before {
+        background-color: black;
+        opacity: .4;
+        filter: alpha(opacity=40);
+    }
+
+    #clipstrip #clipcontainer li div a:hover:before {
+        opacity: 0;
+    }
+
+    #clipstrip #clipcontainer li {
+        width: 139px;
+        height: 110px;
+        position: relative;
+        margin-right: 15px;
+        float: left;
+    }
+
+        #clipstrip #clipcontainer li a span.playBtn {
+            background: url("/mlb/images/homepage/y2012/video_carousel.png") no-repeat;
+            background-position: -14px -338px;
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            top: 0;
+            left: 6px;
+        }
+
+    #clipstrip #clipcontainer .cs_video_play {
+        background: url("/shared/components/mediawall/v3.1/images/mediawall.png") no-repeat scroll -8px -4px transparent;
+        height: 35px;
+        left: 0;
+        position: absolute;
+        top: 2px;
+        width: 41px;
+        z-index: 2;
+        display: none;
+    }
+
+    #clipstrip #clipcontainer li a.cs_llithumb {
+        display: block;
+        border: 3px solid #e6bc2c;
+        width: 154px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 17px 0 0;
+        height: 69px;
+        color: #e6bc2c;
+        background: #565656;
+        background: -moz-linear-gradient(top,#565656 0,#0e0e0e 61%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#565656),color-stop(61%,#0e0e0e));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#565656',endColorstr='#0e0e0e',GradientType=0);
+    }
+
+        #clipstrip #clipcontainer li a.cs_llithumb:hover {
+            text-decoration: none;
+        }
+
+    #clipstrip #clipcontainer .cs_caption_bg {
+        height: 24px;
+        left: 0;
+        opacity: .7;
+        filter: Alpha(Opacity=70);
+        position: absolute;
+        top: 46px;
+        width: 124px;
+    }
+
+    #clipstrip #clipcontainer .cs_caption {
+        color: #000;
+        font-family: arial;
+        font-size: 11px;
+        position: absolute;
+        top: 70px;
+        width: 124px;
+        left: 0;
+    }
+
+        #clipstrip #clipcontainer .cs_caption a {
+            color: #000;
+        }
+
+        #clipstrip #clipcontainer .cs_caption.cs_notify, #clipstrip #clipcontainer .cs_caption.cs_notify strong {
+            color: #e6bc2c;
+        }
+
+    #clipstrip #clipcontainer #cs_arrow_left, #clipstrip #cs_arrow_right {
+        background: url("/mlb/images/homepage/y2012/video_carousel.png") no-repeat scroll 0 -37px transparent;
+        cursor: pointer;
+        height: 41px;
+        left: 30px;
+        position: absolute;
+        top: 82px;
+        width: 41px;
+        z-index: 3;
+    }
+
+    #clipstrip #clipcontainer #cs_arrow_right {
+        left: 585px;
+        background-position: -57px -37px;
+    }
+
+    #clipstrip #clipcontainer #cs_arrow_left:hover {
+        background-position: 0 -196px;
+        cursor: pointer;
+    }
+
+    #clipstrip #clipcontainer #cs_arrow_right:hover {
+        background-position: -57px -196px;
+        cursor: pointer;
+    }
+
+#clipstripAd {
+    display: none;
+    float: right;
+}
+
+#clipstrip #clipcontainer #moreHighLights {
+    display: block;
+    position: absolute;
+    top: 223px;
+    left: 30px;
+}
+
+    #clipstrip #clipcontainer #moreHighLights a {
+        color: #000;
+        font-weight: normal;
+        line-height: 18px;
+        font-family: mlb_primary;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+#clipstrip #clipcontainer #paginator {
+    height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+    #clipstrip #clipcontainer #paginator li {
+        background: url("/mlb/images/homepage/y2012/video_carousel.png") no-repeat scroll -42px -322px transparent;
+        cursor: pointer;
+        float: left;
+        height: 10px;
+        margin-right: 7px;
+        width: 10px;
+    }
+
+    #clipstrip #clipcontainer #paginator .nav_circle_on {
+        background-position: -26px -322px;
+    }
+
+@font-face {
+    font-family: 'adelle';
+    src: url('/shared/fonts/adellebasicbold/adelle.eot?') format('eot'),url('/shared/fonts/adellebasicbold/adelle.woff') format('woff'),url('/shared/fonts/adellebasicbold/adelle.svg#webfontJwXbgJrv') format('svg'),url('/shared/fonts/adellebasicbold/adelle.ttf') format('truetype');
+}
+
+.bam-daypicker, .bam-monthpicker {
+    margin: 1em 0;
+}
+
+    .bam-daypicker .ui-state-default, .bam-daypicker .ui-widget-content .ui-state-default, .bam-daypicker .ui-widget-header .ui-state-default, .bam-daypicker .ui-state-hover, .bam-daypicker .ui-widget-content .ui-state-hover, .bam-daypicker .ui-widget-header .ui-state-hover, .bam-daypicker .ui-state-focus, .bam-daypicker .ui-widget-content .ui-state-focus, .bam-daypicker .ui-widget-header .ui-state-focus, .bam-monthpicker .ui-state-default, .bam-monthpicker .ui-widget-content .ui-state-default, .bam-monthpicker .ui-widget-header .ui-state-default, .bam-monthpicker .ui-state-hover, .bam-monthpicker .ui-widget-content .ui-state-hover, .bam-monthpicker .ui-widget-header .ui-state-hover, .bam-monthpicker .ui-state-focus, .bam-monthpicker .ui-widget-content .ui-state-focus, .bam-monthpicker .ui-widget-header .ui-state-focus {
+        background: 0;
+    }
+
+    .bam-daypicker .bam-daypicker-previous, .bam-daypicker .bam-daypicker-toggle, .bam-daypicker .bam-daypicker-next, .bam-monthpicker .bam-monthpicker-previous, .bam-monthpicker .bam-monthpicker-toggle, .bam-monthpicker .bam-monthpicker-next {
+        margin: 0 14px 0 0;
+        border: 0;
+        padding: 0;
+        height: 20px;
+        line-height: 20px;
+        filter: none;
+    }
+
+    .bam-daypicker .bam-daypicker-previous, .bam-daypicker .bam-daypicker-next, .bam-monthpicker .bam-monthpicker-previous, .bam-monthpicker .bam-monthpicker-next {
+        width: 20px;
+        color: blue;
+        background: url(/images/homepage/team/y2011/controls/mlb.png) no-repeat;
+    }
+
+        .bam-daypicker .bam-daypicker-previous span, .bam-daypicker .bam-daypicker-next span, .bam-monthpicker .bam-monthpicker-previous span, .bam-monthpicker .bam-monthpicker-next span {
+            text-indent: -99em;
+            overflow: hidden;
+        }
+
+    .bam-daypicker .bam-daypicker-previous, .bam-monthpicker .bam-monthpicker-previous {
+        background-position: -3px -78px;
+    }
+
+    .bam-daypicker .bam-daypicker-next, .bam-monthpicker .bam-monthpicker-next {
+        background-position: -3px -113px;
+    }
+
+    .bam-daypicker .bam-daypicker-previous.ui-state-hover, .bam-monthpicker .bam-monthpicker-previous.ui-state-hover {
+        background-position: -3px -44px;
+    }
+
+    .bam-daypicker .bam-daypicker-next.ui-state-hover, .bam-monthpicker .bam-monthpicker-next.ui-state-hover {
+        background-position: -3px -5px;
+    }
+
+    .bam-daypicker .bam-daypicker-toggle, .bam-monthpicker .bam-monthpicker-toggle {
+        width: 200px;
+        text-align: center;
+        color: #000;
+    }
+
+        .bam-daypicker .bam-daypicker-previous .ui-button-text, .bam-daypicker .bam-daypicker-toggle .ui-button-text, .bam-daypicker .bam-daypicker-next .ui-button-text, .bam-monthpicker .bam-monthpicker-previous .ui-button-text, .bam-monthpicker .bam-monthpicker-toggle .ui-button-text, .bam-monthpicker .bam-monthpicker-next .ui-button-text {
+            padding: 0;
+            font: 18px/20px adelle,arial,sans-serif;
+        }
+
+        .bam-daypicker .bam-daypicker-toggle .ui-button-text, .bam-monthpicker .bam-monthpicker-toggle .ui-button-text {
+            padding-right: 29px;
+            display: inline;
+            background: url(/images/homepage/team/y2011/controls/mlb.png) no-repeat right -257px;
+        }
+
+    .bam-daypicker .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current, .bam-monthpicker .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+        float: none;
+        width: 100%;
+        margin: 4px auto;
+    }
+
+    .bam-daypicker .bam-daypicker-calendar *, .bam-monthpicker .bam-monthpicker-calendar * {
+        font-family: adelle,arial,sans-serif;
+        font-weight: normal;
+    }
+
+    .bam-monthpicker .bam-monthpicker-toggle {
+        width: 220px;
+    }
+/*! stopgap_end */

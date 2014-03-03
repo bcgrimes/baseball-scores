@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<games date="20120302">
+   <game calendar_event_id="14-336450-2012-03-02" id="2012/03/02/guhbbc-wasmlb-1"
+         game_pk="336450"
+         group="MLB"
+         game_type="E"
+         event_time="12:00 PM"
+         venue="Space Coast Stadium"
+         venue_id="2513"
+         status="Final"
+         ind="F"
+         inning="9"
+         top_inning="Y"
+         away_code="guh"
+         away_file_code="t2330"
+         away_team_id="2330"
+         away_name_abbrev="GU"
+         away_team_name="Hoyas"
+         away_score="0"
+         home_code="was"
+         home_file_code="was"
+         home_team_id="120"
+         home_name_abbrev="WSH"
+         home_team_name="Nationals"
+         home_score="3"
+         gameday_sw="N"
+         media_state="media_soon">
+      <game_media>
+         <homebase>
+            <media type="mlbtv_home" id="20116585" display="MLB.com" free="NO"
+                   combined_media_state="MEDIA_DONE"
+                   state="MEDIA_DONE"
+                   blackout=""
+                   playback_scenario="HTTP_CLOUD_WIRED_WEB"/>
+            <media type="mlbtv_home" id="20116585" display="MLB.com" free="NO"
+                   combined_media_state="MEDIA_DONE"
+                   state="MEDIA_DONE"
+                   blackout=""
+                   playback_scenario="FMS_CLOUD"/>
+         </homebase>
+         <newsroom/>
+      </game_media>
+   </game>
+   <game calendar_event_id="14-332094-2012-03-02" id="2012/03/02/flsbbc-detmlb-1"
+         game_pk="332094"
+         group="MLB"
+         game_type="E"
+         event_time="1:05 PM"
+         venue="Joker Marchant Stadium"
+         venue_id="2511"
+         status="Final"
+         ind="F"
+         inning="9"
+         top_inning="Y"
+         away_code="fls"
+         away_file_code="fso"
+         away_team_id="228"
+         away_name_abbrev="FSC"
+         away_team_name="Mocs"
+         away_score="1"
+         home_code="det"
+         home_file_code="det"
+         home_team_id="116"
+         home_name_abbrev="DET"
+         home_team_name="Tigers"
+         home_score="11"
+         gameday_sw="N"
+         media_state="media_off">
+      <game_media>
+         <homebase>
+            <media type="mlbtv_home" id="20116651" display="MLB.com" free="NO"
+                   combined_media_state="MEDIA_OFF"
+                   state="MEDIA_OFF"
+                   blackout=""
+                   playback_scenario="HTTP_CLOUD_WIRED_WEB"/>
+         </homebase>
+         <newsroom/>
+      </game_media>
+   </game>
+   <game calendar_event_id="" id="2012/03/02/usfbbc-nyamlb-1" game_pk="332096"
+         group="MLB"
+         game_type="E"
+         event_time="1:05 PM"
+         venue="George M. Steinbrenner Field"
+         venue_id="2523"
+         status="Final"
+         ind="F"
+         inning="9"
+         top_inning="Y"
+         away_code="usf"
+         away_file_code="t2292"
+         away_team_id="2292"
+         away_name_abbrev="USF"
+         away_team_name="Bulls"
+         away_score="0"
+         home_code="nya"
+         home_file_code="nyy"
+         home_team_id="147"
+         home_name_abbrev="NYY"
+         home_team_name="Yankees"
+         home_score="11"
+         gameday_sw="N"
+         media_state="media_dead">
+      <game_media>
+         <newsroom/>
+      </game_media>
+   </game>
+   <game calendar_event_id="14-332095-2012-03-02" id="2012/03/02/seamlb-oakmlb-1"
+         game_pk="332095"
+         group="MLB"
+         game_type="S"
+         event_time="3:05 PM"
+         venue="Phoenix Municipal Stadium"
+         venue_id="2524"
+         status="Final"
+         ind="F"
+         inning="9"
+         top_inning="N"
+         away_code="sea"
+         away_file_code="sea"
+         away_team_id="136"
+         away_name_abbrev="SEA"
+         away_team_name="Mariners"
+         away_score="8"
+         home_code="oak"
+         home_file_code="oak"
+         home_team_id="133"
+         home_name_abbrev="OAK"
+         home_team_name="Athletics"
+         home_score="5"
+         gameday_sw="Y"
+         media_state="media_archive">
+      <game_media>
+         <homebase>
+            <media type="home_audio" id="20114735" display="MLB.com"
+                   combined_media_state="MEDIA_ARCHIVE"
+                   state="MEDIA_ARCHIVE"
+                   blackout=""
+                   playback_scenario="AUDIO_FMS_32K"/>
+            <media type="away_audio" id="20114733" display="KIRO"
+                   combined_media_state="MEDIA_ARCHIVE"
+                   state="MEDIA_ARCHIVE"
+                   blackout=""
+                   playback_scenario="AUDIO_FMS_32K"/>
+         </homebase>
+         <newsroom/>
+      </game_media>
+   </game>
+</games>

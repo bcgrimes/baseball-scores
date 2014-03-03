@@ -1,0 +1,148 @@
+﻿/*
+ * The following styles have been copied from the MLB scores website in order to display the team logo images.
+ * This file is not covered by the MIT open source license.
+ */
+.team {
+    margin-left: 4px;
+    background: url(../images/logo_sprite.png) no-repeat 6px 0;
+    height: 36px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #333;
+    padding-left: 48px;
+    overflow: hidden;
+    zoom: 1;
+}
+.ana {
+    background-position: 6px -504px;
+}
+
+.ari {
+    background-position: 6px -36px;
+}
+
+.atl {
+    background-position: 6px -72px;
+}
+
+.bal {
+    background-position: 6px -108px;
+}
+
+.bos {
+    background-position: 6px -144px;
+}
+
+.chc {
+    background-position: 6px -180px;
+}
+
+.cin {
+    background-position: 6px -216px;
+}
+
+.cle {
+    background-position: 6px -252px;
+}
+
+.col {
+    background-position: 6px -288px;
+}
+
+.cws {
+    background-position: 6px -324px;
+}
+
+.det {
+    background-position: 6px -360px;
+}
+
+.fla {
+    background-position: 6px -396px;
+}
+
+.hou {
+    background-position: 6px -432px;
+}
+
+.kc {
+    background-position: 6px -468px;
+}
+
+.la {
+    background-position: 6px -540px;
+}
+
+.mia {
+    background-position: 6px -396px;
+}
+
+.mil {
+    background-position: 6px -576px;
+}
+
+.min {
+    background-position: 6px -612px;
+}
+
+.nym {
+    background-position: 6px -648px;
+}
+
+.nyy {
+    background-position: 6px -684px;
+}
+
+.oak {
+    background-position: 6px -720px;
+}
+
+.phi {
+    background-position: 6px -756px;
+}
+
+.pit {
+    background-position: 6px -792px;
+}
+
+.sd {
+    background-position: 6px -828px;
+}
+
+.sea {
+    background-position: 6px -864px;
+}
+
+.sf {
+    background-position: 6px -900px;
+}
+
+.stl {
+    background-position: 6px -936px;
+}
+
+.tb {
+    background-position: 6px -972px;
+}
+
+.tex {
+    background-position: 6px -1008px;
+}
+
+.tor {
+    background-position: 6px -1044px;
+}
+
+.was {
+    background-position: 6px -1080px;
+}
+
+.al {
+    background-position: 6px -1116px;
+}
+
+.nl {
+    background-position: 6px -1152px;
+}

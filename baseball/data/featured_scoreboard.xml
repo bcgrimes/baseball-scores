@@ -1,0 +1,121 @@
+<!--Copyright 2011 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt--><games><game id="2011/10/28/texmlb-slnmlb-1" venue="Busch Stadium" game_pk="317073" time="8:05" time_zone="ET" ampm="PM" away_time="7:05" away_time_zone="CT" away_ampm="PM" home_time="7:05" home_time_zone="CT" home_ampm="PM" game_type="W" resume_date="" time_zone_aw_lg="-4" time_zone_hm_lg="-4" time_aw_lg="8:05" aw_lg_ampm="PM" tz_aw_lg_gen="ET" time_hm_lg="8:05" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2889" scheduled_innings="9" description="The 107th World Series, Game 7" away_name_abbrev="TEX" home_name_abbrev="STL" away_code="tex" away_file_code="tex" away_team_id="140" away_team_city="Texas" away_team_name="Rangers" away_division="W" away_league_id="103" away_sport_code="mlb" home_code="sln" home_file_code="stl" home_team_id="138" home_team_city="St. Louis" home_team_name="Cardinals" home_division="C" home_league_id="104" home_sport_code="mlb" day="FRI" gameday_sw="E" away_games_back="" home_games_back="" away_games_back_wildcard="" home_games_back_wildcard="" venue_w_chan_loc="USMO0787" series="World Series" series_num="7" ser_home_nbr="1" ser_games="7" gameday="2011_10_28_texmlb_slnmlb_1" away_win="3" away_loss="4" home_win="4" home_loss="3" league="AN">
+      <status status="Final" ind="F" reason="" inning="9" top_inning="Y" b="0" s="0" o="3" inning_state="" />
+      <linescore>
+         <inning away="2" home="2" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" home="1" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" home="2" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" home="1" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" /> 
+         <r away="2" home="6" diff="4" /> 
+         <h away="6" home="7" /> 
+         <e away="0" home="1" /> 
+      </linescore>
+      <home_runs>
+         <player id="501800" last="Craig" first="Allen" name_display_roster="Craig" number="21" hr="1" std_hr="3" inning="3" runners="0" team_code="sln" />
+      </home_runs>
+      <winning_pitcher id="112020" last="Carpenter" first="Chris" name_display_roster="Carpenter" number="29" era="2.84" wins="2" losses="0" />
+      <losing_pitcher id="457448" last="Harrison" first="Matt" name_display_roster="Harrison" number="54" era="7.04" wins="0" losses="2" />
+      <save_pitcher id="" last="" first="" number="" name_display_roster="" era="0" wins="0" losses="0" saves="0" />
+      <links mlbtv="bam.media.launchPlayer({calendar_event_id:'14-317073-2011-10-28',media_type:'video'})" wrapup="/mlb/gameday/index.jsp?gid=2011_10_28_texmlb_slnmlb_1&amp;mode=wrap&amp;c_id=mlb" home_audio="bam.media.launchPlayer({calendar_event_id:'14-317073-2011-10-28',media_type:'audio'})" away_audio="bam.media.launchPlayer({calendar_event_id:'14-317073-2011-10-28',media_type:'audio'})" home_preview="/mlb/gameday/index.jsp?gid=2011_10_28_texmlb_slnmlb_1&amp;mode=preview&amp;c_id=mlb" away_preview="/mlb/gameday/index.jsp?gid=2011_10_28_texmlb_slnmlb_1&amp;mode=preview&amp;c_id=mlb" preview="/mlb/gameday/index.jsp?gid=2011_10_28_texmlb_slnmlb_1&amp;mode=preview&amp;c_id=mlb" tv_station="FOX, SN" />
+      <broadcast>
+        <home>
+            <tv>FOX, SN</tv>
+            <radio>KMOX 1120, ESPN Radio</radio>
+         </home>
+        <away>
+            <tv>FOX, SN</tv>
+            <radio>103.3 ESPN , ESPN Radio</radio>
+         </away>
+      </broadcast>
+      <game_media>
+         <media type="game" calendar_event_id="14-317073-2011-10-28" start="2011-10-28T20:05:00-0400" title="TEX @ STL" has_mlbtv="true" free="NO" media_state="media_archive" thumbnail="http://mediadownloads.mlb.com/mlbam/preview/texsln_317073_preview.jpg" />
+         <media type="vpp" content_id="19959961" topic_id="" headline="Cardinals win 2011 World Series" thumbnail="http://mediadownloads.mlb.com/mlbam/2011/10/28/images/mlbf_19959961_th_7.jpg" />
+      </game_media>
+      <video_thumbnail>http://mediadownloads.mlb.com/mlbam/preview/texsln_317073_preview.jpg</video_thumbnail>
+   </game><game id="2011/10/22/slnmlb-texmlb-1" venue="Rangers Ballpark in Arlington" game_pk="317069" time="8:05" time_zone="ET" ampm="PM" away_time="7:05" away_time_zone="CT" away_ampm="PM" home_time="7:05" home_time_zone="CT" home_ampm="PM" game_type="W" resume_date="" time_zone_aw_lg="-4" time_zone_hm_lg="-4" time_aw_lg="8:05" aw_lg_ampm="PM" tz_aw_lg_gen="ET" time_hm_lg="8:05" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="13" scheduled_innings="9" description="The 107th World Series, Game 3" away_name_abbrev="STL" home_name_abbrev="TEX" away_code="sln" away_file_code="stl" away_team_id="138" away_team_city="St. Louis" away_team_name="Cardinals" away_division="C" away_league_id="104" away_sport_code="mlb" home_code="tex" home_file_code="tex" home_team_id="140" home_team_city="Texas" home_team_name="Rangers" home_division="W" home_league_id="103" home_sport_code="mlb" day="SAT" gameday_sw="E" away_games_back="" home_games_back="" away_games_back_wildcard="" home_games_back_wildcard="" venue_w_chan_loc="USTX0045" series="World Series" series_num="3" ser_home_nbr="1" ser_games="7" gameday="2011_10_22_slnmlb_texmlb_1" away_win="2" away_loss="1" home_win="1" home_loss="2" league="NA">
+      <status status="Final" ind="F" reason="" inning="9" top_inning="N" b="0" s="0" o="3" inning_state="" />
+      <linescore>
+         <inning away="1" home="0" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" home="0" /> 
+         <inning away="4" home="3" /> 
+         <inning away="3" home="3" /> 
+         <inning away="4" home="0" /> 
+         <inning away="2" home="1" /> 
+         <inning away="1" home="0" /> 
+         <inning away="1" home="0" /> 
+         <r away="16" home="7" diff="9" /> 
+         <h away="15" home="13" /> 
+         <e away="0" home="3" /> 
+      </linescore>
+      <home_runs>
+         <player id="443558" last="Cruz" first="Nelson" name_display_roster="Cruz, N" number="17" hr="1" std_hr="1" inning="4" runners="1" team_code="tex" />
+         <player id="405395" last="Pujols" first="Albert" name_display_roster="Pujols" number="5" hr="3" std_hr="3" inning="9" runners="0" team_code="sln" />
+         <player id="276545" last="Young" first="Michael" name_display_roster="Young, M" number="10" hr="1" std_hr="1" inning="4" runners="0" team_code="tex" />
+         <player id="501800" last="Craig" first="Allen" name_display_roster="Craig" number="21" hr="1" std_hr="1" inning="1" runners="0" team_code="sln" />
+      </home_runs>
+      <winning_pitcher id="458681" last="Lynn" first="Lance" name_display_roster="Lynn" number="62" era="3.00" wins="1" losses="0" />
+      <losing_pitcher id="457448" last="Harrison" first="Matt" name_display_roster="Harrison" number="54" era="7.36" wins="0" losses="1" />
+      <save_pitcher id="" last="" first="" number="" name_display_roster="" era="0" wins="0" losses="0" saves="0" />
+      <links mlbtv="bam.media.launchPlayer({calendar_event_id:'14-317069-2011-10-22',media_type:'video'})" wrapup="/mlb/gameday/index.jsp?gid=2011_10_22_slnmlb_texmlb_1&amp;mode=wrap&amp;c_id=mlb" home_audio="bam.media.launchPlayer({calendar_event_id:'14-317069-2011-10-22',media_type:'audio'})" away_audio="bam.media.launchPlayer({calendar_event_id:'14-317069-2011-10-22',media_type:'audio'})" home_preview="/mlb/gameday/index.jsp?gid=2011_10_22_slnmlb_texmlb_1&amp;mode=preview&amp;c_id=mlb" away_preview="/mlb/gameday/index.jsp?gid=2011_10_22_slnmlb_texmlb_1&amp;mode=preview&amp;c_id=mlb" preview="/mlb/gameday/index.jsp?gid=2011_10_22_slnmlb_texmlb_1&amp;mode=preview&amp;c_id=mlb" tv_station="FOX, SN" />
+      <broadcast>
+        <home>
+            <tv>FOX, SN</tv>
+            <radio>103.3 ESPN , ESPN Radio</radio>
+         </home>
+        <away>
+            <tv>FOX, SN</tv>
+            <radio>KMOX 1120, ESPN Radio</radio>
+         </away>
+      </broadcast>
+      <game_media>
+         <media type="game" calendar_event_id="14-317069-2011-10-22" start="2011-10-22T20:05:00-0400" title="STL @ TEX" has_mlbtv="true" free="NO" media_state="media_archive" thumbnail="http://mediadownloads.mlb.com/mlbam/preview/slntex_317069_preview.jpg" />
+         <media type="vpp" content_id="19939895" topic_id="25588884" headline="Pujols ties Series HR mark" thumbnail="http://mediadownloads.mlb.com/mlbam/2011/10/22/images/mlbf_19939895_th_7.jpg" />
+      </game_media>
+      <video_thumbnail>http://mediadownloads.mlb.com/mlbam/preview/slntex_317069_preview.jpg</video_thumbnail>
+   </game><game id="2011/10/13/texmlb-detmlb-1" venue="Comerica Park" game_pk="317060" time="4:19" time_zone="ET" ampm="PM" away_time="3:19" away_time_zone="CT" away_ampm="PM" home_time="4:19" home_time_zone="ET" home_ampm="PM" game_type="L" resume_date="" time_zone_aw_lg="-4" time_zone_hm_lg="-4" time_aw_lg="4:19" aw_lg_ampm="PM" tz_aw_lg_gen="ET" time_hm_lg="4:19" hm_lg_ampm="PM" tz_hm_lg_gen="ET" venue_id="2394" scheduled_innings="9" description="ALCS Game 5" away_name_abbrev="TEX" home_name_abbrev="DET" away_code="tex" away_file_code="tex" away_team_id="140" away_team_city="Texas" away_team_name="Rangers" away_division="W" away_league_id="103" away_sport_code="mlb" home_code="det" home_file_code="det" home_team_id="116" home_team_city="Detroit" home_team_name="Tigers" home_division="C" home_league_id="103" home_sport_code="mlb" day="THU" gameday_sw="E" away_games_back="" home_games_back="" away_games_back_wildcard="" home_games_back_wildcard="" venue_w_chan_loc="USMI0229" series="ALCS" series_num="5" ser_home_nbr="1" ser_games="7" gameday="2011_10_13_texmlb_detmlb_1" away_win="3" away_loss="2" home_win="2" home_loss="3" league="AA">
+      <status status="Final" ind="F" reason="" inning="9" top_inning="Y" b="0" s="0" o="3" inning_state="" />
+      <linescore>
+         <inning away="1" home="0" /> 
+         <inning away="0" home="0" /> 
+         <inning away="0" home="1" /> 
+         <inning away="0" home="1" /> 
+         <inning away="1" home="0" /> 
+         <inning away="0" home="4" /> 
+         <inning away="0" home="1" /> 
+         <inning away="2" home="0" /> 
+         <inning away="1" /> 
+         <r away="5" home="7" diff="2" /> 
+         <h away="10" home="10" /> 
+         <e away="1" home="1" /> 
+      </linescore>
+      <home_runs>
+         <player id="443558" last="Cruz" first="Nelson" name_display_roster="Cruz, N" number="17" hr="1" std_hr="5" inning="8" runners="1" team_code="tex" />
+         <player id="488671" last="Avila" first="Alex" name_display_roster="Avila" number="13" hr="1" std_hr="1" inning="3" runners="0" team_code="det" />
+         <player id="430605" last="Raburn" first="Ryan" name_display_roster="Raburn" number="25" hr="1" std_hr="2" inning="7" runners="0" team_code="det" />
+         <player id="430321" last="Young" first="Delmon" name_display_roster="Young, D" number="21" hr="2" std_hr="2" inning="6" runners="1" team_code="det" />
+      </home_runs>
+      <winning_pitcher id="434378" last="Verlander" first="Justin" name_display_roster="Verlander" number="35" era="5.56" wins="1" losses="1" />
+      <losing_pitcher id="450351" last="Wilson" first="C.J." name_display_roster="Wilson, C" number="36" era="6.75" wins="0" losses="1" />
+      <save_pitcher id="457435" last="Coke" first="Phil" number="40" name_display_roster="Coke" era="2.70" wins="0" losses="0" saves="1" />
+      <links mlbtv="bam.media.launchPlayer({calendar_event_id:'14-317060-2011-10-13',media_type:'video'})" wrapup="/mlb/gameday/index.jsp?gid=2011_10_13_texmlb_detmlb_1&amp;mode=wrap&amp;c_id=mlb" home_audio="bam.media.launchPlayer({calendar_event_id:'14-317060-2011-10-13',media_type:'audio'})" away_audio="bam.media.launchPlayer({calendar_event_id:'14-317060-2011-10-13',media_type:'audio'})" home_preview="/mlb/gameday/index.jsp?gid=2011_10_13_texmlb_detmlb_1&amp;mode=preview&amp;c_id=mlb" away_preview="/mlb/gameday/index.jsp?gid=2011_10_13_texmlb_detmlb_1&amp;mode=preview&amp;c_id=mlb" preview="/mlb/gameday/index.jsp?gid=2011_10_13_texmlb_detmlb_1&amp;mode=preview&amp;c_id=mlb" tv_station="FOX, SN" />
+      <broadcast>
+        <home>
+            <tv>FOX, SN</tv>
+            <radio>WXYT 97.1 FM / 1270 AM, ESPN Radio</radio>
+         </home>
+        <away>
+            <tv>FOX, SN</tv>
+            <radio>103.3 ESPN , ESPN Radio</radio>
+         </away>
+      </broadcast>
+      <game_media>
+         <media type="game" calendar_event_id="14-317060-2011-10-13" start="2011-10-13T16:19:00-0400" title="TEX @ DET" has_mlbtv="true" free="NO" media_state="media_archive" thumbnail="http://mediadownloads.mlb.com/mlbam/preview/texdet_317060_preview.jpg" />
+         <media type="vpp" content_id="19895515" topic_id="" headline="Tigers hit for cycle in sixth" thumbnail="http://mediadownloads.mlb.com/mlbam/2011/10/13/images/mlbf_19895515_th_7.jpg" />
+      </game_media>
+      <video_thumbnail>http://mediadownloads.mlb.com/mlbam/preview/texdet_317060_preview.jpg</video_thumbnail>
+   </game></games>

@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>MLB Box Scores</title>
+        <meta name="description" content="MLB, boxscores, Brett Grimes, scores" />
+        <meta name="author" content="Brett C. Grimes" />
+        
+        <link rel="stylesheet" type="text/css" href="css/south-street/jquery-ui-1.10.4.custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/mlbscores.css" />
+        <link rel="stylesheet" type="text/css" href="css/mlb_logos.css" />
+        <link rel="stylesheet" type="text/css" href="css/basics.css" />   
+
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script> 
+        <script type="text/javascript" src="js/backbone-min.js"></script> 
+        <script type="text/javascript" src="js/backbone.marionette.min.js"></script>
+        <script type="text/javascript" src="js/modules/base.js"></script>
+        <script type="text/javascript" src="js/modules/mlbscores.js"></script>
+
+        <!-- Templates -->
+        <script type="text/template" id="mlb-scores-layout">
+            <div id="mlb-scores-layout-header" class="ui-corner-top ui-widget-header spacing"></div>
+            <div id="mlb-scores-layout-content" class="ui-widget-content spacing"></div>
+            <div id="mlb-scores-layout-footer" class="ui-corner-bottom ui-widget-header spacing"></div>
+            <div id="mlb-scores-wait" class="baseball-wait" style="z-index:100;"></div>
+        </script>
+        <script type="text/template" id="mlb-scores-header">
+            <div> 
+                <h2>Major League Baseball Box Scores</h2>
+            </div>
+            <div id="mlb-scores-datepicker">
+                <table style="width:100%;">
+                    <tr style="text-align:center;">
+                        <td>
+                            <div id="mlb-scores-view-buttonset">
+                                <input type="radio" name="radio" id="mlb-scores-list-button" checked="checked" /><label for="mlb-scores-list-button">Full</label>
+                                <input type="radio" name="radio" id="mlb-scores-grid-button" /><label for="mlb-scores-grid-button">Summary</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mlb-scores-date-buttonset">
+                                <button class="mlb-scores-datepicker-previous dateIconButton"></button>
+                                <input type="text" class="mlb-scores-datepicker-input dateButton ui-button ui-widget ui-state-default ui-button-text-only" value="<%= getDisplayGameDate() %>" />
+                                <button class="mlb-scores-datepicker-next dateIconButton"></button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="selLeagueContainer">
+                                <select id="mlb-scores-select-league">
+                                    <option value="mlb" selected="selected">MLB</option>
+                                    <option value="aaa">MILB AAA</option>
+                                    <option value="nat">National Team</option>
+                                    <option value="aax">MILB AA - Eastern League</option>
+                                    <option value="afa">MILB High A - Florida State League</option>
+                                    <option value="afx">MILB Low A - Midwest League</option>
+                                    <option value="asx">MILB Short A - NY/PA League</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </script>
+        <script type="text/template" id="mlb-scores-footer">
+            <div id="copyright"> 
+                <p>&copy; 2014 Brett C. Grimes</p>
+            </div> 
+            <!--<div class="ui-corner-all" style="float: right; position: relative; top: -2.25em; padding: 2px; border: 1px outset Gray;">--> 
+                <!--<a href="http://bcgrimes.baycg.com/Brett_Grimes.html" class="lowkeylink" style="color: #555;">Resume</a>-->
+            <!--</div>--> 
+        </script>
+        <!-- Game summary boxscore template -->
+        <script type="text/template" id="mlb-scores-summary-game-view">
+            <div class="boxScoresContainer ui-corner-all">
+                <div>
+                    <span class="gameType"><%= getGameTypeDescription(data.games.game) %></span>
+                </div>
+                <div class="boxScores">
+                <% _.each(data.games.game, function(gameData) { %> <!-- GameDay data: data.games.game -->
+                    <div class="boxScoreGrid">
+                        <table class="<%= gameData.gameday %> mlb-game-boxscore-table boxTable">
+                            <thead class="boxHeader">
+                                <tr>
+                                    <th class="boxHeaderItem gameStatus teamBox teamGridBox">
+                                        <%= gameData.status.status %><% if (gameData.status.reason != "" && gameData.status.reason != "Final") { %> (<%= gameData.status.reason %>)<% } %>
+                                    </th>
+                                    <!--<th class="boxHeaderItem boxSubtitle borderLeft">&nbsp;</th>--><!-- spacer -->
+                                    <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
+                                    <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
+                                    <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
+                                </tr>
+                            </thead>
+                            <tbody class="boxBody">
+                                <tr class="away">
+                                    <td class="boxBodyItem boxAway borderTop teamBox teamGridBox <% if (gameData.linescore != null && Number(gameData.linescore.r.away) > Number(gameData.linescore.r.home)) { %> gameWinner <% } %>">
+                                        <table>
+                                            <tr>
+                                            <% if (League == "aaa") { %>
+                                                <td>
+                                                    <img src="http://www.milb.com/shared/images/logos/50x50/<%=gameData.away_file_code%>.png" />
+                                                </td>
+                                            <% } else { %>
+                                                <td class="team <%= gameData.away_file_code %>"></td>
+                                            <% } %>
+                                                <td>
+                                                    <span class="teamName" title="<%= gameData.away_team_city %> <%= gameData.away_team_name %>"><%= gameData.away_name_abbrev %></span><br />
+                                                    <span class="teamRecord">(<%= gameData.away_win %>-<%= gameData.away_loss %>)</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!--<td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td>--><!-- spacer -->
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (gameData.linescore != null) { %><%= gameData.linescore.r.away%><% } %></td>
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (gameData.linescore != null) { %><%= gameData.linescore.h.away%><% } %></td>
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (gameData.linescore != null) { %><%= gameData.linescore.e.away%><% } %></td>
+                                </tr>
+                                <tr class="home">
+                                    <td class="boxBodyItem boxHome borderTop teamBox teamGridBox <% if (gameData.linescore != null && Number(gameData.linescore.r.home) > Number(gameData.linescore.r.away)) { %> gameWinner <% } %>">
+                                        <table>
+                                            <tr>
+                                            <% if (League == "aaa") { %>
+                                                <td>
+                                                    <img src="http://www.milb.com/shared/images/logos/50x50/<%=gameData.home_file_code%>.png" />
+                                                </td>
+                                            <% } else { %>
+                                                <td class="team <%= gameData.home_file_code %>"></td>
+                                            <% } %>
+                                                <td>
+                                                    <span class="teamName" title="<%= gameData.home_team_city %> <%= gameData.home_team_name %>"><%= gameData.home_name_abbrev %></span><br />
+                                                    <span class="teamRecord">(<%= gameData.home_win %>-<%= gameData.home_loss %>)</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!--<td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td>--><!-- spacer -->
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (gameData.linescore != null) { %><%= gameData.linescore.r.home %><% } %></td>
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (gameData.linescore != null) { %><%= gameData.linescore.h.home %><% } %></td>
+                                    <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (gameData.linescore != null) { %><%= gameData.linescore.e.home %><% } %></td>
+                                </tr>
+                                <tr>
+                                    <!--<td class="infographic borderTop">-->
+                                        <!--<div class="menOnBase">
+                                            <dl>
+                                                <dt class="first">
+                                                    <abbr title="First Base">1st:</abbr></dt>
+                                                <dd class="first">
+                                                    <span>Empty</span>
+                                                </dd>
+                                                <dt class="second">
+                                                    <abbr title="Second Base">2nd:</abbr></dt>
+                                                <dd class="second">
+                                                    <span>Empty</span>
+                                                </dd>
+                                                <dt class="third">
+                                                    <abbr title="Third Base">3rd:</abbr></dt>
+                                                <dd class="third">
+                                                    <span>Empty</span>
+                                                </dd>
+                                            </dl>
+                                        </div>-->
+                                    <!--</td>-->
+                                    <td class="borderTop" colspan="2">
+                                    <% if (gameData.status.ind != "F" && gameData.status.reason != "Tied" && gameData.status.status != "Cancelled" && gameData.status.status != "Postponed") { %>
+                                        <div class="countAndOuts">
+                                            <span class="count"><%= gameData.status.b %>-<%= gameData.status.s %></span>
+                                            <span class="outs"><%= gameData.status.o %> outs</span>
+                                        </div>
+                                    <% } %>
+                                    </td>
+                                    <td class="borderTop" colspan="2" style="text-align:right;">
+                                        <%= gameData.status.inning_state %> <%= gameData.status.inning %>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <% }) %>
+                </div>
+            </div>
+            <div class="copyrightMLB">
+                <div class="copyright">All data courtesy of Major League Baseball:</div>
+                <div class="copyright"><%= copyright %></div>
+            </div>
+        </script>
+
+        <!-- Game full boxscore template -->
+        <script type="text/template" id="mlb-scores-full-game-view">
+            <div class="boxScoresContainer">
+                <div>
+                    <span class="gameType"><%= getGameTypeDescription(data.games.game) %></span>
+                </div>
+                <div class="boxScores">
+                <% _.each(data.games.game, function(gameData) { %> <!-- GameDay data: data.games.game -->
+                    <div class="boxScoreList">
+                        <div class="boxTitle">
+                            <span><%= getTeamName(gameData, "away") %> at <%= getTeamName(gameData, "home") %></span>
+                            <% if (gameData.description != "") { %><span style="float:right;"><%= gameData.description %></span><% } %>
+                        </div>
+                        <div class="boxContainer ui-corner-all">
+                            <table class="<%= gameData.gameday %> mlb-game-boxscore-table boxTable">
+                                <thead class="boxHeader">
+                                    <tr>
+                                        <th class="boxHeaderItem gameStatus teamBox teamListBox">
+                                            <%= gameData.status.status %><% if (gameData.status.reason != "" && gameData.status.reason != "Final") { %> (<%= gameData.status.reason %>)<% } %>
+                                        </th>
+                                <% if (gameData.linescore != null) { %>
+                                    <% _.each(gameData.linescore.inning, function(inning, inningIndex) { %>
+                                        <th class="boxHeaderItem boxSubtitle borderLeft"><%= (inningIndex + 1) %></th>
+                                    <% }) %>
+                                <% } %>
+                                        <th class="boxSpacerItem boxSubtitle borderLeft">&nbsp;</th><!-- spacer -->
+                                        <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
+                                        <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
+                                        <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="boxBody">
+                                    <tr>
+                                        <td class="boxBodyItem boxAway borderTop teamBox teamListBox <% if (gameData.linescore != null && Number(gameData.linescore.r.away) > Number(gameData.linescore.r.home)) { %> gameWinner <% } %>">
+                                            <table>
+                                                <tr>
+                                                <% if (League == "aaa") { %>
+                                                    <td>
+                                                        <img src="http://www.milb.com/shared/images/logos/50x50/<%=gameData.away_file_code%>.png" />
+                                                    </td>
+                                                <% } else { %>
+                                                    <td class="team <%= gameData.away_file_code %>"></td>
+                                                <% } %>
+                                                    <td>
+                                                        <span class="teamName"><%= gameData.away_team_name %></span><br />
+                                                        <span class="teamRecord">(<%= gameData.away_win %>-<%= gameData.away_loss %>)</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                <% if (gameData.linescore != null) { %>
+                                    <% _.each(gameData.linescore.inning, function(inning, inningIndex) { %>
+                                        <td class="boxBodyItem boxAway borderLeft borderTop <% if (Number(inning.away) > 0) { %> boxRuns<% } %><% if (gameData.linescore.inning.length == inningIndex + 1 && gameData.status.top_inning == 'Y') { %> currentInning<% } %>"><%= inning.away %></td>
+                                    <% }) %>
+                                <% } %>
+                                        <td class="boxSpacerItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td><!-- spacer -->
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (gameData.linescore != null) { %><%= gameData.linescore.r.away%><% } %></td>
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (gameData.linescore != null) { %><%= gameData.linescore.h.away%><% } %></td>
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (gameData.linescore != null) { %><%= gameData.linescore.e.away%><% } %></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boxBodyItem boxHome borderTop teamBox teamListBox <% if (gameData.linescore != null && Number(gameData.linescore.r.home) > Number(gameData.linescore.r.away)) { %> gameWinner <% } %>">
+                                            <table>
+                                                <tr>
+                                                <% if (League == "aaa") { %>
+                                                    <td>
+                                                        <img src="http://www.milb.com/shared/images/logos/50x50/<%=gameData.home_file_code%>.png" />
+                                                    </td>
+                                                <% } else { %>
+                                                    <td class="team <%= gameData.home_file_code %>"></td>
+                                                <% } %>
+                                                    <td>
+                                                        <span class="teamName"><%= gameData.home_team_name %></span><br />
+                                                        <span class="teamRecord">(<%= gameData.home_win %>-<%= gameData.home_loss %>)</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                <% if (gameData.linescore != null) { %>
+                                    <% _.each(gameData.linescore.inning, function(inning, inningIndex) { %>
+                                        <td class="boxBodyItem boxHome borderLeft borderTop <% if (Number(inning.home) > 0) { %> boxRuns<% } %><% if (gameData.linescore.inning.length == inningIndex + 1 && gameData.status.top_inning == 'N') { %> currentInning<% } %>"><%= (inning.home == null && gameData.status.ind == "F" ? "-" : inning.home) %></td>
+                                    <% }) %>
+                                <% } %>
+                                        <td class="boxSpacerItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td><!-- spacer -->
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (gameData.linescore != null) { %><%= gameData.linescore.r.home %><% } %></td>
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (gameData.linescore != null) { %><%= gameData.linescore.h.home %><% } %></td>
+                                        <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (gameData.linescore != null) { %><%= gameData.linescore.e.home %><% } %></td>
+                                    </tr>
+                                    <tr>
+                                    <% if (gameData.linescore != null) { %>
+                                        <td class="boxBodyItem boxHome borderLeft borderTop" colspan="<%= Number(gameData.linescore.inning.length) %>"></td>
+                                    <% } %>
+                                        <td class="borderTop" colspan="3">
+                                    <% if (gameData.status.ind != "F" && gameData.status.status != "Cancelled" && gameData.status.status != "Postponed") { %>
+                                            <div class="countAndOuts">
+                                                <span class="count"><%= gameData.status.b %>-<%= gameData.status.s %></span>
+                                                <span class="outs"><%= gameData.status.o %> outs</span>
+                                            </div>
+                                    <% } %>
+                                        </td>
+                                        <td class="borderTop" colspan="2" style="text-align:right;">
+                                            <%= gameData.status.inning_state %> <%= gameData.status.inning %>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            <% }) %>
+                </div>
+            </div>
+            <div class="copyrightMLB">
+                <div class="copyright">All data courtesy of Major League Baseball:</div>
+                <div class="copyright"><%= copyright %></div>
+            </div>
+        </script>        
+    </head> 
+ 
+    <body> 
+        <div id="container" class="ui-corner-all">  
+            <div id="lCenter" class="alignCenter"></div> 
+        </div>
+
+        <script type="text/javascript">
+            //----------------------------------
+            // jQuery ready event code
+            //----------------------------------
+            $(function () {
+                App.start();
+            });
+            // End of jQuery ready event code
+            //----------------------------------
+        </script>
+    </body> 
+</html> 
