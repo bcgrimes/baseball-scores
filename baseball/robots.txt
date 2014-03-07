@@ -5,13 +5,7 @@ Disallow: /logs
 Disallow: /imgs
 Disallow: /css
 Disallow: /index_files
-Disallow: /photoalbum
-Disallow: /dcvending/cgi_bin
-Disallow: /pack226
 Disallow: /js
 Disallow: /data
-Disallow: /pumas
-Disallow: /bcgrimes
-Disallow: /bcgrimes/references.*
 
 # WebMatrix 1.0
