@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>mlbscores.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>mlbscores.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>﻿<span class="hljs-comment">/*!
+ * MLBScores Marionette Module
+ * mlbscores.js
+ * http://baycg.com/
+ *
+ * Copyright 2014, Brett Grimes
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Date: 09-Feb-2014
+ */</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <hr>
+<h2 id="base-mlbscores-module-definition">Base.MLBScores module definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+App.module(<span class="hljs-string">"MLBScores"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Mod, App, Backbone, Marionette, $, _)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Define the Module constants</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Constants = {
+        MonthName: {
+            <span class="hljs-number">0</span>: <span class="hljs-string">"January"</span>,
+            <span class="hljs-number">1</span>: <span class="hljs-string">"February"</span>,
+            <span class="hljs-number">2</span>: <span class="hljs-string">"March"</span>,
+            <span class="hljs-number">3</span>: <span class="hljs-string">"April"</span>,
+            <span class="hljs-number">4</span>: <span class="hljs-string">"May"</span>,
+            <span class="hljs-number">5</span>: <span class="hljs-string">"June"</span>,
+            <span class="hljs-number">6</span>: <span class="hljs-string">"July"</span>,
+            <span class="hljs-number">7</span>: <span class="hljs-string">"August"</span>,
+            <span class="hljs-number">8</span>: <span class="hljs-string">"September"</span>,
+            <span class="hljs-number">9</span>: <span class="hljs-string">"October"</span>,
+            <span class="hljs-number">10</span>: <span class="hljs-string">"November"</span>,
+            <span class="hljs-number">11</span>: <span class="hljs-string">"December"</span>
+        }
+    };</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-utility-functions">Base.MLBSCores.Utility functions</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+    Mod.Tools = {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>Returns a number as a string, padding single digit numbers with a leading zero</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        NumberPad2: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(number)</span> {</span>
+            number = <span class="hljs-built_in">Number</span>(number);
+            <span class="hljs-keyword">if</span> (number &lt; <span class="hljs-number">10</span>) {
+                <span class="hljs-keyword">return</span> <span class="hljs-string">"0"</span> + <span class="hljs-built_in">String</span>(number);
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-built_in">String</span>(number);
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>Returns a Date as a string in format of “MMM d, yyyy”</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        GetDisplayDate: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(date)</span> {</span>
+            <span class="hljs-keyword">return</span> Mod.Constants.MonthName[date.getMonth()] + <span class="hljs-string">" "</span> + date.getDate() + <span class="hljs-string">", "</span> + date.getFullYear();
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Returns a string description for the given game type code</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        GetGameTypeDescription: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(gameType)</span> {</span>
+            <span class="hljs-keyword">switch</span> (gameType) {
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"E"</span>:
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"S"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"Pre-Season"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"R"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"Regular Season"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"A"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"All-Star Game"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"D"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"Divisional Series"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"L"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"League Championship Series"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">case</span> <span class="hljs-string">"W"</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">"World Series"</span>;
+                    <span class="hljs-keyword">break</span>;
+                <span class="hljs-keyword">default</span>:
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;
+                    <span class="hljs-keyword">break</span>;
+            }
+        }
+    }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>End of Utility methods</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <h2 id="data-objects">Data objects</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-model-definition">Base.MLBScores.Model definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Model = Backbone.Model.extend({
+        defaults: {
+            async: <span class="hljs-literal">false</span>,
+            urlRoot: <span class="hljs-string">""</span>,
+            LastModified: {},
+            mlb: {},
+            aaa: {},
+            nat: {},
+            aax: {},
+            afa: {},
+            afx: {},
+            asx: {}
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>Initialization of the model</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>Fetch data from the server</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.fetch();
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Override the sync function to process the data returned from the PHP proxy</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        sync: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(method, model, options)</span> {</span>
+            <span class="hljs-keyword">var</span> now = (<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()).getTime();
+            <span class="hljs-keyword">var</span> date_key = model.getDateKey();
+            <span class="hljs-keyword">var</span> league = model.get(<span class="hljs-string">"League"</span>);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>Make an AJAX call for the data if it is the first time or it has been longer than the refesh timeout period</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">if</span> (model.get(<span class="hljs-string">"LastModified"</span>)[date_key] == <span class="hljs-literal">null</span>
+                || model.get(league)[date_key] == <span class="hljs-literal">null</span>
+                || (date_key == model.getDateKey(now) &amp;&amp; now - model.get(<span class="hljs-string">"LastModified"</span>)[date_key] &gt;= App.Constants.RefreshTimeoutLimitMS)) {
+                $.ajax(<span class="hljs-string">"mlb_json_proxy.php"</span>, {
+                    async: <span class="hljs-literal">false</span>,
+                    type: <span class="hljs-string">"GET"</span>,
+                    dataType: <span class="hljs-string">"json"</span>,
+                    data: { ws_path: <span class="hljs-string">"components/game/"</span> + model.get(<span class="hljs-string">"League"</span>) + <span class="hljs-string">"/year_"</span> + model.get(<span class="hljs-string">"GameDate"</span>).getFullYear() + <span class="hljs-string">"/month_"</span> + Mod.Tools.NumberPad2(<span class="hljs-built_in">Number</span>(model.get(<span class="hljs-string">"GameDate"</span>).getMonth()) + <span class="hljs-number">1</span>) + <span class="hljs-string">"/day_"</span> + Mod.Tools.NumberPad2(<span class="hljs-built_in">Number</span>(model.get(<span class="hljs-string">"GameDate"</span>).getDate())) + <span class="hljs-string">"/master_scoreboard.json"</span> }
+                }).done(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(data, textStatus, jqXHR)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>CReate an empty data set</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    <span class="hljs-keyword">var</span> data_set = { data: { games: { game: [] } } };</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <p>If valid data was returned, parse it and update the data set with the result</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    <span class="hljs-keyword">if</span> (_.isString(data) &amp;&amp; data[<span class="hljs-number">0</span>] == <span class="hljs-string">"{"</span>) {
+                        data_set = $.parseJSON(data);
+                        <span class="hljs-keyword">if</span> (!_.isArray(data_set.data.games.game)) {
+                            data_set.data.games.game = (data_set.data.games.game != <span class="hljs-literal">null</span> ? [data_set.data.games.game] : []);
+                        }
+                    }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Update the model data from the data set</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    <span class="hljs-keyword">var</span> data_update = { LastModified: model.get(<span class="hljs-string">"LastModified"</span>) };
+                    data_update.LastModified[date_key] = now;
+                    data_update[league] = _.extend({}, model.get(league));
+                    data_update[league][date_key] = data_set;
+                    data_update.copyright = data_set.copyright;
+                    data_update.data = data_update[league][date_key].data;
+                    model.set(data_update, options);
+                }).fail(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(jqXHR, textStatus)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>Let the user know the data fetch failed</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    alert(<span class="hljs-string">"Request failed: "</span> + jqXHR.responseText);
+                });
+            } <span class="hljs-comment">//else {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Refresh the model data with itself to
+model.set(“data”, model.get(league)[date_key].data, options);
+}</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>Return a string key value constructed from the given date or the current GameDate by default</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        getDateKey: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(date)</span> {</span>
+            date = (_.isNumber(date) ? <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(date) : <span class="hljs-keyword">this</span>.get(<span class="hljs-string">"GameDate"</span>));
+            <span class="hljs-keyword">return</span> date.getFullYear() + Mod.Tools.NumberPad2(<span class="hljs-built_in">Number</span>(date.getMonth()) + <span class="hljs-number">1</span>) + Mod.Tools.NumberPad2(<span class="hljs-built_in">Number</span>(date.getDate()));
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-collection-definition">Base.MLBScores.Collection definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Collection = Backbone.Collection.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Default sort is by game time</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        comparator: <span class="hljs-keyword">this</span>.sortByTime,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>Sort by status (primary), league (secondary) and home team city (tertiary)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        sortByStatus: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(itemA, itemB)</span> {</span>
+            <span class="hljs-keyword">var</span> result = itemA.get(<span class="hljs-string">"status"</span>).status.localeCompare(itemB.get(<span class="hljs-string">"status"</span>).status);
+            <span class="hljs-keyword">if</span> (result == <span class="hljs-number">0</span>) {
+                result = itemA.get(<span class="hljs-string">"league"</span>).localeCompare(itemB.get(<span class="hljs-string">"league"</span>));
+            }
+            <span class="hljs-keyword">if</span> (result == <span class="hljs-number">0</span>) {
+                result = itemA.get(<span class="hljs-string">"home_team_city"</span>).localeCompare(itemB.get(<span class="hljs-string">"home_team_city"</span>));
+            }
+            <span class="hljs-keyword">return</span> result;
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p>Sort by time (primary) and home team city (secondary)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        sortByTime: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(itemA, itemB)</span> {</span>
+            <span class="hljs-keyword">var</span> result = itemA.get(<span class="hljs-string">"time"</span>).localeCompare(itemB.get(<span class="hljs-string">"time"</span>));
+            <span class="hljs-keyword">if</span> (result == <span class="hljs-number">0</span>) {
+                result = itemA.get(<span class="hljs-string">"home_team_city"</span>).localeCompare(itemB.get(<span class="hljs-string">"home_team_city"</span>));
+            }
+            <span class="hljs-keyword">return</span> result;
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <p>End of Data objects</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <h2 id="view-definitions">View definitions</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-header-definition">Base.MLBScores.Header definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Header = Marionette.ItemView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-28">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-header"</span>,
+
+        templateHelpers: {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-29">&#182;</a>
+              </div>
+              <p>Wrapper for the template to access the Base.MLBScores.Tools.GetDisplayDate function </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            getDisplayGameDate: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+                <span class="hljs-keyword">return</span> Mod.Tools.GetDisplayDate(<span class="hljs-keyword">this</span>.GameDate);
+            }
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-30">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-30">&#182;</a>
+              </div>
+              <p>Events hash</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        events: {
+            <span class="hljs-string">"changed #mlb-scores-select-league"</span>: <span class="hljs-string">"selectLeague"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-31">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-31">&#182;</a>
+              </div>
+              <p>UI hash</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        ui: {
+            previous: <span class="hljs-string">".mlb-scores-datepicker-previous"</span>,
+            next: <span class="hljs-string">".mlb-scores-datepicker-next"</span>,
+            date: <span class="hljs-string">".mlb-scores-datepicker-date"</span>,
+            datepicker: <span class="hljs-string">".mlb-scores-datepicker-input"</span>,
+            datebuttons: <span class="hljs-string">".mlb-scores-date-buttonset"</span>,
+            list: <span class="hljs-string">"#mlb-scores-list-button"</span>,
+            grid: <span class="hljs-string">"#mlb-scores-grid-button"</span>,
+            viewbuttons: <span class="hljs-string">"#mlb-scores-view-buttonset"</span>,
+            leagueselect: <span class="hljs-string">"#mlb-scores-select-league"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-32">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-32">&#182;</a>
+              </div>
+              <p>Post-render view work</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        onRender: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">var</span> _this = <span class="hljs-keyword">this</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-33">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-33">&#182;</a>
+              </div>
+              <p>Create the date picker</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.datepicker.datepicker({
+                defaultDate: <span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"GameDate"</span>),
+                dateFormat: <span class="hljs-string">"MM d, yy"</span>,
+                gotoCurrent: <span class="hljs-literal">true</span>,
+                minDate: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2007</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>),  <span class="hljs-comment">// No json data for years before 2007</span>
+                maxDate: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(),
+                changeMonth: <span class="hljs-literal">true</span>,
+                changeYear: <span class="hljs-literal">true</span>,
+                showOn: <span class="hljs-string">"focus"</span>,
+                onSelect: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(dateText, inst)</span> {</span>
+                    _this.selectGameDate(dateText, inst);
+                }
+            }).addClass(<span class="hljs-string">"ui-button ui-button-text"</span>);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-34">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-34">&#182;</a>
+              </div>
+              <p>Create the Previous Date icon button and its click event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.previous.button({
+                icons: {
+                    primary: <span class="hljs-string">"ui-icon-circle-triangle-w"</span>,
+                    text: <span class="hljs-literal">false</span>
+                }
+            }).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ev)</span> {</span>
+                _this.ui.datepicker.datepicker(<span class="hljs-string">"setDate"</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(_this.model.get(<span class="hljs-string">"GameDate"</span>).getTime() - App.Constants.DayInMS));
+                _this.selectGameDate(_this.ui.datepicker.datepicker(<span class="hljs-string">"getDate"</span>).toDateString());
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-35">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-35">&#182;</a>
+              </div>
+              <p>Create the Next Date icon button and its click event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.next.button({
+                icons: {
+                    primary: <span class="hljs-string">"ui-icon-circle-triangle-e"</span>,
+                    text: <span class="hljs-literal">false</span>
+                }
+            }).click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ev)</span> {</span>
+                _this.ui.datepicker.datepicker(<span class="hljs-string">"setDate"</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(_this.model.get(<span class="hljs-string">"GameDate"</span>).getTime() + App.Constants.DayInMS));
+                _this.selectGameDate(_this.ui.datepicker.datepicker(<span class="hljs-string">"getDate"</span>).toDateString());
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-36">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-36">&#182;</a>
+              </div>
+              <p>Add the League select event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.leagueselect.change(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ev)</span> {</span>
+                _this.selectLeague();
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-37">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-37">&#182;</a>
+              </div>
+              <p>Add the List (Full) view button click event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.list.click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ev)</span> {</span>
+                App.vent.trigger(<span class="hljs-string">"changed:viewtype"</span>, <span class="hljs-string">"list"</span>);
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-38">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-38">&#182;</a>
+              </div>
+              <p>Add the Grid (Summary) view button click event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.grid.click(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(ev)</span> {</span>
+                App.vent.trigger(<span class="hljs-string">"changed:viewtype"</span>, <span class="hljs-string">"grid"</span>);
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-39">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-39">&#182;</a>
+              </div>
+              <p>Format the view buttons into a buttonset</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.viewbuttons.buttonset();
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-40">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-40">&#182;</a>
+              </div>
+              <p>Select League event handler definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        selectLeague: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">this</span>.model.set(<span class="hljs-string">"League"</span>, <span class="hljs-keyword">this</span>.$(<span class="hljs-string">"#mlb-scores-select-league option"</span>).filter(<span class="hljs-string">":selected"</span>).val(), { silent: <span class="hljs-literal">true</span> });
+            <span class="hljs-keyword">this</span>.selectGameDate((<span class="hljs-keyword">this</span>.model.has(<span class="hljs-string">"GameDate"</span>) ? <span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"GameDate"</span>) : <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()).toDateString());
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-41">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-41">&#182;</a>
+              </div>
+              <p>Select Game Date event handler definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        selectGameDate: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(dateText, inst)</span> {</span>
+            <span class="hljs-keyword">this</span>.model.set(<span class="hljs-string">"GameDate"</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-built_in">Date</span>.parse(dateText)), { silent: <span class="hljs-literal">true</span> });
+            <span class="hljs-keyword">this</span>.ui.datepicker.datepicker(<span class="hljs-string">"option"</span>, <span class="hljs-string">"buttonText"</span>, Mod.Tools.GetDisplayDate(<span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"GameDate"</span>)));
+            App.vent.trigger(<span class="hljs-string">"changed:gamedate"</span>, <span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"League"</span>), <span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"GameDate"</span>));
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-42">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-42">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-footer-definition">Base.MLBScores.Footer definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Footer = Marionette.ItemView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-43">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-43">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-footer"</span>,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-44">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-44">&#182;</a>
+              </div>
+              <p>UI hash</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        ui: {
+            copyright: <span class="hljs-string">"mlb-scores-copyright"</span>,
+            resultstime: <span class="hljs-string">"#mlb-scores-results-time"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-45">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-45">&#182;</a>
+              </div>
+              <p>Post-render view work</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        onRender: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-46">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-46">&#182;</a>
+              </div>
+              <p>Add a refresh time update event handler</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            App.vent.on(<span class="hljs-string">"update:data"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(updateDate)</span> {</span>
+                <span class="hljs-keyword">this</span>.ui.resultstime.html(_.isDate(updateDate) ? updateDate.toLocaleTimeString() : <span class="hljs-string">""</span>);
+            }, <span class="hljs-keyword">this</span>);
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-47">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-47">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-emptyview-definition">Base.MLBScores.EmptyView definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.EmptyView = Marionette.ItemView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-48">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-48">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-games-empty-view"</span>
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-49">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-49">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-baseview-definition">Base.MLBScores.BaseView definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.BaseView = Marionette.ItemView.extend({
+        templateHelpers: {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-50">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-50">&#182;</a>
+              </div>
+              <p>Wrapper for the template to access the Base.MLBScores.Tools.GetDisplayDate function </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            getDisplayGameDate: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+                <span class="hljs-keyword">return</span> Mod.Tools.GetDisplayDate(<span class="hljs-keyword">this</span>.GameDate);
+            },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-51">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-51">&#182;</a>
+              </div>
+              <p>Return a string with the concatenated Team City and Name</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            getTeamName: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(type)</span> {</span>
+                <span class="hljs-keyword">if</span> (type == <span class="hljs-string">"away"</span>) {
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>.concat(<span class="hljs-keyword">this</span>.away_team_city, <span class="hljs-string">" "</span>, (<span class="hljs-keyword">this</span>.away_team_city.indexOf(<span class="hljs-keyword">this</span>.away_team_name) &lt; <span class="hljs-number">0</span> ? <span class="hljs-keyword">this</span>.away_team_name : <span class="hljs-string">""</span>));
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>.concat(<span class="hljs-keyword">this</span>.home_team_city, <span class="hljs-string">" "</span>, (<span class="hljs-keyword">this</span>.home_team_city.indexOf(<span class="hljs-keyword">this</span>.home_team_name) &lt; <span class="hljs-number">0</span> ? <span class="hljs-keyword">this</span>.home_team_name : <span class="hljs-string">""</span>));
+                }
+            }
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-52">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-52">&#182;</a>
+              </div>
+              <p>Define the model definition to be used by this view</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        model: Backbone.Model
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-53">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-53">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-fullitem-definition">Base.MLBScores.FullItem definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.FullItem = Mod.BaseView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-54">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-54">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-full-game-item-view"</span>,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-55">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-55">&#182;</a>
+              </div>
+              <p>Define the CSS class attribute for the main view element</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        className: <span class="hljs-string">"boxScoreList"</span>
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-56">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-56">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-summaryitem-definition">Base.MLBScores.SummaryItem definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.SummaryItem = Mod.BaseView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-57">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-57">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-summary-game-item-view"</span>,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-58">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-58">&#182;</a>
+              </div>
+              <p>Define the CSS class attribute for the main view element</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        className: <span class="hljs-string">"boxScoreGrid"</span>
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-59">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-59">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-content-definition">Base.MLBScores.Content definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Content = Marionette.CompositeView.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-60">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-60">&#182;</a>
+              </div>
+              <p>The view template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-games-view"</span>,
+
+        templateHelpers: {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-61">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-61">&#182;</a>
+              </div>
+              <p>Wrapper for the template to access the Base.MLBScores.Tools.GetGameTypeDescription function </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            getGameTypeDescription: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(gameList)</span> {</span>
+                <span class="hljs-keyword">if</span> (gameList.length &gt; <span class="hljs-number">0</span>) {
+                    <span class="hljs-keyword">return</span> Mod.Tools.GetGameTypeDescription(gameList[<span class="hljs-number">0</span>].game_type);
+                }
+                <span class="hljs-keyword">return</span> <span class="hljs-string">"No game scores are available for this date."</span>;
+            }
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-62">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-62">&#182;</a>
+              </div>
+              <p>Empty view definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        emptyView: Mod.EmptyView,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-63">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-63">&#182;</a>
+              </div>
+              <p>Template target for the CollectionView</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        itemViewContainer: <span class="hljs-string">".boxScores"</span>,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-64">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-64">&#182;</a>
+              </div>
+              <p>UI hash</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        ui: {
+            boxscores: <span class="hljs-string">".boxScores"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-65">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-65">&#182;</a>
+              </div>
+              <p>Initialization for the view</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-66">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-66">&#182;</a>
+              </div>
+              <p>Create the collection from the games list in the model data</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.collection = <span class="hljs-keyword">new</span> Mod.Collection(<span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"data"</span>).games.game);
+            <span class="hljs-keyword">var</span> _this = <span class="hljs-keyword">this</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-67">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-67">&#182;</a>
+              </div>
+              <p>Add an Application event handler for the “changed:gamedate” event</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            App.vent.on(<span class="hljs-string">"changed:gamedate"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(league, gameDate)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-68">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-68">&#182;</a>
+              </div>
+              <p>Update the league and game date</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                _this.model.set({
+                    League: league,
+                    GameDate: gameDate
+                }, { silent: <span class="hljs-literal">true</span> });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-69">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-69">&#182;</a>
+              </div>
+              <p>Fetch the data from the server</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                _this.model.fetch();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-70">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-70">&#182;</a>
+              </div>
+              <p>Apply the new data to the Collection</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                _this.collection.set(_this.model.get(<span class="hljs-string">"data"</span>).games.game);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-71">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-71">&#182;</a>
+              </div>
+              <p>Restart the auto-refresh functionality</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                _this.setDataUpdate();
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-72">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-72">&#182;</a>
+              </div>
+              <p>Trigger a “update:data” event</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            App.vent.trigger(<span class="hljs-string">"update:data"</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>());</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-73">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-73">&#182;</a>
+              </div>
+              <p>Start the auto-refresh functionality</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.setDataUpdate();
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-74">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-74">&#182;</a>
+              </div>
+              <p>Set an auto-refresh feature, if showing games for the current date</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        setDataUpdate: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span>
+            <span class="hljs-keyword">var</span> now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-75">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-75">&#182;</a>
+              </div>
+              <p>Only start if viewing game data for today</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.model.get(<span class="hljs-string">"GameDate"</span>).toDateString() == now.toDateString()) {
+                <span class="hljs-keyword">var</span> _this = <span class="hljs-keyword">this</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-76">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-76">&#182;</a>
+              </div>
+              <p>Clear any existing interval function</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                window.clearInterval(Mod.IntervalID);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-77">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-77">&#182;</a>
+              </div>
+              <p>Set an interval event handler to periodically fetch new data from the server</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                Mod.IntervalID = window.setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-78">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-78">&#182;</a>
+              </div>
+              <p>Fetch the data from the server</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    _this.model.fetch();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-79">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-79">&#182;</a>
+              </div>
+              <p>Apply the new data to the Collection</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    _this.collection.set(_this.model.get(<span class="hljs-string">"data"</span>).games.game);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-80">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-80">&#182;</a>
+              </div>
+              <p>Trigger a “update:data” event</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                    App.vent.trigger(<span class="hljs-string">"update:data"</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>());
+                }, App.Constants.RefreshTimeoutLimitMS);
+            } <span class="hljs-keyword">else</span> {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-81">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-81">&#182;</a>
+              </div>
+              <p>Clear any existing interval function</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                window.clearInterval(Mod.IntervalID);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-82">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-82">&#182;</a>
+              </div>
+              <p>Trigger a “update:data” event</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                App.vent.trigger(<span class="hljs-string">"update:data"</span>, <span class="hljs-literal">null</span>);
+            }
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-83">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-83">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-contentlist-definition">Base.MLBScores.ContentList definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.ContentList = Mod.Content.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-84">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-84">&#182;</a>
+              </div>
+              <p>Define the item view type</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        itemView: Mod.FullItem,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-85">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-85">&#182;</a>
+              </div>
+              <p>Post-render view work</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        onRender: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-86">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-86">&#182;</a>
+              </div>
+              <p>Make the box score items sortable</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.boxscores.sortable({
+                items: <span class="hljs-string">".boxScoreList"</span>
+            });
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-87">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-87">&#182;</a>
+              </div>
+              <h2 id="base-mlbscores-contentgrid-definition">Base.MLBScores.ContentGrid definition</h2>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.ContentGrid = Mod.Content.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-88">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-88">&#182;</a>
+              </div>
+              <p>Define the item view type</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        itemView: Mod.SummaryItem,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-89">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-89">&#182;</a>
+              </div>
+              <p>Post-render view work</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        onRender: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-90">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-90">&#182;</a>
+              </div>
+              <p>Make the box score items sortable</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.ui.boxscores.sortable({
+                items: <span class="hljs-string">".boxScoreGrid"</span>
+            });
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-91">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-91">&#182;</a>
+              </div>
+              <p>End of Views</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+});</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-92">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-92">&#182;</a>
+              </div>
+              <h2 id="end-of-mlbscores-module">End of MLBScores module</h2>
+
+            </div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

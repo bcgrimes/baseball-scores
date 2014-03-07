@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>base.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>base.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>﻿<span class="hljs-comment">/*!
+ * App and Base Marionette Module
+ * base.js
+ * http://baycg.com/
+ *
+ * Copyright 2014, Brett Grimes
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Date: 09-Feb-2014
+ */</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Create the application instance</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>App = <span class="hljs-keyword">new</span> Backbone.Marionette.Application();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Define the Application initialization function</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>App.addInitializer(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(options)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>Define the constants for the application</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    App.Constants = {
+        DayInMS: <span class="hljs-number">86400000</span>,
+        GameDate: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(),
+        NumberOfMonthsToShow: <span class="hljs-number">3</span>,
+        Title: <span class="hljs-string">"Major League Baseball Box Scores"</span>,
+        Teams: {    <span class="hljs-comment">// This will be filled during the data fetch</span>
+            AL: {}, <span class="hljs-comment">// (Key, Value) =&gt; (TeamAbbr, TeamName)</span>
+            NL: {}  <span class="hljs-comment">// (Key, Value) =&gt; (TeamAbbr, TeamName)</span>
+        },
+        Leagues: {
+            <span class="hljs-string">"mlb"</span>: <span class="hljs-string">"MLB"</span>,
+            <span class="hljs-string">"aaa"</span>: <span class="hljs-string">"MILB AAA"</span>,
+            <span class="hljs-string">"nat"</span>: <span class="hljs-string">"National Team"</span>,
+            <span class="hljs-string">"aax"</span>: <span class="hljs-string">"MILB AA - Eastern League"</span>,
+            <span class="hljs-string">"afa"</span>: <span class="hljs-string">"MILB High A - Florida State League"</span>,
+            <span class="hljs-string">"afx"</span>: <span class="hljs-string">"MILB Low A - Midwest League"</span>,
+            <span class="hljs-string">"asx"</span>: <span class="hljs-string">"MILB Short A - NY/PA League"</span>
+        },
+        RefreshTimeoutLimitMS: <span class="hljs-number">10000</span>
+    };</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>Add the display region</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    App.addRegions({
+        main: <span class="hljs-string">"#lCenter"</span>
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>Start the base module</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">var</span> base = App.module(<span class="hljs-string">"Base"</span>);
+    base.start();
+});</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Definition for the Base module
+Contains the Controller, Model and Layout for the page</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>App.module(<span class="hljs-string">"Base"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Mod, App, Backbone, Marionette, $, _)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>Base.Controller definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Controller = Marionette.Controller.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Initialization for the Base.Controller</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>Create an instance of the Base.Layout for the page</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.scoresLayout = <span class="hljs-keyword">new</span> Mod.Layout({
+                model: <span class="hljs-keyword">new</span> Mod.Model()
+            });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>Show the layout in the Application display region</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            App.main.show(<span class="hljs-keyword">this</span>.scoresLayout);
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>Intialization for the Module</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.addInitializer(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(options)</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Create an instance of the Base.Controller</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        Mod.controller = <span class="hljs-keyword">new</span> Mod.Controller();
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>Base.Model definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Model = Backbone.Model.extend({
+        defaults: {
+            GameDate: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(),
+            copyright: <span class="hljs-string">""</span>,
+            League: <span class="hljs-string">"mlb"</span>
+        }
+    });</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Base.Layout definition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Mod.Layout = Marionette.Layout.extend({</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <p>The layout template id</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        template: <span class="hljs-string">"#mlb-scores-layout"</span>,</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Define the attributes on the main element</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        attributes: {
+            style: <span class="hljs-string">"margin:20px;"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>Define a header, content and footer region in the Base.Layout</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        regions: {
+            header: <span class="hljs-string">"#mlb-scores-layout-header"</span>,
+            content: <span class="hljs-string">"#mlb-scores-layout-content"</span>,
+            footer: <span class="hljs-string">"#mlb-scores-layout-footer"</span>
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Initialization of the Base.Layout</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>Create an instance of the MLBScores Module and start it</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.gamesModule = App.module(<span class="hljs-string">"MLBScores"</span>);
+            <span class="hljs-keyword">this</span>.gamesModule.start();</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>Set an event handler for view type changes</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            App.vent.on(<span class="hljs-string">"changed:viewtype"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(viewType)</span> {</span>
+                viewType = viewType || <span class="hljs-keyword">this</span>.currentViewType;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Swap the content views based on the given view type using the existing model data</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                <span class="hljs-keyword">switch</span> (viewType) {
+                    <span class="hljs-keyword">default</span>:
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">"list"</span>:
+                        <span class="hljs-keyword">this</span>.content.show(<span class="hljs-keyword">new</span> App.MLBScores.ContentList({
+                            model: <span class="hljs-keyword">this</span>.content.currentView.model
+                        }));
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">"grid"</span>:
+                        <span class="hljs-keyword">this</span>.content.show(<span class="hljs-keyword">new</span> App.MLBScores.ContentGrid({
+                            model: <span class="hljs-keyword">this</span>.content.currentView.model
+                        }));
+                        <span class="hljs-keyword">break</span>;
+                }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>Update the cache of the current view type</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>                <span class="hljs-keyword">this</span>.currentViewType = viewType;
+            }, <span class="hljs-keyword">this</span>);
+        },</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p>Show the page content in the Base.Layout</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        onRender: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <p>Adjust the display height</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.$el.height($(window).height() - <span class="hljs-number">45</span>);  <span class="hljs-comment">// TODO: this needs adjusting for browsers on iOS</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <p>Create and show a new instance of the MLBScores.Header view </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.header.show(<span class="hljs-keyword">new</span> App.MLBScores.Header({
+                model: <span class="hljs-keyword">new</span> App.Base.Model()
+            }));</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
+              </div>
+              <p>Create and show a new instance of the MLBScores.Footer view </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.footer.show(<span class="hljs-keyword">new</span> App.MLBScores.Footer({
+                model: <span class="hljs-keyword">new</span> App.Base.Model()
+            }));</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-28">&#182;</a>
+              </div>
+              <p>Cache the current content view type</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.currentViewType = <span class="hljs-string">"list"</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-29">&#182;</a>
+              </div>
+              <p>Create and show a new instance of the MLBScores.ContentList view</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>            <span class="hljs-keyword">this</span>.content.show(<span class="hljs-keyword">new</span> App.MLBScores.ContentList({
+                model: <span class="hljs-keyword">new</span> App.MLBScores.Model({
+                    GameDate: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(App.Constants.GameDate.getTime()),
+                    copyright: <span class="hljs-string">""</span>,
+                    League: <span class="hljs-string">"mlb"</span>
+                })
+            }));
+        }
+    });
+});</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
