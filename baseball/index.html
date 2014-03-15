@@ -321,8 +321,10 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.home %><% } %></td>
                         </tr>
                         <tr>
-                            <td class="boxBodyItem boxHome borderLeft borderTop itemHighlight" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, 9) : 9) %>" style="text-align:left;">
+                            <td class="boxBodyItem boxHome borderLeft borderTop itemHighlight mlb-scores-alerts" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, 9) : 9) %>" style="text-align:left;">
+                        <% if (status.ind == "I") { %>
                                 <% if (!_.isUndefined(obj.alerts)) { %><%= alerts.brief_text %><% } %>
+                        <% } %>
                             </td>
                             <td class="borderTop itemHighlight" colspan="3">
                         <% if (status.ind == "I") { %>

@@ -120,6 +120,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 || (date_key == model.getDateKey(now) && now - model.get("LastModified")[date_key] >= App.Constants.RefreshTimeoutLimitMS)) {
                 $.ajax("mlb_json_proxy.php", {
                     async: false,
+                    cache: false,
                     type: "GET",
                     dataType: "json",
                     data: { ws_path: "components/game/" + model.get("League") + "/year_" + model.get("GameDate").getFullYear() + "/month_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getMonth()) + 1) + "/day_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getDate())) + "/master_scoreboard.json" }
@@ -134,9 +135,9 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                         }
                     }
                     // Update the model data from the data set
-                    var data_update = { LastModified: model.get("LastModified") };
+                    var data_update = { LastModified: Number(model.get("LastModified")) };
                     data_update.LastModified[date_key] = now;
-                    data_update[league] = _.extend({}, model.get(league));
+                    data_update[league] = $.extend(true, {}, model.get(league));
                     data_update[league][date_key] = data_set;
                     data_update.copyright = data_set.copyright;
                     data_update.data = data_update[league][date_key].data;
@@ -145,10 +146,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     // Let the user know the data fetch failed
                     alert("Request failed: " + jqXHR.responseText);
                 });
-            } //else {
-                // Refresh the model data with itself to
-                //model.set("data", model.get(league)[date_key].data, options);
-            //}
+            }
         },
 
         // Return a string key value constructed from the given date or the current GameDate by default
@@ -389,7 +387,8 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
 
         // UI hash
         ui: {
-            boxscores: ".boxScores"
+            boxscores: ".boxScores",
+            alerts: ".mlb-scores-alerts"
         },
 
         // Initialization for the view
@@ -407,7 +406,9 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 // Fetch the data from the server
                 _this.model.fetch();
                 // Apply the new data to the Collection
-                _this.collection.set(_this.model.get("data").games.game);
+                _this.collection.reset(_this.model.get("data").games.game);
+                // Render the view
+                _this.render();
                 // Restart the auto-refresh functionality
                 _this.setDataUpdate();
             });
@@ -430,7 +431,9 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     // Fetch the data from the server
                     _this.model.fetch();
                     // Apply the new data to the Collection
-                    _this.collection.set(_this.model.get("data").games.game);
+                    _this.collection.reset(_this.model.get("data").games.game);
+                    // Render the view
+                    _this.render();
                     // Trigger a "update:data" event
                     App.vent.trigger("update:data", new Date());
                 }, App.Constants.RefreshTimeoutLimitMS);
