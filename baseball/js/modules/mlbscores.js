@@ -452,7 +452,8 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         onRender: function () {
             // Make the box score items sortable
             this.ui.boxscores.sortable({
-                items: ".boxScoreList"
+                items: ".boxScoreList",
+                opacity: 0.5
             });
         }
     });
@@ -467,7 +468,8 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         onRender: function () {
             // Make the box score items sortable
             this.ui.boxscores.sortable({
-                items: ".boxScoreGrid"
+                items: ".boxScoreGrid",
+                opacity: 0.5
             });
         }
     });
