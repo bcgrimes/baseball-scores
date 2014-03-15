@@ -64,10 +64,10 @@
         </script>
         <script type="text/template" id="mlb-scores-footer">
             <p id="copyright"> 
-                <span id="mlb-scores-copyright">&copy; 2014  <a href="http://bcgrimes.baycg.com/Brett_Grimes.html" class="lowkeylink" style="color: #555;">Brett C. Grimes</a></span><span id="mlb-scores-results-time" style="float:right;"></span>
+                <span id="mlb-scores-copyright">&copy; 2014  <a href="http://bcgrimes.baycg.com/Brett_Grimes.html" target="_blank" class="lowkeylink" style="color: #555;">Brett C. Grimes</a></span><span id="mlb-scores-results-time" style="float:right;"></span>
             </p> 
             <!--<div class="ui-corner-all" style="float: right; position: relative; top: -2.25em; padding: 2px; border: 1px outset Gray;">--> 
-                <!--<a href="http://bcgrimes.baycg.com/Brett_Grimes.html" class="lowkeylink" style="color: #555;">Resume</a>-->
+                <!--<a href="http://bcgrimes.baycg.com/Brett_Grimes.html" target="_blank" class="lowkeylink" style="color: #555;">Resume</a>-->
             <!--</div>--> 
         </script>
 
@@ -98,7 +98,13 @@
                 <thead class="boxHeader">
                     <tr>
                         <th class="boxHeaderItem gameStatus teamBox teamGridBox">
-                            <span><%= status.status %><% if (status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
+                            <% if (status.ind == "I") { %>
+                                <a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" target="_blank" class="lowkeylink" title="Watch GameDay">
+                            <% } %>
+                                <span><%= status.status %><% if (status.reason != null && status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
+                            <% if (status.ind == "I") { %>
+                                </a>
+                            <% } %>
                         </th>
                         <!--<th class="boxHeaderItem boxSubtitle borderLeft">&nbsp;</th>--><!-- spacer -->
                         <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
@@ -113,7 +119,7 @@
                                 <tr>
                                     <% if (away_sport_code == "mlb") { %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>"><span class="team <%= away_file_code %>" title="<%= away_team_city %> <%= away_team_name %>"></span></a>
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" target="_blank"><span class="team <%= away_file_code %>" title="<%= away_team_city %> <%= away_team_name %>"></span></a>
                                         </td>
                                     <% } else { %>
                                         <td>
@@ -121,7 +127,7 @@
                                         </td>
                                     <% } %>
                                     <td>
-                                        <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" class="lowkeylink">
+                                        <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" target="_blank" class="lowkeylink">
                                         <span class="teamName" title="<%= away_team_city %> <%= away_team_name %>"><%= away_name_abbrev %></span><br />
                                         <span class="teamRecord">(<%= away_win %>-<%= away_loss %>)</span>
                                         </a>
@@ -140,7 +146,7 @@
                                 <tr>
                                     <% if (home_sport_code == "mlb") { %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>"><span class="team <%= home_file_code %>" title="<%= home_team_city %> <%= home_team_name %>"></span></a>
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" target="_blank"><span class="team <%= home_file_code %>" title="<%= home_team_city %> <%= home_team_name %>"></span></a>
                                         </td>
                                     <% } else { %>
                                         <td>
@@ -148,7 +154,7 @@
                                         </td>
                                     <% } %>
                                     <td>
-                                        <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" class="lowkeylink">
+                                        <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" target="_blank" class="lowkeylink">
                                         <span class="teamName" title="<%= home_team_city %> <%= home_team_name %>"><%= home_name_abbrev %></span><br />
                                         <span class="teamRecord">(<%= home_win %>-<%= home_loss %>)</span>
                                         </a>
@@ -184,7 +190,6 @@
                             </div>-->
                         <!--</td>-->
                         <td class="borderTop itemHighlight" colspan="2">
-                            <!--<a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" style="float:left;"><img src="images/mlb-icon.png" title="MLB GameDay" /></a>-->
                         <% if (status.ind == "I") { %>
                             <div class="countAndOuts i">
                                 <span class="count"><%= status.b %>-<%= status.s %></span>
@@ -209,13 +214,18 @@
                 <% if (description != "") { %><span style="margin-left:25px;"><%= description %></span><% } %>
                 <span style="float:right;"><%= time %> <%= ampm %></span>
             </div>
-            <div class="boxContainer ui-corner-all">
+            <div class="boxContainer">
                 <table class="<%= gameday %> mlb-game-boxscore-table boxTable">
                     <thead class="boxHeader">
                         <tr>
                             <th class="boxHeaderItem gameStatus teamBox teamListBox">
-                                <span><%= status.status %><% if (status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
-                                <!--<a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" style="float:right;"><img src="images/mlb-icon.png" title="MLB GameDay" /></a>-->
+                            <% if (status.ind == "I") { %>
+                                <a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" target="_blank" class="lowkeylink" title="Watch GameDay">
+                            <% } %>
+                                    <span><%= status.status %><% if (status.reason != null && status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
+                            <% if (status.ind == "I") { %>
+                                </a>
+                            <% } %>
                             </th>
                     <% if (!_.isUndefined(obj.linescore)) { %>
                         <% _.each(linescore.inning, function(inning, inningIndex) { %>
@@ -244,7 +254,7 @@
                                     <tr>
                                     <% if (away_sport_code == "mlb") { %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>"><span class="team <%= away_file_code %>" title="<%= away_team_city %> <%= away_team_name %>"></span></a>
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" target="_blank"><span class="team <%= away_file_code %>" title="<%= away_team_city %> <%= away_team_name %>"></span></a>
                                         </td>
                                     <% } else { %>
                                         <td>
@@ -252,7 +262,7 @@
                                         </td>
                                     <% } %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" class="lowkeylink">
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= away_file_code %>" target="_blank" class="lowkeylink">
                                             <span class="teamName"><%= away_team_name %></span><br />
                                             <span class="teamRecord">(<%= away_win %>-<%= away_loss %>)</span>
                                             </a>
@@ -285,7 +295,7 @@
                                     <tr>
                                     <% if (home_sport_code == "mlb") { %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>"><span class="team <%= home_file_code %>" title="<%= home_team_city %> <%= home_team_name %>"></span></a>
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" target="_blank"><span class="team <%= home_file_code %>" title="<%= home_team_city %> <%= home_team_name %>"></span></a>
                                         </td>
                                     <% } else { %>
                                         <td>
@@ -293,7 +303,7 @@
                                         </td>
                                     <% } %>
                                         <td>
-                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" class="lowkeylink">
+                                            <a href="http://mlb.mlb.com/index.jsp?c_id=<%= home_file_code %>" target="_blank" class="lowkeylink">
                                             <span class="teamName"><%= home_team_name %></span><br />
                                             <span class="teamRecord">(<%= home_win %>-<%= home_loss %>)</span>
                                             </a>
@@ -321,7 +331,7 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.home %><% } %></td>
                         </tr>
                         <tr>
-                            <td class="boxBodyItem boxHome borderLeft borderTop itemHighlight mlb-scores-alerts" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, 9) : 9) %>" style="text-align:left;">
+                            <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, 9) : 9) %>" style="text-align:left;">
                         <% if (status.ind == "I") { %>
                                 <% if (!_.isUndefined(obj.alerts)) { %><%= alerts.brief_text %><% } %>
                         <% } %>

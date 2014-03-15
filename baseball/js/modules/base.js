@@ -34,7 +34,7 @@ App.addInitializer(function (options) {
             "afx": "MILB Low A - Midwest League",
             "asx": "MILB Short A - NY/PA League"
         },
-        RefreshTimeoutLimitMS: 5000
+        RefreshTimeoutLimitMS: 10000
     };
 
     // Add the display region

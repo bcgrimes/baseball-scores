@@ -406,9 +406,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 // Fetch the data from the server
                 _this.model.fetch();
                 // Apply the new data to the Collection
-                _this.collection.reset(_this.model.get("data").games.game);
-                // Render the view
-                _this.render();
+                _this.collection.set(_this.model.get("data").games.game);
                 // Restart the auto-refresh functionality
                 _this.setDataUpdate();
             });
@@ -431,9 +429,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     // Fetch the data from the server
                     _this.model.fetch();
                     // Apply the new data to the Collection
-                    _this.collection.reset(_this.model.get("data").games.game);
-                    // Render the view
-                    _this.render();
+                    _this.collection.set(_this.model.get("data").games.game);
                     // Trigger a "update:data" event
                     App.vent.trigger("update:data", new Date());
                 }, App.Constants.RefreshTimeoutLimitMS);
