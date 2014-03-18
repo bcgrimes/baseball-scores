@@ -155,14 +155,31 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
     // Base.MLBScores.Collection definition
     //----------------------------------
     Mod.Collection = Backbone.Collection.extend({
-        // Sort by status (primary, desc), time (secondary) and home team city (tertiary)
+        // Sort by status (primary, "I" is always first, "F" is always last), time (secondary) and home team city code (tertiary)
         comparator: function (itemA, itemB) {
-            var result = -(itemA.get("status").ind.localeCompare(itemB.get("status").ind));
+            var result = null;
+            if (itemA.get("status").ind[0] == "I" && itemB.get("status").ind[0] == "I") {
+                result = 0;
+            } else if (itemA.get("status").ind[0] == "I") {
+                return -1;
+            } else if (itemB.get("status").ind[0] == "I") {
+                return 1;
+            }
+            if (itemA.get("status").ind[0] == "F" && itemB.get("status").ind[0] == "F") {
+                result = 0;
+            } else if (itemA.get("status").ind[0] == "F") {
+                return 1;
+            } else if (itemB.get("status").ind[0] == "F") {
+                return -1;
+            }
+            if (result == null) {
+                result = itemA.get("status").ind.localeCompare(itemB.get("status").ind);
+            }
             if (result == 0) {
                 result = itemA.get("time").localeCompare(itemB.get("time"));
             }
             if (result == 0) {
-                result = itemA.get("home_team_city").localeCompare(itemB.get("home_team_city"));
+                result = itemA.get("home_name_abbrev").localeCompare(itemB.get("home_name_abbrev"));
             }
             return result;
         }
