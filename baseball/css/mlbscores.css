@@ -178,7 +178,7 @@ body {
     height: 74px;
     width: 110px;
     background-repeat: no-repeat;
-    background-image: url(../images/baseball-wait.gif)
+    background-image: url(images/baseball-wait.gif)
 }
 .spacing {
     padding-left: 10px;
@@ -220,4 +220,78 @@ a.lowkeylink:hover {
    -ms-transform-origin: 0 100%;
    -o-transform-origin: 0 100%;
    transform-origin: 0 100%;
+}
+
+.info span {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.info span a {
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.menOnBase {
+    width: 36px;
+    height: 26px;
+    margin: 0 auto;
+}
+
+.menOnBase dl {
+    position: relative;
+    width: 36px;
+    height: 26px;
+    margin: 0;
+}
+
+.menOnBase dt, .menOnBase dd {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/runners.png);
+}
+
+.menOnBase dd {
+    margin: 0;
+}
+
+.menOnBase .first {
+    left: 20px;
+    top: 10px;
+}
+
+.menOnBase .second {
+    left: 10px;
+}
+
+.menOnBase .third {
+    left: 0;
+    top: 10px;
+}
+
+.menOnBase .runner {
+    background-position: -16px 0;
+}
+
+.menOnBase .moved {
+    background-position: -32px 0;
+}
+
+.menOnBase abbr, .menOnBase span {
+    opacity: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.countAndOuts {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 3px;
 }

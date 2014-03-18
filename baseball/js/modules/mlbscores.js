@@ -155,24 +155,12 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
     // Base.MLBScores.Collection definition
     //----------------------------------
     Mod.Collection = Backbone.Collection.extend({
-        // Default sort is by game time
-        comparator: this.sortByTime,
-
-        // Sort by status (primary), league (secondary) and home team city (tertiary)
-        sortByStatus: function (itemA, itemB) {
-            var result = itemA.get("status").status.localeCompare(itemB.get("status").status);
+        // Sort by status (primary, desc), time (secondary) and home team city (tertiary)
+        comparator: function (itemA, itemB) {
+            var result = -(itemA.get("status").ind.localeCompare(itemB.get("status").ind));
             if (result == 0) {
-                result = itemA.get("league").localeCompare(itemB.get("league"));
+                result = itemA.get("time").localeCompare(itemB.get("time"));
             }
-            if (result == 0) {
-                result = itemA.get("home_team_city").localeCompare(itemB.get("home_team_city"));
-            }
-            return result;
-        },
-
-        // Sort by time (primary) and home team city (secondary)
-        sortByTime: function (itemA, itemB) {
-            var result = itemA.get("time").localeCompare(itemB.get("time"));
             if (result == 0) {
                 result = itemA.get("home_team_city").localeCompare(itemB.get("home_team_city"));
             }
@@ -331,6 +319,64 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 } else {
                     return "".concat(this.home_team_city, " ", (this.home_team_city.indexOf(this.home_team_name) < 0 ? this.home_team_name : ""));
                 }
+            },
+            getRunnerOn: function (base) {
+                var result = "<span>Empty</span>";
+                if (this.runners_on_base != null) {
+                    switch (base) {
+                        case 1:
+                            if (this.runners_on_base.status == 1
+                                || this.runners_on_base.status == 4      // 1st & 2nd
+                                || this.runners_on_base.status == 5      // 1st & 3rd
+                                || this.runners_on_base.status == 7) {  // 1st, 2nd && 3rd
+                                result = "<abbr title='" + this.runners_on_base.runner_on_1b.first + " " + this.runners_on_base.runner_on_1b.last + "'>" + this.runners_on_base.runner_on_1b.last + "</abbr>";
+                            }
+                            break;
+                        case 2:
+                            if (this.runners_on_base.status == 2
+                                    || this.runners_on_base.status == 4      // 1st & 2nd
+                                    || this.runners_on_base.status == 6      // 2nd && 3rd
+                                    || this.runners_on_base.status == 7) {  // 1st, 2nd && 3rd
+                                result = "<abbr title='" + this.runners_on_base.runner_on_2b.first + " " + this.runners_on_base.runner_on_2b.last + "'>" + this.runners_on_base.runner_on_2b.last + "</abbr>";
+                            }
+                            break;
+                        case 3:
+                            if (this.runners_on_base.status == 3
+                                    || this.runners_on_base.status == 5      // 1st && 3rd
+                                    || this.runners_on_base.status == 6      // 2nd && 3rd
+                                    || this.runners_on_base.status == 7) {  // 1st, 2nd && 3rd
+                                result = "<abbr title='" + this.runners_on_base.runner_on_3b.first + " " + this.runners_on_base.runner_on_3b.last + "'>" + this.runners_on_base.runner_on_3b.last + "</abbr>";
+                            }
+                            break;
+                    }
+                }
+                return result;
+            },
+            hasRunnerOn: function (base) {
+                var result = false;
+                if (this.runners_on_base != null) {
+                    switch (base) {
+                        case 1:
+                            result = (this.runners_on_base.status == 1
+                                    || this.runners_on_base.status == 4      // 1st & 2nd
+                                    || this.runners_on_base.status == 5      // 1st & 3rd
+                                    || this.runners_on_base.status == 7);   // 1st, 2nd && 3rd
+                            break;
+                        case 2:
+                            result = (this.runners_on_base.status == 2
+                                    || this.runners_on_base.status == 4      // 1st & 2nd
+                                    || this.runners_on_base.status == 6      // 2nd && 3rd
+                                    || this.runners_on_base.status == 7);   // 1st, 2nd && 3rd
+                            break;
+                        case 3:
+                            result = (this.runners_on_base.status == 3
+                                    || this.runners_on_base.status == 5      // 1st && 3rd
+                                    || this.runners_on_base.status == 6      // 2nd && 3rd
+                                    || this.runners_on_base.status == 7);   // 1st, 2nd && 3rd
+                            break;
+                    }
+                }
+                return result;
             }
         },
 
@@ -384,7 +430,10 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         // UI hash
         ui: {
             boxscores: ".boxScores",
-            alerts: ".mlb-scores-alerts"
+            alerts: ".mlb-scores-alerts",
+            first: "dd.first",
+            second: "dd.second",
+            third: "dd.third"
         },
 
         // Initialization for the view

@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/south-street/jquery-ui-1.10.4.custom.css" />
         <link rel="stylesheet" type="text/css" href="css/mlbscores.css" />
         <link rel="stylesheet" type="text/css" href="css/mlb_logos.css" />
-        <!--<link rel="stylesheet" type="text/css" href="css/basics.css" />  --> 
+        <!--<link rel="stylesheet" type="text/css" href="css/mlbscoreboard_grid.css" /> -->  
 
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
@@ -64,11 +64,9 @@
         </script>
         <script type="text/template" id="mlb-scores-footer">
             <p id="copyright"> 
-                <span id="mlb-scores-copyright">&copy; 2014  <a href="http://bcgrimes.baycg.com/Brett_Grimes.html" target="_blank" class="lowkeylink" style="color: #555;">Brett C. Grimes</a></span><span id="mlb-scores-results-time" style="float:right;"></span>
+                <span id="mlb-scores-copyright">&copy; 2014  <a href="http://bcgrimes.baycg.com/Brett_Grimes.html" target="_blank" class="lowkeylink" style="color: #555;">Brett C. Grimes</a></span>
+                <span id="mlb-scores-results-time" title="Last Update" style="float:right;"></span>
             </p> 
-            <!--<div class="ui-corner-all" style="float: right; position: relative; top: -2.25em; padding: 2px; border: 1px outset Gray;">--> 
-                <!--<a href="http://bcgrimes.baycg.com/Brett_Grimes.html" target="_blank" class="lowkeylink" style="color: #555;">Resume</a>-->
-            <!--</div>--> 
         </script>
 
         <!-- empty games view -->
@@ -101,15 +99,17 @@
                             <% if (status.ind == "I") { %>
                                 <a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" target="_blank" class="lowkeylink" title="Watch GameDay">
                             <% } %>
-                                <span><%= status.status %><% if (status.reason != null && status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
+                                <span style="text-overflow:ellipsis;"><%= status.status %></span>
                             <% if (status.ind == "I") { %>
                                 </a>
                             <% } %>
                         </th>
-                        <!--<th class="boxHeaderItem boxSubtitle borderLeft">&nbsp;</th>--><!-- spacer -->
                         <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
                         <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
                         <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
+                    <% if (status.ind == "I") { %>
+                        <th class="boxHeaderItem boxSubtitle borderLeft" style="white-space:nowrap;"><%= status.inning_state.substr(0,3) %> <%= status.inning %></th>
+                    <% } %>
                     </tr>
                 </thead>
                 <tbody class="boxBody">
@@ -135,10 +135,27 @@
                                 </tr>
                             </table>
                         </td>
-                        <!--<td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td>--><!-- spacer -->
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.r.away%><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.h.away%><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.away%><% } %></td>
+                    <% if (status.ind == "I") { %>
+                        <td class="infographic borderLeft borderTop itemHighlight" rowspan="2">
+                            <div class="menOnBase">
+                                <dl>
+                                    <dt class="first"><abbr title="First Base">1st:</abbr></dt>
+                                    <dd class="first<% if (obj.hasRunnerOn(1)) { %> runner <% } %>"><%= obj.getRunnerOn(1) %></dd>
+                                    <dt class="second"><abbr title="Second Base">2nd:</abbr></dt>
+                                    <dd class="second <% if (obj.hasRunnerOn(2)) { %> runner <% } %>"><%= obj.getRunnerOn(2) %></dd>
+                                    <dt class="third"><abbr title="Third Base">3rd:</abbr></dt>
+                                    <dd class="third <% if (obj.hasRunnerOn(3)) { %> runner <% } %>"><%= obj.getRunnerOn(3) %></dd>
+                                </dl>
+                            </div>
+                            <div class="countAndOuts">
+                                <div class="count"><%= status.b %>-<%= status.s %></div>
+                                <div class="outs"><%= status.o %> outs</div>
+                            </div>
+                        </td>
+                    <% } %>
                     </tr>
                     <tr class="home">
                         <td class="boxBodyItem boxHome borderTop teamBox teamGridBox <% if (!_.isUndefined(obj.linescore) && Number(linescore.r.home) > Number(linescore.r.away)) { %> gameWinner <% } %>">
@@ -162,46 +179,9 @@
                                 </tr>
                             </table>
                         </td>
-                        <!--<td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop">&nbsp;</td>--><!-- spacer -->
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.r.home %><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.h.home %><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.home %><% } %></td>
-                    </tr>
-                    <tr>
-                        <!--<td class="infographic borderTop">-->
-                            <!--<div class="menOnBase">
-                                <dl>
-                                    <dt class="first">
-                                        <abbr title="First Base">1st:</abbr></dt>
-                                    <dd class="first">
-                                        <span>Empty</span>
-                                    </dd>
-                                    <dt class="second">
-                                        <abbr title="Second Base">2nd:</abbr></dt>
-                                    <dd class="second">
-                                        <span>Empty</span>
-                                    </dd>
-                                    <dt class="third">
-                                        <abbr title="Third Base">3rd:</abbr></dt>
-                                    <dd class="third">
-                                        <span>Empty</span>
-                                    </dd>
-                                </dl>
-                            </div>-->
-                        <!--</td>-->
-                        <td class="borderTop itemHighlight" colspan="2">
-                        <% if (status.ind == "I") { %>
-                            <div class="countAndOuts i">
-                                <span class="count"><%= status.b %>-<%= status.s %></span>
-                                <span class="outs"><%= status.o %> outs</span>
-                            </div>
-                        <% } else { %>
-                                &nbsp;
-                        <% } %>
-                        </td>
-                        <td class="borderTop itemHighlight" colspan="2" style="text-align:right;">
-                            <%= status.inning_state.substr(0,3) %> <%= status.inning %>
-                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -245,6 +225,9 @@
                             <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
                             <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
                             <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
+                    <% if (status.ind == "I") { %>
+                            <th class="boxHeaderItem boxSubtitle borderLeft" style="white-space:nowrap;"><%= status.inning_state.substr(0,3) %> <%= status.inning %></th>
+                    <% } %>
                         </tr>
                     </thead>
                     <tbody class="boxBody">
@@ -288,6 +271,24 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.r.away%><% } %></td>
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.h.away%><% } %></td>
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.away%><% } %></td>
+                        <% if (status.ind == "I") { %>
+                            <td class="infographic borderLeft borderTop itemHighlight" rowspan="2">
+                                <div class="menOnBase">
+                                    <dl>
+                                        <dt class="first"><abbr title="First Base">1st:</abbr></dt>
+                                        <dd class="first<% if (obj.hasRunnerOn(1)) { %> runner <% } %>"><%= obj.getRunnerOn(1) %></dd>
+                                        <dt class="second"><abbr title="Second Base">2nd:</abbr></dt>
+                                        <dd class="second <% if (obj.hasRunnerOn(2)) { %> runner <% } %>"><%= obj.getRunnerOn(2) %></dd>
+                                        <dt class="third"><abbr title="Third Base">3rd:</abbr></dt>
+                                        <dd class="third <% if (obj.hasRunnerOn(3)) { %> runner <% } %>"><%= obj.getRunnerOn(3) %></dd>
+                                    </dl>
+                                </div>
+                                <div class="countAndOuts">
+                                    <div class="count"><%= status.b %>-<%= status.s %></div>
+                                    <div class="outs"><%= status.o %> outs</div>
+                                </div>
+                            </td>
+                        <% } %>
                         </tr>
                         <tr>
                             <td class="boxBodyItem boxHome borderTop teamBox teamListBox <% if (!_.isUndefined(obj.linescore) && Number(linescore.r.home) > Number(linescore.r.away)) { %> gameWinner <% } %>">
@@ -331,23 +332,19 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.home %><% } %></td>
                         </tr>
                         <tr>
-                            <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, 9) : 9) %>" style="text-align:left;">
-                        <% if (status.ind == "I") { %>
-                                <% if (!_.isUndefined(obj.alerts)) { %><%= alerts.brief_text %><% } %>
-                        <% } %>
-                            </td>
-                            <td class="borderTop itemHighlight" colspan="3">
-                        <% if (status.ind == "I") { %>
-                                <div class="countAndOuts">
-                                    <span class="count"><%= status.b %>-<%= status.s %></span>
-                                    <span class="outs"><%= status.o %> outs</span>
-                                </div>
-                        <% } else { %>
-                                &nbsp;
-                        <% } %>
-                            </td>
-                            <td class="borderTop itemHighlight" colspan="2" style="text-align:right;">
-                                <%= status.inning_state.substr(0,3) %> <%= status.inning %>
+                            <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts info" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, (status.ind == "I" ? 15 : 14)) : (status.ind == "I" ? 15 : 14)) %>" style="text-align:left;">
+                            <% if (status.ind == "I") { %>
+                                <% if (!_.isUndefined(obj.pbp)) { %><span style="text-overflow:clip;" title="Last play: <%= pbp.last %>">Last: <%= pbp.last %></span><% } %>
+                            <% } else if (status.ind[0] == "F") { %>
+                                <span title="Winning Pitcher">W:</span>
+                                <span>
+                                    <a href="/team/player.jsp?player_id=<%= winning_pitcher.id %>"><abbr title="<%= winning_pitcher.first %> <%= winning_pitcher.last %>"><%= winning_pitcher.last %></abbr></a> (<%= winning_pitcher.wins %>-<%= winning_pitcher.losses %>, <%= winning_pitcher.era %>)
+                                </span>
+                                <span title="Losing Pitcher">L:</span>
+                                <span>
+                                    <a href="/team/player.jsp?player_id=<%= losing_pitcher.id %>"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
+                                </span>
+                            <% } %>
                             </td>
                         </tr>
                     </tbody>
