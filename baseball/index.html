@@ -338,11 +338,11 @@
                             <% } else if (status.ind[0] == "F") { %>
                                 <span title="Winning Pitcher">W:</span>
                                 <span>
-                                    <a href="/team/player.jsp?player_id=<%= winning_pitcher.id %>"><abbr title="<%= winning_pitcher.first %> <%= winning_pitcher.last %>"><%= winning_pitcher.last %></abbr></a> (<%= winning_pitcher.wins %>-<%= winning_pitcher.losses %>, <%= winning_pitcher.era %>)
+                                    <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= winning_pitcher.id %>" target="_blank"><abbr title="<%= winning_pitcher.first %> <%= winning_pitcher.last %>"><%= winning_pitcher.last %></abbr></a> (<%= winning_pitcher.wins %>-<%= winning_pitcher.losses %>, <%= winning_pitcher.era %>)
                                 </span>
                                 <span title="Losing Pitcher">L:</span>
                                 <span>
-                                    <a href="/team/player.jsp?player_id=<%= losing_pitcher.id %>"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
+                                    <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= losing_pitcher.id %>" target="_blank"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
                                 </span>
                             <% } %>
                             </td>
