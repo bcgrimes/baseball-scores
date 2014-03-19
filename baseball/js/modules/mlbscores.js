@@ -114,35 +114,41 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             var now = (new Date()).getTime();
             var date_key = model.getDateKey();
             var league = model.get("League");
-            // Make an AJAX call for the data
-            $.ajax("mlb_json_proxy.php", {
-                async: false,
-                cache: false,
-                type: "GET",
-                dataType: "json",
-                data: { ws_path: "components/game/" + model.get("League") + "/year_" + model.get("GameDate").getFullYear() + "/month_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getMonth()) + 1) + "/day_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getDate())) + "/master_scoreboard.json" }
-            }).done(function (data, textStatus, jqXHR) {
-                // CReate an empty data set
-                var data_set = { data: { games: { game: [] } } };
-                // If valid data was returned, parse it and update the data set with the result
-                if (_.isString(data) && data[0] == "{") {
-                    data_set = $.parseJSON(data);
-                    if (!_.isArray(data_set.data.games.game)) {
-                        data_set.data.games.game = (data_set.data.games.game != null ? [data_set.data.games.game] : []);
+            // Use cached data if found and not today
+            if (date_key == model.getDateKey(now) || !model.has(league) || model.get(league)[date_key] == null) {
+                // Make an AJAX call for the data
+                $.ajax("mlb_json_proxy.php", {
+                    async: false,
+                    cache: false,
+                    type: "GET",
+                    dataType: "json",
+                    data: { ws_path: "components/game/" + model.get("League") + "/year_" + model.get("GameDate").getFullYear() + "/month_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getMonth()) + 1) + "/day_" + Mod.Tools.NumberPad2(Number(model.get("GameDate").getDate())) + "/master_scoreboard.json" }
+                }).done(function (data, textStatus, jqXHR) {
+                    // CReate an empty data set
+                    var data_set = { data: { games: { game: [] } } };
+                    // If valid data was returned, parse it and update the data set with the result
+                    if (_.isString(data) && data[0] == "{") {
+                        data_set = $.parseJSON(data);
+                        if (!_.isArray(data_set.data.games.game)) {
+                            data_set.data.games.game = (data_set.data.games.game != null ? [data_set.data.games.game] : []);
+                        }
                     }
-                }
-                // Update the model data from the data set
-                var data_update = { LastModified: Number(model.get("LastModified")) };
-                data_update.LastModified[date_key] = now;
-                data_update[league] = $.extend(true, {}, model.get(league));
-                data_update[league][date_key] = data_set;
-                data_update.copyright = data_set.copyright;
-                data_update.data = data_update[league][date_key].data;
-                model.set(data_update, options);
-            }).fail(function (jqXHR, textStatus) {
-                // Let the user know the data fetch failed
-                alert("Request failed: " + jqXHR.responseText);
-            });
+                    // Update the model data from the data set
+                    var data_update = { LastModified: Number(model.get("LastModified")) };
+                    data_update.LastModified[date_key] = now;
+                    data_update[league] = $.extend(true, {}, model.get(league));
+                    data_update[league][date_key] = data_set;
+                    data_update.copyright = data_set.copyright;
+                    data_update.data = data_update[league][date_key].data;
+                    model.set(data_update, options);
+                }).fail(function (jqXHR, textStatus) {
+                    // Let the user know the data fetch failed
+                    alert("Request failed: " + jqXHR.responseText);
+                });
+            } else {
+                // Use the cached data fo rthe league and date
+                model.set("data", model.get(league)[date_key].data, options);
+            }
         },
 
         // Return a string key value constructed from the given date or the current GameDate by default
