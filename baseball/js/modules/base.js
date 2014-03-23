@@ -127,8 +127,9 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
 
         // Show the page content in the Base.Layout
         onRender: function () {
+            var $window = $(window)
             // Adjust the display height
-            this.$el.height($(window).height() - 45);  // TODO: this needs adjusting for browsers on iOS
+            this.$el.height($window.height() - 45);  // TODO: this needs adjusting for browsers on iOS
 
             // Create and show a new instance of the MLBScores.Header view 
             this.header.show(new App.MLBScores.Header({
@@ -143,14 +144,24 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             // Cache the current content view type
             this.currentViewType = "list";
 
-            // Create and show a new instance of the MLBScores.ContentList view
-            this.content.show(new App.MLBScores.ContentList({
-                model: new App.MLBScores.Model({
-                    GameDate: new Date(App.Constants.GameDate.getTime()),
-                    copyright: "",
-                    League: "mlb"
-                })
-            }));
+            // Create and show a new instance of the MLBScores.ContentList view or MLBScores.ContentGrid view for smaller screens
+            if ($window.width() > 1000) {
+                this.content.show(new App.MLBScores.ContentList({
+                    model: new App.MLBScores.Model({
+                        GameDate: new Date(App.Constants.GameDate.getTime()),
+                        copyright: "",
+                        League: "mlb"
+                    })
+                }));
+            } else {
+                this.content.show(new App.MLBScores.ContentGrid({
+                    model: new App.MLBScores.Model({
+                        GameDate: new Date(App.Constants.GameDate.getTime()),
+                        copyright: "",
+                        League: "mlb"
+                    })
+                }));
+            }
         }
     });
 });

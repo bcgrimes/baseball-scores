@@ -315,7 +315,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         onRender: function () {
             // Add a refresh time update event handler
             App.vent.on("update:data", function (updateDate) {
-                this.ui.resultstime.html(_.isDate(updateDate) ? updateDate.toLocaleTimeString() : "");
+                this.ui.resultstime.html(_.isDate(updateDate) ? "Updated: " + updateDate.toLocaleTimeString() : "");
             }, this);
         }
     });
@@ -400,6 +400,15 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     }
                 }
                 return result;
+            },
+            getStatusColspan: function () {
+                var columns = ((this.status.ind[0] == "I" || this.status.ind[0] == "F")
+                    && (!_.isUndefined(this.linescore) && _.isArray(this.linescore.inning)
+                        ? Math.max(this.linescore.inning.length, (this.status.ind == "I" || this.status.ind[0] == "F" ? 15 : 14))
+                        : (this.status.ind == "I" || this.status.ind[0] == "F" ? 15 : 14)
+                    )
+                );
+                return "colspan='" + columns + "'";
             }
         },
 

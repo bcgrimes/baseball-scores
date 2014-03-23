@@ -59,7 +59,7 @@ body {
 }
 .boxScoreGrid {
     float: left;
-    width: 235px;
+    width: 255px;
 }
 .boxScoreList {
     float: left;
@@ -114,9 +114,7 @@ body {
     padding: 0;
 }
 .statusMessage {
-    color: #f00;
-    font-weight: bold;
-    line-height: 4em;
+    min-height: 64px;
 }
 .teamBox {
     padding-left: 3px;
@@ -127,7 +125,7 @@ body {
     width: 150px;
 }
 .teamGridBox {
-    width: 125px;
+    width: 150px;
 }
 .teamName {
     color: Purple;
@@ -162,7 +160,7 @@ body {
     height: 74px;
     width: 110px;
     background-repeat: no-repeat;
-    background-image: url(images/baseball-wait.gif)
+    background-image: url(../images/baseball-wait.gif)
 }
 .spacing {
     padding-left: 10px;

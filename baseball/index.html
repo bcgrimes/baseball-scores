@@ -207,7 +207,7 @@
                                 </a>
                             <% } %>
                             </th>
-                    <% if (!_.isUndefined(obj.linescore)) { %>
+                    <% if ((status.ind[0] == "I" || status.ind[0] == "F") && !_.isUndefined(obj.linescore) && _.isArray(obj.linescore.inning)) { %>
                         <% _.each(linescore.inning, function(inning, inningIndex) { %>
                             <th class="boxHeaderItem boxSubtitle borderLeft"><%= (inningIndex + 1) %></th>
                         <% }) %>
@@ -253,7 +253,7 @@
                                     </tr>
                                 </table>
                             </td>
-                    <% if (!_.isUndefined(obj.linescore)) { %>
+                    <% if ((status.ind[0] == "I" || status.ind[0] == "F") && !_.isUndefined(obj.linescore) && _.isArray(obj.linescore.inning)) { %>
                         <% _.each(linescore.inning, function(inning, inningIndex) { %>
                             <td class="boxBodyItem boxAway borderLeft borderTop <% if (Number(inning.away) > 0) { %> boxRuns<% } %><% if (linescore.inning.length == inningIndex + 1 && status.top_inning == 'Y') { %> itemHighlight<% } %>"><%= inning.away %></td>
                         <% }) %>
@@ -312,7 +312,7 @@
                                     </tr>
                                 </table>
                             </td>
-                    <% if (!_.isUndefined(obj.linescore)) { %>
+                    <% if ((status.ind[0] == "I" || status.ind[0] == "F") && !_.isUndefined(obj.linescore) && _.isArray(obj.linescore.inning)) { %>
                         <% _.each(linescore.inning, function(inning, inningIndex) { %>
                             <td class="boxBodyItem boxHome borderLeft borderTop <% if (Number(inning.home) > 0) { %> boxRuns<% } %><% if (linescore.inning.length == inningIndex + 1 && status.top_inning == 'N') { %> itemHighlight<% } %>"><%= (_.isUndefined(inning.home) ? "-" : inning.home) %></td>
                         <% }) %>
@@ -332,19 +332,34 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.home %><% } %></td>
                         </tr>
                         <tr>
-                            <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts info" colspan="<%= (!_.isUndefined(obj.linescore) ? Math.max(linescore.inning.length, (status.ind == "I" ? 15 : 14)) : (status.ind == "I" ? 15 : 14)) %>" style="text-align:left;">
+                            <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts info" style="text-align:left;" <%= getStatusColspan() %>>
+                                <div class="statusMessage">
                             <% if (status.ind == "I") { %>
-                                <% if (!_.isUndefined(obj.pbp)) { %><span style="text-overflow:clip;" title="Last play: <%= pbp.last %>">Last: <%= pbp.last %></span><% } %>
+                                    <span title="Pitching">Pitching:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= opposing_pitcher.id %>" target="_blank"><abbr title="<%= opposing_pitcher.first %> <%= opposing_pitcher.last %>"><%= opposing_pitcher.name_display_roster %></abbr></a>, ERA: <%= opposing_pitcher.era %> (<%= (status.top_inning == "Y" ? home_name_abbrev : away_name_abbrev) %>)
+                                    </span>
+                                    <br />
+                                    <span title="Batting">Batting:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= batter.id %>" target="_blank"><abbr title="<%= batter.first %> <%= batter.last %>"><%= batter.name_display_roster %></abbr></a>, AVG: <%= batter.avg %> (<%= (status.top_inning == "Y" ? away_name_abbrev : home_name_abbrev) %>)
+                                    </span>
+                                <% if (!_.isUndefined(obj.pbp)) { %>
+                                    <br />
+                                    <span title="Last play: <%= pbp.last %>">Last: <%= pbp.last %></span>
+                                <% } %>
                             <% } else if (status.ind[0] == "F") { %>
-                                <span title="Winning Pitcher">W:</span>
-                                <span>
-                                    <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= winning_pitcher.id %>" target="_blank"><abbr title="<%= winning_pitcher.first %> <%= winning_pitcher.last %>"><%= winning_pitcher.last %></abbr></a> (<%= winning_pitcher.wins %>-<%= winning_pitcher.losses %>, <%= winning_pitcher.era %>)
-                                </span>
-                                <span title="Losing Pitcher">L:</span>
-                                <span>
-                                    <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= losing_pitcher.id %>" target="_blank"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
-                                </span>
+                                    <span title="Winning Pitcher">W:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= winning_pitcher.id %>" target="_blank"><abbr title="<%= winning_pitcher.first %> <%= winning_pitcher.last %>"><%= winning_pitcher.last %></abbr></a> (<%= winning_pitcher.wins %>-<%= winning_pitcher.losses %>, <%= winning_pitcher.era %>)
+                                    </span>
+                                    <br />
+                                    <span title="Losing Pitcher">L:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= losing_pitcher.id %>" target="_blank"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
+                                    </span>
                             <% } %>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -355,7 +370,9 @@
  
     <body> 
         <div id="container" class="ui-corner-all">  
-            <div id="lCenter" class="alignCenter"></div> 
+            <div id="lCenter" class="alignCenter">
+                <div class="baseball-wait"></div>
+            </div> 
         </div>
 
         <script type="text/javascript">
