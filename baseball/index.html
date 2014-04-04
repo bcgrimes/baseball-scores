@@ -96,18 +96,18 @@
                 <thead class="boxHeader">
                     <tr>
                         <th class="boxHeaderItem gameStatus teamBox teamGridBox">
-                            <% if (status.ind == "I") { %>
+                            <% if (status.ind[0] == "I") { %>
                                 <a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" target="_blank" class="lowkeylink" title="Watch GameDay">
                             <% } %>
                                 <span style="text-overflow:ellipsis;"><%= status.status %></span>
-                            <% if (status.ind == "I") { %>
+                            <% if (status.ind[0] == "I") { %>
                                 </a>
                             <% } %>
                         </th>
                         <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
                         <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
                         <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
-                    <% if (status.ind == "I") { %>
+                    <% if (status.ind[0] == "I") { %>
                         <th class="boxHeaderItem boxSubtitle borderLeft" style="white-space:nowrap;"><%= status.inning_state.substr(0,3) %> <%= status.inning %></th>
                     <% } %>
                     </tr>
@@ -138,7 +138,7 @@
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.r.away%><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.h.away%><% } %></td>
                         <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.away%><% } %></td>
-                    <% if (status.ind == "I") { %>
+                    <% if (status.ind[0] == "I") { %>
                         <td class="infographic borderLeft borderTop itemHighlight" rowspan="2">
                             <div class="menOnBase">
                                 <dl>
@@ -199,11 +199,11 @@
                     <thead class="boxHeader">
                         <tr>
                             <th class="boxHeaderItem gameStatus teamBox teamListBox">
-                            <% if (status.ind == "I") { %>
+                            <% if (status.ind[0] == "I") { %>
                                 <a href="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=<%= gameday %>&mode=gameday&c_id=mlb" target="_blank" class="lowkeylink" title="Watch GameDay">
                             <% } %>
                                     <span><%= status.status %><% if (status.reason != null && status.reason != "" && status.reason != "Final") { %> (<%= status.reason %>)<% } %></span>
-                            <% if (status.ind == "I") { %>
+                            <% if (status.ind[0] == "I") { %>
                                 </a>
                             <% } %>
                             </th>
@@ -225,7 +225,7 @@
                             <th class="boxHeaderItem boxSubtitle borderLeft">R</th>
                             <th class="boxHeaderItem boxSubtitle borderLeft">H</th>
                             <th class="boxHeaderItem boxSubtitle borderLeft">E</th>
-                    <% if (status.ind == "I") { %>
+                    <% if (status.ind[0] == "I") { %>
                             <th class="boxHeaderItem boxSubtitle borderLeft" style="white-space:nowrap;"><%= status.inning_state.substr(0,3) %> <%= status.inning %></th>
                     <% } %>
                         </tr>
@@ -271,7 +271,7 @@
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop runs"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.r.away%><% } %></td>
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop hits"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.h.away%><% } %></td>
                             <td class="boxBodyItem boxSubtitle boxSummary borderLeft borderTop errors"><% if (!_.isUndefined(obj.linescore)) { %><%= linescore.e.away%><% } %></td>
-                        <% if (status.ind == "I") { %>
+                        <% if (status.ind[0] == "I") { %>
                             <td class="infographic borderLeft borderTop itemHighlight" rowspan="2">
                                 <div class="menOnBase">
                                     <dl>
@@ -334,10 +334,10 @@
                         <tr>
                             <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts info" style="text-align:left;" <%= getStatusColspan() %>>
                                 <div class="statusMessage">
-                            <% if (status.ind == "I") { %>
+                            <% if (status.ind[0] == "I") { %>
                                     <span title="Pitching">Pitching:</span>
                                     <span>
-                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= opposing_pitcher.id %>" target="_blank"><abbr title="<%= opposing_pitcher.first %> <%= opposing_pitcher.last %>"><%= opposing_pitcher.name_display_roster %></abbr></a>, ERA: <%= opposing_pitcher.era %> (<%= (status.top_inning == "Y" ? home_name_abbrev : away_name_abbrev) %>)
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).id %>" target="_blank"><abbr title="<%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).first %> <%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).last %>"><%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).name_display_roster %></abbr></a>, ERA: <%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).era %> (<%= (status.top_inning == "Y" ? home_name_abbrev : away_name_abbrev) %>)
                                     </span>
                                     <br />
                                     <span title="Batting">Batting:</span>
