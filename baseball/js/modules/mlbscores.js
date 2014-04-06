@@ -402,7 +402,11 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 return result;
             },
             getStatusColspan: function () {
-                return "colspan='" + (this.status.ind[0] == "I" || this.status.ind[0] == "F" ? 15 : 14) + "'";
+                var innings = 9;
+                if (!_.isUndefined(this.linescore) && _.isArray(this.linescore.inning)) {
+                    innings = Math.max(this.linescore.inning.length, 9);
+                }
+                return "colspan='" + (this.status.ind[0] == "I" || this.status.ind[0] == "F" ? innings + 6 : innings + 5) + "'";
             }
         },
 

@@ -335,12 +335,12 @@
                             <td class="boxBodyItem boxHome borderTop itemHighlight mlb-scores-alerts info" style="text-align:left;" <%= getStatusColspan() %>>
                                 <div class="statusMessage">
                             <% if (status.ind[0] == "I") { %>
-                                    <span title="Pitching">Pitching:</span>
+                                    <span title="Pitching">P:</span>
                                     <span>
-                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).id %>" target="_blank"><abbr title="<%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).first %> <%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).last %>"><%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).name_display_roster %></abbr></a>, ERA: <%= (status.top_inning == "Y" ? pitcher : opposing_pitcher).era %> (<%= (status.top_inning == "Y" ? home_name_abbrev : away_name_abbrev) %>)
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= pitcher.id %>" target="_blank"><abbr title="<%= pitcher.first %> <%= pitcher.last %>"><%= pitcher.name_display_roster %></abbr></a>, ERA: <%= pitcher.era %> (<%= (status.top_inning == "Y" ? home_name_abbrev : away_name_abbrev) %>)
                                     </span>
                                     <br />
-                                    <span title="Batting">Batting:</span>
+                                    <span title="Batting">AB:</span>
                                     <span>
                                         <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= batter.id %>" target="_blank"><abbr title="<%= batter.first %> <%= batter.last %>"><%= batter.name_display_roster %></abbr></a>, AVG: <%= batter.avg %> (<%= (status.top_inning == "Y" ? away_name_abbrev : home_name_abbrev) %>)
                                     </span>
@@ -357,6 +357,18 @@
                                     <span title="Losing Pitcher">L:</span>
                                     <span>
                                         <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= losing_pitcher.id %>" target="_blank"><abbr title="<%= losing_pitcher.first %> <%= losing_pitcher.last %>"><%= losing_pitcher.last %></abbr></a> (<%= losing_pitcher.wins %>-<%= losing_pitcher.losses %>, <%= losing_pitcher.era %>)
+                                    </span>
+                            <% } else if (status.ind[0] == "P" && away_sport_code == "mlb" && away_probable_pitcher != null) { %>
+                                    <span >Probables:</span>
+                                    <br />
+                                    <span title="<%= away_team_name %>"><%= away_name_abbrev %>:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= away_probable_pitcher.id %>" target="_blank"><abbr title="<%= away_probable_pitcher.first %> <%= away_probable_pitcher.last %>"><%= away_probable_pitcher.last %></abbr></a> (<%= away_probable_pitcher.wins %>-<%= away_probable_pitcher.losses %>, <%= away_probable_pitcher.era %>)
+                                    </span>
+                                    <br />
+                                    <span title="<%= home_team_name %>"><%= home_name_abbrev %>:</span>
+                                    <span>
+                                        <a href="http://mlb.mlb.com/team/player.jsp?player_id=<%= home_probable_pitcher.id %>" target="_blank"><abbr title="<%= home_probable_pitcher.first %> <%= home_probable_pitcher.last %>"><%= home_probable_pitcher.last %></abbr></a> (<%= home_probable_pitcher.wins %>-<%= home_probable_pitcher.losses %>, <%= home_probable_pitcher.era %>)
                                     </span>
                             <% } %>
                                 </div>
