@@ -52,6 +52,14 @@ App.addInitializer(function (options) {
 // Contains the Controller, Model and Layout for the page
 App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
 
+    // Define the constants for the module
+    Mod.Constants = {
+        ViewType: {
+            Full: "list",
+            Summary: "grid"
+        }
+    };
+
     // Base.Controller definition
     Mod.Controller = Marionette.Controller.extend({
         // Initialization for the Base.Controller
@@ -104,17 +112,17 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             this.gamesModule.start();
 
             // Set an event handler for view type changes
-            App.vent.on("changed:viewtype", function (viewType) {
+            this.listenTo(App.vent, "changed:viewtype", function (viewType) {
                 viewType = viewType || this.currentViewType;
                 // Swap the content views based on the given view type using the existing model data
                 switch (viewType) {
                     default:
-                    case "list":
+                    case Mod.Constants.ViewType.Full:
                         this.content.show(new App.MLBScores.ContentList({
                             model: this.content.currentView.model
                         }));
                         break;
-                    case "grid":
+                    case Mod.Constants.ViewType.Summary:
                         this.content.show(new App.MLBScores.ContentGrid({
                             model: this.content.currentView.model
                         }));
@@ -141,11 +149,12 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
                 model: new App.Base.Model()
             }));
 
-            // Cache the current content view type
-            this.currentViewType = "list";
-
             // Create and show a new instance of the MLBScores.ContentList view or MLBScores.ContentGrid view for smaller screens
             if ($window.width() > 1000) {
+                // Cache the current content view type
+                this.currentViewType = Mod.Constants.ViewType.Full;
+
+                // Create the full list
                 this.content.show(new App.MLBScores.ContentList({
                     model: new App.MLBScores.Model({
                         GameDate: new Date(App.Constants.GameDate.getTime()),
@@ -154,6 +163,10 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
                     })
                 }));
             } else {
+                // Cache the current content view type
+                this.currentViewType = Mod.Constants.ViewType.Summary;
+
+                // Create the summary grid list
                 this.content.show(new App.MLBScores.ContentGrid({
                     model: new App.MLBScores.Model({
                         GameDate: new Date(App.Constants.GameDate.getTime()),

@@ -314,7 +314,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         // Post-render view work
         onRender: function () {
             // Add a refresh time update event handler
-            App.vent.on("update:data", function (updateDate) {
+            this.listenTo(App.vent, "update:data", function (updateDate) {
                 this.ui.resultstime.html(_.isDate(updateDate) ? "Updated: " + updateDate.toLocaleTimeString() : "");
             }, this);
         }
@@ -472,7 +472,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             this.collection = new Mod.Collection(this.model.get("data").games.game);
             var _this = this;
             // Add an Application event handler for the "changed:gamedate" event
-            App.vent.on("changed:gamedate", function (league, gameDate) {
+            this.listenTo(App.vent, "changed:gamedate", function (league, gameDate) {
                 // Update the league and game date
                 _this.model.set({
                     League: league,
