@@ -282,8 +282,12 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
         selectView: function (viewType) {
             if (viewType === App.Constants.ViewType.Full) {
                 this.ui.list.click();
+                this.ui.list.prop("checked", "checked");
+                this.ui.grid.removeProp("checked");
             } else {
                 this.ui.grid.click();
+                this.ui.grid.prop("checked", "checked");
+                this.ui.list.removeProp("checked");
             }
         },
         
