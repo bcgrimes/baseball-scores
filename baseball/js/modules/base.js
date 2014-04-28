@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * App and Base Marionette Module
  * base.js
  * http://baycg.com/
@@ -149,31 +149,21 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
                 model: new App.Base.Model()
             }));
 
-            // Create and show a new instance of the MLBScores.ContentList view or MLBScores.ContentGrid view for smaller screens
-            if ($window.width() > 1000) {
-                // Cache the current content view type
-                this.currentViewType = Mod.Constants.ViewType.Full;
+            // Cache the current content view type
+            this.currentViewType = Mod.Constants.ViewType.Full;
 
-                // Create the full list
-                this.content.show(new App.MLBScores.ContentList({
-                    model: new App.MLBScores.Model({
-                        GameDate: new Date(App.Constants.GameDate.getTime()),
-                        copyright: "",
-                        League: "mlb"
-                    })
-                }));
-            } else {
-                // Cache the current content view type
-                this.currentViewType = Mod.Constants.ViewType.Summary;
-
-                // Create the summary grid list
-                this.content.show(new App.MLBScores.ContentGrid({
-                    model: new App.MLBScores.Model({
-                        GameDate: new Date(App.Constants.GameDate.getTime()),
-                        copyright: "",
-                        League: "mlb"
-                    })
-                }));
+            // Create the full list
+            this.content.show(new App.MLBScores.ContentList({
+                model: new App.MLBScores.Model({
+                    GameDate: new Date(App.Constants.GameDate.getTime()),
+                    copyright: "",
+                    League: "mlb"
+                })
+            }));
+            
+            // Switch to the gird view if on a smaller screen
+            if ($window.width() < 1024) {
+                App.vent.trigger("changed:viewtype", "grid");
             }
         }
     });

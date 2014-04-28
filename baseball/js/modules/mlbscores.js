@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * MLBScores Marionette Module
  * mlbscores.js
  * http://baycg.com/
@@ -58,25 +58,18 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 case "E":
                 case "S":
                     return "Pre-Season";
-                    break;
                 case "R":
                     return "Regular Season";
-                    break;
                 case "A":
                     return "All-Star Game";
-                    break;
                 case "D":
                     return "Divisional Series";
-                    break;
                 case "L":
                     return "League Championship Series";
-                    break;
                 case "W":
                     return "World Series";
-                    break;
                 default:
                     return "";
-                    break;
             }
         }
     }
@@ -115,7 +108,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             var date_key = model.getDateKey();
             var league = model.get("League");
             // Use cached data if found and not today
-            if (date_key == model.getDateKey(now) || !model.has(league) || model.get(league)[date_key] == null) {
+            if (date_key === model.getDateKey(now) || !model.has(league) || model.get(league)[date_key] == null) {
                 // Make an AJAX call for the data
                 $.ajax("mlb_json_proxy.php", {
                     async: false,
@@ -127,7 +120,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     // CReate an empty data set
                     var data_set = { data: { games: { game: [] } } };
                     // If valid data was returned, parse it and update the data set with the result
-                    if (_.isString(data) && data[0] == "{") {
+                    if (_.isString(data) && data[0] === "{") {
                         data_set = $.parseJSON(data);
                         if (!_.isArray(data_set.data.games.game)) {
                             data_set.data.games.game = (data_set.data.games.game != null ? [data_set.data.games.game] : []);
@@ -143,7 +136,7 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                     model.set(data_update, options);
                 }).fail(function (jqXHR, textStatus) {
                     // Let the user know the data fetch failed
-                    alert("Request failed: " + jqXHR.responseText);
+                    window.alert("Request failed: " + jqXHR.responseText);
                 });
             } else {
                 // Use the cached data fo rthe league and date
