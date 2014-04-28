@@ -116,7 +116,6 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
                 viewType = viewType || this.currentViewType;
                 // Swap the content views based on the given view type using the existing model data
                 switch (viewType) {
-                    default:
                     case Mod.Constants.ViewType.Full:
                         this.content.show(new App.MLBScores.ContentList({
                             model: this.content.currentView.model
@@ -163,7 +162,7 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             
             // Switch to the gird view if on a smaller screen
             if ($window.width() < 1000) {
-                App.vent.trigger("changed:viewtype", "grid");
+                this.header.ui.grid.click();
             }
         }
     });
