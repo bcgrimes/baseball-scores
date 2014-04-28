@@ -158,7 +158,7 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             
             // Switch to the gird view if on a smaller screen
             if ($window.width() < 1024) {
-                this.header.selectView(App.Constants.ViewType.Summary);
+                this.header.currentView.selectView(App.Constants.ViewType.Summary);
             }
         }
     });
