@@ -34,7 +34,11 @@ App.addInitializer(function (options) {
             "afx": "MILB Low A - Midwest League",
             "asx": "MILB Short A - NY/PA League"
         },
-        RefreshTimeoutLimitMS: 10000
+        RefreshTimeoutLimitMS: 10000,
+        ViewType: {
+            Full: "list",
+            Summary: "grid"
+        }
     };
 
     // Add the display region
@@ -51,14 +55,6 @@ App.addInitializer(function (options) {
 // Definition for the Base module
 // Contains the Controller, Model and Layout for the page
 App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
-
-    // Define the constants for the module
-    Mod.Constants = {
-        ViewType: {
-            Full: "list",
-            Summary: "grid"
-        }
-    };
 
     // Base.Controller definition
     Mod.Controller = Marionette.Controller.extend({
@@ -116,12 +112,12 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
                 viewType = viewType || this.currentViewType;
                 // Swap the content views based on the given view type using the existing model data
                 switch (viewType) {
-                    case Mod.Constants.ViewType.Full:
+                    case App.Constants.ViewType.Full:
                         this.content.show(new App.MLBScores.ContentList({
                             model: this.content.currentView.model
                         }));
                         break;
-                    case Mod.Constants.ViewType.Summary:
+                    case App.Constants.ViewType.Summary:
                         this.content.show(new App.MLBScores.ContentGrid({
                             model: this.content.currentView.model
                         }));
@@ -149,7 +145,7 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             }));
 
             // Cache the current content view type
-            this.currentViewType = Mod.Constants.ViewType.Full;
+            this.currentViewType = App.Constants.ViewType.Full;
 
             // Create the full list
             this.content.show(new App.MLBScores.ContentList({
@@ -161,8 +157,8 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             }));
             
             // Switch to the gird view if on a smaller screen
-            if ($window.width() < 1000) {
-                this.header.ui.grid.click();
+            if ($window.width() < 1024) {
+                this.header.selectView(App.Constants.ViewType.Summary);
             }
         }
     });

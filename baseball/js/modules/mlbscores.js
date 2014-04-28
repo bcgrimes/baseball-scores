@@ -278,6 +278,15 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             this.ui.viewbuttons.buttonset();
         },
 
+        // Select view type via buttonset
+        selectView: function (viewType) {
+            if (viewType === App.Constants.ViewType.Full) {
+                this.ui.list.click();
+            } else {
+                this.ui.grid.click();
+            }
+        },
+        
         // Select League event handler definition
         selectLeague: function () {
             this.model.set("League", this.$("#mlb-scores-select-league option").filter(":selected").val(), { silent: true });
