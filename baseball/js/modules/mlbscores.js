@@ -202,11 +202,6 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             }
         },
 
-        // Events hash
-        events: {
-            "changed #mlb-scores-select-league": "selectLeague"
-        },
-
         // UI hash
         ui: {
             previous: ".mlb-scores-datepicker-previous",
@@ -218,6 +213,12 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
             grid: "#mlb-scores-grid-button",
             viewbuttons: "#mlb-scores-view-buttonset",
             leagueselect: "#mlb-scores-select-league"
+        },
+
+        // Events hash
+        events: {
+            "change #mlb-scores-select-league": "selectLeague",
+            "change #mlb-scores-list-button, #mlb-scores-grid-button": "selectView"
         },
 
         // Post-render view work
@@ -260,34 +261,16 @@ App.module("MLBScores", function (Mod, App, Backbone, Marionette, $, _) {
                 _this.selectGameDate(_this.ui.datepicker.datepicker("getDate").toDateString());
             });
 
-            // Add the League select event handler
-            this.ui.leagueselect.change(function (ev) {
-                _this.selectLeague();
-            });
-
-            // Add the List (Full) view button click event handler
-            this.ui.list.click(function (ev) {
-                App.vent.trigger("changed:viewtype", "list");
-            });
-
-            // Add the Grid (Summary) view button click event handler
-            this.ui.grid.click(function (ev) {
-                App.vent.trigger("changed:viewtype", "grid");
-            });
             // Format the view buttons into a buttonset
             this.ui.viewbuttons.buttonset();
         },
 
         // Select view type via buttonset
-        selectView: function (viewType) {
-            if (viewType === App.Constants.ViewType.Full) {
-                this.ui.list.click();
-                this.ui.list.prop("checked", "checked");
-                this.ui.grid.removeProp("checked");
+        selectView: function (ev) {
+            if ($(ev.target).attr("id") === this.ui.list.attr("id")) {
+                App.vent.trigger("changed:viewtype", "list");
             } else {
-                this.ui.grid.click();
-                this.ui.grid.prop("checked", "checked");
-                this.ui.list.removeProp("checked");
+                App.vent.trigger("changed:viewtype", "grid");
             }
         },
         
