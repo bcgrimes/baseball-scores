@@ -162,7 +162,7 @@ App.module("Base", function (Mod, App, Backbone, Marionette, $, _) {
             }));
             
             // Switch to the gird view if on a smaller screen
-            if ($window.width() < 1024) {
+            if ($window.width() < 1000) {
                 App.vent.trigger("changed:viewtype", "grid");
             }
         }
